@@ -1,1 +1,1 @@
-test
+create (zhai:Person {name: '翟天临', age:38, photo: Blob.fromURL('http://s12.sinaimg.cn/mw690/005AE7Quzy7rL8kA4Nt6b&690'), pet: Blob.fromURL('http://s1.sinaimg.cn/middle/005AE7Quzy7rL9TUfZee0&690'), car: Blob.fromURL('http://s5.sinaimg.cn/middle/005AE7Quzy7rL9U08Pa24&690')}) create (sonIsComing:Show {name: '儿子来了', year:2019, photo: Blob.fromURL('http://s15.sinaimg.cn/mw690/005AE7Quzy7rL8j2jlIee&690')}) create (e:Event {name: '博士论文作假', actorName:'翟天临', actorPhoto: Blob.fromURL('http://s8.sinaimg.cn/middle/005AE7Quzy7rLa3FgNN37&690')})
