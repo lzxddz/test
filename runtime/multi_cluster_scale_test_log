@@ -1,80 +1,80 @@
-2024-12-30 17:08:37 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
-2024-12-30 17:08:37 - root - INFO - Initialize ClusterScaleTEstData
-2024-12-30 17:08:37 - root - INFO - filename = my_1.cnf
-2024-12-30 17:08:37 - root - INFO - filename = my_2.cnf
-2024-12-30 17:08:37 - root - INFO - filename = my_3.cnf
-2024-12-30 17:08:37 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
-2024-12-30 17:08:38 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
-2024-12-30 17:08:41 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node2_log) to determine success if you are debugging.)
-2024-12-30 17:08:44 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node3_log) to determine success if you are debugging.)
-2024-12-30 17:09:01 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 15.125782251358032s
-2024-12-30 17:09:01 - root - INFO - Connected to MySQL server id: 2 at 3302 aftre trying for 0.0885322093963623s
-2024-12-30 17:09:01 - root - INFO - Connected to MySQL server id: 3 at 3303 aftre trying for 0.02532958984375s
-2024-12-30 17:09:01 - root - INFO - -------Testing cluster scale add node-----------
-2024-12-30 17:09:51 - root - INFO - Unique id = cluster_id#e1e1caac-c6d0-11ef-a864-0e161e4cf6ef
-2024-12-30 17:09:52 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
-2024-12-30 17:09:52 - root - INFO - nodes = 4, new_nodes = 1
-2024-12-30 17:09:52 - root - INFO - filename = my_4.cnf
-2024-12-30 17:09:54 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
-2024-12-30 17:10:02 - root - INFO - Connected to MySQL server id: 4 at 3304 aftre trying for 5.379987955093384s
-2024-12-30 17:10:03 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
-2024-12-30 17:10:04 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
-2024-12-30 17:10:04 - root - INFO - Unique id = cluster_id#e978764e-c6d0-11ef-a864-0e161e4cf6ef
-2024-12-30 17:10:07 - root - INFO - Closed connection to MySQL server id: 4
-2024-12-30 17:10:07 - root - INFO - Try to stop Node id 4, its process id is 25817
-2024-12-30 17:10:07 - root - INFO - Node 4 is still running after 0, try to kill the process 25817
-2024-12-30 17:10:08 - root - INFO - Used about 1s to find Node id 4 crashes
-2024-12-30 17:10:08 - root - INFO - -------Testing cluster scale add node with drop table-----------
-2024-12-30 17:10:16 - root - INFO - Unique id = cluster_id#f0ed48b4-c6d0-11ef-a864-0e161e4cf6ef
-2024-12-30 17:10:17 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
-2024-12-30 17:10:17 - root - INFO - nodes = 4, new_nodes = 1
-2024-12-30 17:10:17 - root - INFO - filename = my_4.cnf
-2024-12-30 17:10:19 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
-2024-12-30 17:10:19 - root - INFO - New nodes have been started, notifying cluster scale tx...
-2024-12-30 17:10:29 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
-2024-12-30 17:10:30 - root - INFO - Unique id = cluster_id#f8c31c4e-c6d0-11ef-a864-0e161e4cf6ef
-2024-12-30 17:10:36 - root - INFO - Try to stop Node id 4, its process id is 26093
-2024-12-30 17:10:36 - root - INFO - Node 4 is still running after 0, try to kill the process 26093
-2024-12-30 17:10:37 - root - INFO - Used about 1s to find Node id 4 crashes
-2024-12-30 17:10:38 - root - INFO - -------Testing cluster scale add node with duplicate migration tx-----------
-2024-12-30 17:11:10 - root - INFO - Unique id = cluster_id#1118ed6e-c6d1-11ef-a864-0e161e4cf6ef
-2024-12-30 17:11:11 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
-2024-12-30 17:11:11 - root - INFO - nodes = 4, new_nodes = 1
-2024-12-30 17:11:11 - root - INFO - filename = my_4.cnf
-2024-12-30 17:11:13 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
-2024-12-30 17:11:16 - root - INFO - Now starting to migrate data.
-2024-12-30 17:11:16 - root - INFO - Used around 0 seconds to find 'Data migration: duplicate migration tx detected'
-2024-12-30 17:11:19 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
-2024-12-30 17:11:20 - root - INFO - Connected to MySQL server id: 4 at 3304 aftre trying for 0.8003592491149902s
-2024-12-30 17:11:20 - root - INFO - Unique id = cluster_id#16d90572-c6d1-11ef-a864-0e161e4cf6ef
-2024-12-30 17:11:23 - root - INFO - Closed connection to MySQL server id: 4
-2024-12-30 17:11:23 - root - INFO - Try to stop Node id 4, its process id is 26366
-2024-12-30 17:11:23 - root - INFO - Node 4 is still running after 0, try to kill the process 26366
-2024-12-30 17:11:24 - root - INFO - Used about 1s to find Node id 4 crashes
-2024-12-30 17:11:24 - root - INFO - -------Testing cluster scale add node with range splitting-----------
-2024-12-30 17:11:24 - root - INFO - self.data.MULTI_RANGE_ROW_NUM: 6291
-2024-12-30 17:12:15 - root - INFO - Unique id = cluster_id#3775e53e-c6d1-11ef-a864-0e161e4cf6ef
-2024-12-30 17:12:16 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
-2024-12-30 17:12:16 - root - INFO - nodes = 4, new_nodes = 1
-2024-12-30 17:12:16 - root - INFO - filename = my_4.cnf
-2024-12-30 17:12:17 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
-2024-12-30 17:12:35 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
-2024-12-30 17:12:36 - root - INFO - Unique id = cluster_id#43d8edda-c6d1-11ef-a864-0e161e4cf6ef
-2024-12-30 17:12:39 - root - INFO - Try to stop Node id 4, its process id is 26647
-2024-12-30 17:12:39 - root - INFO - Node 4 is still running after 0, try to kill the process 26647
-2024-12-30 17:12:40 - root - INFO - Used about 1s to find Node id 4 crashes
-2024-12-30 17:12:40 - root - INFO - Unique id = cluster_id#464cd932-c6d1-11ef-a864-0e161e4cf6ef
-2024-12-30 17:12:41 - root - INFO - Used about 1s to find Node id 3 crashes
-2024-12-30 17:12:42 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node3_log) to determine success if you are debugging.)
-2024-12-30 17:14:12 - root - INFO - Cleaning up resources
-2024-12-30 17:14:12 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
-2024-12-30 17:14:12 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
-2024-12-30 17:14:12 - root - INFO - Try to stop Node id 1, its process id is 25374
-2024-12-30 17:14:12 - root - INFO - Node 1 is still running after 0, try to kill the process 25374
-2024-12-30 17:14:13 - root - INFO - Used about 1s to find Node id 1 crashes
-2024-12-30 17:14:13 - root - INFO - Try to stop Node id 2, its process id is 25459
-2024-12-30 17:14:13 - root - INFO - Node 2 is still running after 0, try to kill the process 25459
-2024-12-30 17:14:14 - root - INFO - Used about 1s to find Node id 2 crashes
-2024-12-30 17:14:14 - root - INFO - Try to stop Node id 3, its process id is 26876
-2024-12-30 17:14:14 - root - INFO - Node 3 is still running after 0, try to kill the process 26876
-2024-12-30 17:14:15 - root - INFO - Used about 1s to find Node id 3 crashes
+2024-12-31 11:38:38 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
+2024-12-31 11:38:38 - root - INFO - Initialize ClusterScaleTEstData
+2024-12-31 11:38:38 - root - INFO - filename = my_1.cnf
+2024-12-31 11:38:38 - root - INFO - filename = my_2.cnf
+2024-12-31 11:38:38 - root - INFO - filename = my_3.cnf
+2024-12-31 11:38:38 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
+2024-12-31 11:38:39 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
+2024-12-31 11:38:42 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node2_log) to determine success if you are debugging.)
+2024-12-31 11:38:45 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node3_log) to determine success if you are debugging.)
+2024-12-31 11:39:04 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 17.469800233840942s
+2024-12-31 11:39:04 - root - INFO - Connected to MySQL server id: 2 at 3302 aftre trying for 0.09405350685119629s
+2024-12-31 11:39:04 - root - INFO - Connected to MySQL server id: 3 at 3303 aftre trying for 0.05742669105529785s
+2024-12-31 11:39:04 - root - INFO - -------Testing cluster scale add node-----------
+2024-12-31 11:39:52 - root - INFO - Unique id = cluster_id#f34fe97c-c76b-11ef-94b0-be298a718ceb
+2024-12-31 11:39:54 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
+2024-12-31 11:39:54 - root - INFO - nodes = 4, new_nodes = 1
+2024-12-31 11:39:54 - root - INFO - filename = my_4.cnf
+2024-12-31 11:39:56 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
+2024-12-31 11:40:03 - root - INFO - Connected to MySQL server id: 4 at 3304 aftre trying for 4.552742958068848s
+2024-12-31 11:40:04 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2024-12-31 11:40:04 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
+2024-12-31 11:40:04 - root - INFO - Unique id = cluster_id#fa5a9f0a-c76b-11ef-94b0-be298a718ceb
+2024-12-31 11:40:09 - root - INFO - Closed connection to MySQL server id: 4
+2024-12-31 11:40:09 - root - INFO - Try to stop Node id 4, its process id is 23390
+2024-12-31 11:40:09 - root - INFO - Node 4 is still running after 0, try to kill the process 23390
+2024-12-31 11:40:10 - root - INFO - Used about 1s to find Node id 4 crashes
+2024-12-31 11:40:11 - root - INFO - -------Testing cluster scale add node with drop table-----------
+2024-12-31 11:40:30 - root - INFO - Unique id = cluster_id#09ffafb8-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:40:32 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
+2024-12-31 11:40:32 - root - INFO - nodes = 4, new_nodes = 1
+2024-12-31 11:40:32 - root - INFO - filename = my_4.cnf
+2024-12-31 11:40:33 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
+2024-12-31 11:40:33 - root - INFO - New nodes have been started, notifying cluster scale tx...
+2024-12-31 11:40:42 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
+2024-12-31 11:40:43 - root - INFO - Unique id = cluster_id#1158a846-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:40:46 - root - INFO - Try to stop Node id 4, its process id is 23669
+2024-12-31 11:40:46 - root - INFO - Node 4 is still running after 0, try to kill the process 23669
+2024-12-31 11:40:47 - root - INFO - Used about 1s to find Node id 4 crashes
+2024-12-31 11:40:47 - root - INFO - -------Testing cluster scale add node with duplicate migration tx-----------
+2024-12-31 11:41:48 - root - INFO - Unique id = cluster_id#387d14fc-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:41:50 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
+2024-12-31 11:41:50 - root - INFO - nodes = 4, new_nodes = 1
+2024-12-31 11:41:50 - root - INFO - filename = my_4.cnf
+2024-12-31 11:41:51 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
+2024-12-31 11:41:54 - root - INFO - Now starting to migrate data.
+2024-12-31 11:41:54 - root - INFO - Used around 0 seconds to find 'Data migration: duplicate migration tx detected'
+2024-12-31 11:42:06 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
+2024-12-31 11:42:06 - root - INFO - Connected to MySQL server id: 4 at 3304 aftre trying for 0.03992438316345215s
+2024-12-31 11:42:07 - root - INFO - Unique id = cluster_id#43720c82-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:42:10 - root - INFO - Closed connection to MySQL server id: 4
+2024-12-31 11:42:10 - root - INFO - Try to stop Node id 4, its process id is 23945
+2024-12-31 11:42:10 - root - INFO - Node 4 is still running after 0, try to kill the process 23945
+2024-12-31 11:42:11 - root - INFO - Used about 1s to find Node id 4 crashes
+2024-12-31 11:42:11 - root - INFO - -------Testing cluster scale add node with range splitting-----------
+2024-12-31 11:42:11 - root - INFO - self.data.MULTI_RANGE_ROW_NUM: 6291
+2024-12-31 11:44:39 - root - INFO - Unique id = cluster_id#9def453a-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:44:40 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
+2024-12-31 11:44:40 - root - INFO - nodes = 4, new_nodes = 1
+2024-12-31 11:44:40 - root - INFO - filename = my_4.cnf
+2024-12-31 11:44:41 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node4_log) to determine success if you are debugging.)
+2024-12-31 11:45:11 - root - INFO - Cluster scale is finished. Verifying data are consistent after cluster scale.
+2024-12-31 11:45:13 - root - INFO - Unique id = cluster_id#b231ff56-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:45:16 - root - INFO - Try to stop Node id 4, its process id is 24221
+2024-12-31 11:45:16 - root - INFO - Node 4 is still running after 0, try to kill the process 24221
+2024-12-31 11:45:17 - root - INFO - Used about 1s to find Node id 4 crashes
+2024-12-31 11:45:17 - root - INFO - Unique id = cluster_id#b4b716b2-c76c-11ef-94b0-be298a718ceb
+2024-12-31 11:45:18 - root - INFO - Used about 1s to find Node id 3 crashes
+2024-12-31 11:45:19 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node3_log) to determine success if you are debugging.)
+2024-12-31 11:46:49 - root - INFO - Cleaning up resources
+2024-12-31 11:46:49 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-31 11:46:49 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-31 11:46:49 - root - INFO - Try to stop Node id 1, its process id is 22930
+2024-12-31 11:46:49 - root - INFO - Node 1 is still running after 0, try to kill the process 22930
+2024-12-31 11:46:50 - root - INFO - Used about 1s to find Node id 1 crashes
+2024-12-31 11:46:50 - root - INFO - Try to stop Node id 2, its process id is 23032
+2024-12-31 11:46:50 - root - INFO - Node 2 is still running after 0, try to kill the process 23032
+2024-12-31 11:46:51 - root - INFO - Used about 1s to find Node id 2 crashes
+2024-12-31 11:46:51 - root - INFO - Try to stop Node id 3, its process id is 24452
+2024-12-31 11:46:51 - root - INFO - Node 3 is still running after 0, try to kill the process 24452
+2024-12-31 11:46:52 - root - INFO - Used about 1s to find Node id 3 crashes

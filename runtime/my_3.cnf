@@ -28,6 +28,6 @@ monograph_kv_storage=cass
 monograph_cass_user=cassandra
 monograph_cass_password=cassandra
 monograph_cass_hosts=172.31.5.203
-monograph_keyspace_name=tx_pr_test_1735576551008
+monograph_keyspace_name=mono_pr_test_1735643583476
 [mariadb]
 monograph_txlog_service_list=127.0.0.1:8012 127.0.0.1:8022 127.0.0.1:8032

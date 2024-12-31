@@ -1,27 +1,27 @@
-2024-12-30 17:00:31 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
-2024-12-30 17:00:31 - root - INFO - Initialize ClusterScaleTEstData
-2024-12-30 17:00:31 - root - INFO - filename = my_1.cnf
-2024-12-30 17:00:31 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
-2024-12-30 17:00:32 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
-2024-12-30 17:00:37 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 3.1431524753570557s
-2024-12-30 17:00:37 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 0.03676176071166992s
-2024-12-30 17:00:37 - root - INFO - unique id = cluster_id#97a2e1c0-c6cf-11ef-98a5-0e161e4cf6ef
-2024-12-30 17:00:38 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
-2024-12-30 17:00:38 - root - INFO - nodes = 2, new_nodes = 1
-2024-12-30 17:00:38 - root - INFO - filename = my_2.cnf
-2024-12-30 17:00:40 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node2_log) to determine success if you are debugging.)
-2024-12-30 17:00:48 - root - INFO - Connected to MySQL server id: 2 at 3302 aftre trying for 5.238767623901367s
-2024-12-30 17:00:48 - root - INFO - Executing simple MySQL SELECT on new added node
-2024-12-30 17:00:49 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
-2024-12-30 17:00:51 - root - INFO - Cluster scale is finished.
-2024-12-30 17:00:51 - root - INFO - Unique id = cluster_id#9fae37c0-c6cf-11ef-98a5-0e161e4cf6ef
-2024-12-30 17:00:56 - root - INFO - Cleaning up resources
-2024-12-30 17:00:56 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
-2024-12-30 17:00:56 - root - INFO - Closed connection to MySQL server id: 1
-2024-12-30 17:00:56 - root - INFO - Try to stop Node id 1, its process id is 24153
-2024-12-30 17:00:56 - root - INFO - Node 1 is still running after 0, try to kill the process 24153
-2024-12-30 17:00:57 - root - INFO - Used about 1s to find Node id 1 crashes
-2024-12-30 17:00:57 - root - INFO - Closed connection to MySQL server id: 2
-2024-12-30 17:00:57 - root - INFO - Try to stop Node id 2, its process id is 24387
-2024-12-30 17:00:57 - root - INFO - Node 2 is still running after 0, try to kill the process 24387
-2024-12-30 17:00:58 - root - INFO - Used about 1s to find Node id 2 crashes
+2024-12-31 11:30:17 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
+2024-12-31 11:30:17 - root - INFO - Initialize ClusterScaleTEstData
+2024-12-31 11:30:17 - root - INFO - filename = my_1.cnf
+2024-12-31 11:30:17 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
+2024-12-31 11:30:18 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
+2024-12-31 11:30:22 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 1.9571561813354492s
+2024-12-31 11:30:22 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 0.010695219039916992s
+2024-12-31 11:30:22 - root - INFO - unique id = cluster_id#9f4ec7c2-c76a-11ef-bb55-be298a718ceb
+2024-12-31 11:30:23 - root - INFO - Scale event has now reached cluster config stage. Starting new nodes...
+2024-12-31 11:30:23 - root - INFO - nodes = 2, new_nodes = 1
+2024-12-31 11:30:23 - root - INFO - filename = my_2.cnf
+2024-12-31 11:30:25 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node2_log) to determine success if you are debugging.)
+2024-12-31 11:30:31 - root - INFO - Connected to MySQL server id: 2 at 3302 aftre trying for 3.617081880569458s
+2024-12-31 11:30:31 - root - INFO - Executing simple MySQL SELECT on new added node
+2024-12-31 11:30:32 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2024-12-31 11:30:34 - root - INFO - Cluster scale is finished.
+2024-12-31 11:30:34 - root - INFO - Unique id = cluster_id#a631e98e-c76a-11ef-bb55-be298a718ceb
+2024-12-31 11:30:39 - root - INFO - Cleaning up resources
+2024-12-31 11:30:39 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-31 11:30:39 - root - INFO - Closed connection to MySQL server id: 1
+2024-12-31 11:30:39 - root - INFO - Try to stop Node id 1, its process id is 21704
+2024-12-31 11:30:39 - root - INFO - Node 1 is still running after 0, try to kill the process 21704
+2024-12-31 11:30:40 - root - INFO - Used about 1s to find Node id 1 crashes
+2024-12-31 11:30:40 - root - INFO - Closed connection to MySQL server id: 2
+2024-12-31 11:30:40 - root - INFO - Try to stop Node id 2, its process id is 21936
+2024-12-31 11:30:40 - root - INFO - Node 2 is still running after 0, try to kill the process 21936
+2024-12-31 11:30:41 - root - INFO - Used about 1s to find Node id 2 crashes
