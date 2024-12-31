@@ -1,0 +1,105 @@
+2024-12-30 16:57:45 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
+2024-12-30 16:57:45 - root - INFO - filename = my_1.cnf
+2024-12-30 16:57:45 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
+2024-12-30 16:57:46 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
+2024-12-30 16:57:51 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 2.9521901607513428s
+2024-12-30 16:57:51 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 0.02860736846923828s
+2024-12-30 16:57:51 - cassandra.policies - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '172.31.5.203:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-12-30 16:57:51 - root - INFO - -------Testing slice size with one flush and one range
+2024-12-30 16:57:51 - root - INFO - --------CREATE TABLE-----------
+2024-12-30 16:57:51 - root - INFO - Executing 4194 insertions of same size rows
+2024-12-30 16:58:00 - root - INFO - Begin checkpoint with timestamp: 1735577875015295
+2024-12-30 16:58:00 - root - INFO - Succeeded with timestamp: 1735577875015295
+2024-12-30 16:58:00 - root - INFO - physical table name is tf351f049_634c_452a_bff9_7aa3a61d5411
+2024-12-30 16:58:00 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:00 - root - INFO - row_size is initialized to 206
+2024-12-30 16:58:12 - root - INFO - Begin checkpoint with timestamp: 1735577887107285
+2024-12-30 16:58:12 - root - INFO - Succeeded with timestamp: 1735577887107285
+2024-12-30 16:58:12 - root - INFO - physical table name is tf351f049_634c_452a_bff9_7aa3a61d5411
+2024-12-30 16:58:12 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:12 - root - INFO - Checking sum size
+2024-12-30 16:58:12 - root - INFO - Dropping table
+2024-12-30 16:58:12 - root - INFO - -------Testing slice size with one flush and one range
+2024-12-30 16:58:12 - root - INFO - --------CREATE TABLE-----------
+2024-12-30 16:58:12 - root - INFO - Executing 3355 insertions of same size rows
+2024-12-30 16:58:20 - root - INFO - Begin checkpoint with timestamp: 1735577895494183
+2024-12-30 16:58:20 - root - INFO - Succeeded with timestamp: 1735577895494183
+2024-12-30 16:58:20 - root - INFO - physical table name is te76eaa93_48ba_42aa_acc0_053f0709be75
+2024-12-30 16:58:20 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:20 - root - INFO - row_size is initialized to 206
+2024-12-30 16:58:31 - root - INFO - Begin checkpoint with timestamp: 1735577906494309
+2024-12-30 16:58:31 - root - INFO - Succeeded with timestamp: 1735577906494309
+2024-12-30 16:58:31 - root - INFO - physical table name is te76eaa93_48ba_42aa_acc0_053f0709be75
+2024-12-30 16:58:31 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:31 - root - INFO - Checking sum size
+2024-12-30 16:58:31 - root - INFO - Dropping table
+2024-12-30 16:58:31 - root - INFO - -------Testing slice size with one flush and one range
+2024-12-30 16:58:31 - root - INFO - --------CREATE TABLE-----------
+2024-12-30 16:58:31 - root - INFO - Executing 1258 insertions of same size rows
+2024-12-30 16:58:39 - root - INFO - Begin checkpoint with timestamp: 1735577914875415
+2024-12-30 16:58:39 - root - INFO - Succeeded with timestamp: 1735577914875415
+2024-12-30 16:58:39 - root - INFO - physical table name is tbe7daac3_f630_4311_8ce2_2d923dad609c
+2024-12-30 16:58:39 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:39 - root - INFO - row_size is initialized to 206
+2024-12-30 16:58:48 - root - INFO - Begin checkpoint with timestamp: 1735577923974670
+2024-12-30 16:58:48 - root - INFO - Succeeded with timestamp: 1735577923974670
+2024-12-30 16:58:48 - root - INFO - physical table name is tbe7daac3_f630_4311_8ce2_2d923dad609c
+2024-12-30 16:58:48 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:48 - root - INFO - Checking sum size
+2024-12-30 16:58:48 - root - INFO - Dropping table
+2024-12-30 16:58:49 - root - INFO - -------Testing slice size with multiple flushes and multiple ranges
+2024-12-30 16:58:49 - root - INFO - Checkpoint will happen at []
+2024-12-30 16:58:49 - root - INFO - Executing 6291 insertions of same size rows
+2024-12-30 16:58:54 - root - INFO - Begin checkpoint with timestamp: 1735577929244331
+2024-12-30 16:58:54 - root - INFO - Succeeded with timestamp: 1735577929244331
+2024-12-30 16:58:54 - root - INFO - physical table name is t37cc1db0_b46d_493a_83c2_5b1ce3210ece
+2024-12-30 16:58:54 - root - INFO - Parition keys are [2254]
+2024-12-30 16:58:54 - root - INFO - row_size is initialized to 206
+2024-12-30 16:59:04 - root - INFO - Begin checkpoint with timestamp: 1735577939781725
+2024-12-30 16:59:04 - root - INFO - Succeeded with timestamp: 1735577939781725
+2024-12-30 16:59:04 - root - INFO - physical table name is t37cc1db0_b46d_493a_83c2_5b1ce3210ece
+2024-12-30 16:59:04 - root - INFO - Parition keys are [2255, 2259, 2260, 2264, 2263, 2261, 2265, 2262, 2258, 2257, 2254, 2256]
+2024-12-30 16:59:04 - root - INFO - Checking sum size
+2024-12-30 16:59:04 - root - INFO - Dropping table
+2024-12-30 16:59:04 - root - INFO - -------Testing slice size with multiple flushes and multiple ranges
+2024-12-30 16:59:05 - root - INFO - Checkpoint will happen at [6291]
+2024-12-30 16:59:05 - root - INFO - Executing 12582 insertions of same size rows
+2024-12-30 16:59:10 - root - INFO - Begin checkpoint with timestamp: 1735577945150102
+2024-12-30 16:59:10 - root - INFO - Succeeded with timestamp: 1735577945150102
+2024-12-30 16:59:10 - root - INFO - physical table name is t640905d0_af61_41ec_8f5d_cebe4fee6c29
+2024-12-30 16:59:10 - root - INFO - Parition keys are [2254]
+2024-12-30 16:59:10 - root - INFO - row_size is initialized to 206
+2024-12-30 16:59:22 - root - INFO - Begin checkpoint with timestamp: 1735577957432388
+2024-12-30 16:59:22 - root - INFO - Succeeded with timestamp: 1735577957432388
+2024-12-30 16:59:32 - root - INFO - Begin checkpoint with timestamp: 1735577967206336
+2024-12-30 16:59:32 - root - INFO - Succeeded with timestamp: 1735577967206336
+2024-12-30 16:59:32 - root - INFO - physical table name is t640905d0_af61_41ec_8f5d_cebe4fee6c29
+2024-12-30 16:59:32 - root - INFO - Parition keys are [2256, 2276, 2270, 2259, 2268, 2254, 2264, 2262, 2273, 2257, 2269, 2258, 2272, 2267, 2275, 2274, 2265, 2266, 2263, 2255, 2261, 2271, 2260]
+2024-12-30 16:59:32 - root - INFO - Checking sum size
+2024-12-30 16:59:32 - root - INFO - Dropping table
+2024-12-30 16:59:32 - root - INFO - -------Testing slice size with multiple flushes and multiple ranges
+2024-12-30 16:59:32 - root - INFO - Checkpoint will happen at [6291, 12582, 18873]
+2024-12-30 16:59:32 - root - INFO - Executing 25164 insertions of same size rows
+2024-12-30 16:59:37 - root - INFO - Begin checkpoint with timestamp: 1735577972609933
+2024-12-30 16:59:37 - root - INFO - Succeeded with timestamp: 1735577972609933
+2024-12-30 16:59:37 - root - INFO - physical table name is tb75ea901_1773_4528_9529_7f68b59a2771
+2024-12-30 16:59:37 - root - INFO - Parition keys are [2254]
+2024-12-30 16:59:37 - root - INFO - row_size is initialized to 206
+2024-12-30 16:59:49 - root - INFO - Begin checkpoint with timestamp: 1735577984373421
+2024-12-30 16:59:49 - root - INFO - Succeeded with timestamp: 1735577984373421
+2024-12-30 17:00:02 - root - INFO - Begin checkpoint with timestamp: 1735577997620462
+2024-12-30 17:00:02 - root - INFO - Succeeded with timestamp: 1735577997620462
+2024-12-30 17:00:16 - root - INFO - Begin checkpoint with timestamp: 1735578011069985
+2024-12-30 17:00:16 - root - INFO - Succeeded with timestamp: 1735578011069985
+2024-12-30 17:00:27 - root - INFO - Begin checkpoint with timestamp: 1735578022536827
+2024-12-30 17:00:27 - root - INFO - Succeeded with timestamp: 1735578022536827
+2024-12-30 17:00:27 - root - INFO - physical table name is tb75ea901_1773_4528_9529_7f68b59a2771
+2024-12-30 17:00:27 - root - INFO - Parition keys are [2272, 2295, 2258, 2255, 2288, 2297, 2261, 2265, 2263, 2266, 2256, 2262, 2280, 2270, 2292, 2285, 2276, 2289, 2268, 2254, 2284, 2293, 2283, 2257, 2273, 2260, 2277, 2286, 2282, 2259, 2290, 2287, 2294, 2298, 2274, 2296, 2269, 2279, 2278, 2271, 2267, 2275, 2291, 2281, 2264]
+2024-12-30 17:00:27 - root - INFO - Checking sum size
+2024-12-30 17:00:27 - root - INFO - Dropping table
+2024-12-30 17:00:27 - root - INFO - Cleaning up resources
+2024-12-30 17:00:27 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:00:27 - root - INFO - Closed connection to MySQL server id: 1
+2024-12-30 17:00:27 - root - INFO - Try to stop Node id 1, its process id is 24011
+2024-12-30 17:00:27 - root - INFO - Node 1 is still running after 0, try to kill the process 24011
+2024-12-30 17:00:28 - root - INFO - Used about 1s to find Node id 1 crashes

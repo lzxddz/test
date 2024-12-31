@@ -1,0 +1,29 @@
+2024-12-30 17:01:27 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
+2024-12-30 17:01:27 - root - INFO - filename = my_1.cnf
+2024-12-30 17:01:27 - root - INFO - filename = my_2.cnf
+2024-12-30 17:01:27 - root - INFO - filename = my_3.cnf
+2024-12-30 17:01:27 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
+2024-12-30 17:01:28 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
+2024-12-30 17:01:31 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node2_log) to determine success if you are debugging.)
+2024-12-30 17:01:34 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node3_log) to determine success if you are debugging.)
+2024-12-30 17:01:44 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 7.901725769042969s
+2024-12-30 17:01:44 - root - INFO - Connected to MySQL server id: 2 at 3302 aftre trying for 0.07429671287536621s
+2024-12-30 17:01:44 - root - INFO - Connected to MySQL server id: 3 at 3303 aftre trying for 0.05703163146972656s
+2024-12-30 17:01:44 - cassandra.policies - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '172.31.5.203:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-12-30 17:01:44 - root - INFO - Executing simple Cassandra SELECT
+2024-12-30 17:01:44 - root - INFO - Executing simple mysql SELECT
+2024-12-30 17:01:45 - root - INFO - Executing simple mysql SELECT
+2024-12-30 17:01:45 - root - INFO - Executing simple mysql SELECT
+2024-12-30 17:01:45 - root - INFO - Cleaning up resources
+2024-12-30 17:01:45 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:01:45 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:01:45 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:01:45 - root - INFO - Try to stop Node id 1, its process id is 24648
+2024-12-30 17:01:45 - root - INFO - Node 1 is still running after 0, try to kill the process 24648
+2024-12-30 17:01:46 - root - INFO - Used about 1s to find Node id 1 crashes
+2024-12-30 17:01:46 - root - INFO - Try to stop Node id 2, its process id is 24733
+2024-12-30 17:01:46 - root - INFO - Node 2 is still running after 0, try to kill the process 24733
+2024-12-30 17:01:47 - root - INFO - Used about 1s to find Node id 2 crashes
+2024-12-30 17:01:47 - root - INFO - Try to stop Node id 3, its process id is 24820
+2024-12-30 17:01:47 - root - INFO - Node 3 is still running after 0, try to kill the process 24820
+2024-12-30 17:01:48 - root - INFO - Used about 1s to find Node id 3 crashes

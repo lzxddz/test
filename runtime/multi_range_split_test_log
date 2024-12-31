@@ -1,0 +1,191 @@
+2024-12-30 17:01:51 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but load-balancing policies are not specified in some ExecutionProfiles. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], EPs without explicit LBPs = ('EXEC_PROFILE_DEFAULT',))
+2024-12-30 17:01:51 - root - INFO - filename = my_1.cnf
+2024-12-30 17:01:51 - root - INFO - filename = my_2.cnf
+2024-12-30 17:01:51 - root - INFO - filename = my_3.cnf
+2024-12-30 17:01:51 - cassandra.cluster - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['172.31.5.203'], lbp = None)
+2024-12-30 17:01:52 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node1_log) to determine success if you are debugging.)
+2024-12-30 17:01:55 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node2_log) to determine success if you are debugging.)
+2024-12-30 17:01:58 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/mono_test_src/runtime/node3_log) to determine success if you are debugging.)
+2024-12-30 17:02:15 - root - INFO - Connected to MySQL server id: 1 at 3301 aftre trying for 15.246870040893555s
+2024-12-30 17:02:16 - root - INFO - Connected to MySQL server id: 2 at 3302 aftre trying for 0.4649486541748047s
+2024-12-30 17:02:16 - root - INFO - Connected to MySQL server id: 3 at 3303 aftre trying for 0.032260894775390625s
+2024-12-30 17:02:16 - cassandra.policies - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '172.31.5.203:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-12-30 17:02:16 - root - INFO - -------Testing slice size with one flush and one range
+2024-12-30 17:02:17 - root - INFO - Executing 4194 insertions of same size rows
+2024-12-30 17:02:20 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:02:25 - root - INFO - Begin checkpoint with timestamp: 1735578140213232
+2024-12-30 17:02:25 - root - INFO - Succeeded with timestamp: 1735578140213232
+2024-12-30 17:02:30 - root - INFO - Begin checkpoint with timestamp: 1735578140212320
+2024-12-30 17:02:30 - root - INFO - Succeeded with timestamp: 1735578140212320
+2024-12-30 17:02:35 - root - INFO - Begin checkpoint with timestamp: 1735578140231115
+2024-12-30 17:02:35 - root - INFO - Succeeded with timestamp: 1735578140231115
+2024-12-30 17:02:35 - root - INFO - physical table name is t78289efd_b26b_4f2f_8759_d6519780a817
+2024-12-30 17:02:35 - root - INFO - Parition keys are [2254]
+2024-12-30 17:02:35 - root - INFO - row_size is initialized to 206
+2024-12-30 17:02:45 - root - INFO - Checkpoint called by id 3
+2024-12-30 17:02:50 - root - INFO - Begin checkpoint with timestamp: 1735578165078271
+2024-12-30 17:02:50 - root - INFO - Succeeded with timestamp: 1735578165078271
+2024-12-30 17:02:55 - root - INFO - Begin checkpoint with timestamp: 1735578165072446
+2024-12-30 17:02:55 - root - INFO - Succeeded with timestamp: 1735578165072446
+2024-12-30 17:03:00 - root - INFO - Begin checkpoint with timestamp: 1735578165074804
+2024-12-30 17:03:00 - root - INFO - Succeeded with timestamp: 1735578165074804
+2024-12-30 17:03:00 - root - INFO - physical table name is t78289efd_b26b_4f2f_8759_d6519780a817
+2024-12-30 17:03:00 - root - INFO - Parition keys are [2254]
+2024-12-30 17:03:00 - root - INFO - Checking sum size
+2024-12-30 17:03:00 - root - INFO - Dropping table
+2024-12-30 17:03:00 - root - INFO - -------Testing slice size with one flush and one range
+2024-12-30 17:03:00 - root - INFO - Executing 3355 insertions of same size rows
+2024-12-30 17:03:03 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:03:08 - root - INFO - Begin checkpoint with timestamp: 1735578183735071
+2024-12-30 17:03:08 - root - INFO - Succeeded with timestamp: 1735578183735071
+2024-12-30 17:03:13 - root - INFO - Begin checkpoint with timestamp: 1735578183739476
+2024-12-30 17:03:13 - root - INFO - Succeeded with timestamp: 1735578183739476
+2024-12-30 17:03:18 - root - INFO - Begin checkpoint with timestamp: 1735578183742977
+2024-12-30 17:03:18 - root - INFO - Succeeded with timestamp: 1735578183742977
+2024-12-30 17:03:18 - root - INFO - physical table name is t784adcdc_4728_4b6e_9342_746a1ee9223b
+2024-12-30 17:03:18 - root - INFO - Parition keys are [2254]
+2024-12-30 17:03:18 - root - INFO - row_size is initialized to 206
+2024-12-30 17:03:25 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:03:30 - root - INFO - Begin checkpoint with timestamp: 1735578205854012
+2024-12-30 17:03:30 - root - INFO - Succeeded with timestamp: 1735578205854012
+2024-12-30 17:03:35 - root - INFO - Begin checkpoint with timestamp: 1735578205854522
+2024-12-30 17:03:35 - root - INFO - Succeeded with timestamp: 1735578205854522
+2024-12-30 17:03:40 - root - INFO - Begin checkpoint with timestamp: 1735578205854049
+2024-12-30 17:03:40 - root - INFO - Succeeded with timestamp: 1735578205854049
+2024-12-30 17:03:40 - root - INFO - physical table name is t784adcdc_4728_4b6e_9342_746a1ee9223b
+2024-12-30 17:03:40 - root - INFO - Parition keys are [2254]
+2024-12-30 17:03:40 - root - INFO - Checking sum size
+2024-12-30 17:03:40 - root - INFO - Dropping table
+2024-12-30 17:03:40 - root - INFO - -------Testing slice size with one flush and one range
+2024-12-30 17:03:41 - root - INFO - Executing 1258 insertions of same size rows
+2024-12-30 17:03:44 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:03:49 - root - INFO - Begin checkpoint with timestamp: 1735578224188358
+2024-12-30 17:03:49 - root - INFO - Succeeded with timestamp: 1735578224188358
+2024-12-30 17:03:54 - root - INFO - Begin checkpoint with timestamp: 1735578224189965
+2024-12-30 17:03:54 - root - INFO - Succeeded with timestamp: 1735578224189965
+2024-12-30 17:03:59 - root - INFO - Begin checkpoint with timestamp: 1735578224203407
+2024-12-30 17:03:59 - root - INFO - Succeeded with timestamp: 1735578224203407
+2024-12-30 17:03:59 - root - INFO - physical table name is te7fd21f8_2e03_4ac3_935e_411befaf54c1
+2024-12-30 17:03:59 - root - INFO - Parition keys are [2254]
+2024-12-30 17:03:59 - root - INFO - row_size is initialized to 206
+2024-12-30 17:04:04 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:04:09 - root - INFO - Begin checkpoint with timestamp: 1735578244459139
+2024-12-30 17:04:09 - root - INFO - Succeeded with timestamp: 1735578244459139
+2024-12-30 17:04:14 - root - INFO - Begin checkpoint with timestamp: 1735578244461192
+2024-12-30 17:04:14 - root - INFO - Succeeded with timestamp: 1735578244461192
+2024-12-30 17:04:19 - root - INFO - Begin checkpoint with timestamp: 1735578244460868
+2024-12-30 17:04:19 - root - INFO - Succeeded with timestamp: 1735578244460868
+2024-12-30 17:04:19 - root - INFO - physical table name is te7fd21f8_2e03_4ac3_935e_411befaf54c1
+2024-12-30 17:04:19 - root - INFO - Parition keys are [2254]
+2024-12-30 17:04:19 - root - INFO - Checking sum size
+2024-12-30 17:04:19 - root - INFO - Dropping table
+2024-12-30 17:04:19 - root - INFO - -------Testing slice size with multiple flushes and multiple ranges
+2024-12-30 17:04:20 - root - INFO - Checkpoint will happen at []
+2024-12-30 17:04:20 - root - INFO - Executing 6291 insertions of same size rows
+2024-12-30 17:04:23 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:04:28 - root - INFO - Begin checkpoint with timestamp: 1735578263158020
+2024-12-30 17:04:28 - root - INFO - Succeeded with timestamp: 1735578263158020
+2024-12-30 17:04:33 - root - INFO - Begin checkpoint with timestamp: 1735578263166013
+2024-12-30 17:04:33 - root - INFO - Succeeded with timestamp: 1735578263166013
+2024-12-30 17:04:38 - root - INFO - Begin checkpoint with timestamp: 1735578263169217
+2024-12-30 17:04:38 - root - INFO - Succeeded with timestamp: 1735578263169217
+2024-12-30 17:04:38 - root - INFO - physical table name is t9733d891_2513_4776_9a60_e7370327c4e6
+2024-12-30 17:04:38 - root - INFO - Parition keys are [2254]
+2024-12-30 17:04:38 - root - INFO - row_size is initialized to 206
+2024-12-30 17:04:50 - root - INFO - Checkpoint called by id 3
+2024-12-30 17:04:55 - root - INFO - Begin checkpoint with timestamp: 1735578290849973
+2024-12-30 17:04:55 - root - INFO - Succeeded with timestamp: 1735578290849973
+2024-12-30 17:05:00 - root - INFO - Begin checkpoint with timestamp: 1735578290842149
+2024-12-30 17:05:00 - root - INFO - Succeeded with timestamp: 1735578290842149
+2024-12-30 17:05:05 - root - INFO - Begin checkpoint with timestamp: 1735578290833995
+2024-12-30 17:05:05 - root - INFO - Succeeded with timestamp: 1735578290833995
+2024-12-30 17:05:05 - root - INFO - physical table name is t9733d891_2513_4776_9a60_e7370327c4e6
+2024-12-30 17:05:05 - root - INFO - Parition keys are [2261, 2255, 2259, 2265, 2256, 2264, 2254, 2258, 2263, 2260, 2262, 2257]
+2024-12-30 17:05:05 - root - INFO - Checking sum size
+2024-12-30 17:05:06 - root - INFO - -------Testing slice size with multiple flushes and multiple ranges
+2024-12-30 17:05:06 - root - INFO - Checkpoint will happen at [6291]
+2024-12-30 17:05:06 - root - INFO - Executing 12582 insertions of same size rows
+2024-12-30 17:05:09 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:05:14 - root - INFO - Begin checkpoint with timestamp: 1735578309485966
+2024-12-30 17:05:14 - root - INFO - Succeeded with timestamp: 1735578309485966
+2024-12-30 17:05:19 - root - INFO - Begin checkpoint with timestamp: 1735578309477391
+2024-12-30 17:05:19 - root - INFO - Succeeded with timestamp: 1735578309477391
+2024-12-30 17:05:24 - root - INFO - Begin checkpoint with timestamp: 1735578309476077
+2024-12-30 17:05:24 - root - INFO - Succeeded with timestamp: 1735578309476077
+2024-12-30 17:05:24 - root - INFO - physical table name is tff1d45fb_b868_46ce_b68f_5d876af194ea
+2024-12-30 17:05:24 - root - INFO - Parition keys are [2254]
+2024-12-30 17:05:24 - root - INFO - row_size is initialized to 206
+2024-12-30 17:05:37 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:05:42 - root - INFO - Begin checkpoint with timestamp: 1735578337009714
+2024-12-30 17:05:42 - root - INFO - Succeeded with timestamp: 1735578337009714
+2024-12-30 17:05:47 - root - INFO - Begin checkpoint with timestamp: 1735578337021890
+2024-12-30 17:05:47 - root - INFO - Succeeded with timestamp: 1735578337021890
+2024-12-30 17:05:52 - root - INFO - Begin checkpoint with timestamp: 1735578337013697
+2024-12-30 17:05:52 - root - INFO - Succeeded with timestamp: 1735578337013697
+2024-12-30 17:06:03 - root - INFO - Checkpoint called by id 3
+2024-12-30 17:06:08 - root - INFO - Begin checkpoint with timestamp: 1735578363993989
+2024-12-30 17:06:08 - root - INFO - Succeeded with timestamp: 1735578363993989
+2024-12-30 17:06:14 - root - INFO - Begin checkpoint with timestamp: 1735578363985963
+2024-12-30 17:06:14 - root - INFO - Succeeded with timestamp: 1735578363985963
+2024-12-30 17:06:19 - root - INFO - Begin checkpoint with timestamp: 1735578363984505
+2024-12-30 17:06:19 - root - INFO - Succeeded with timestamp: 1735578363984505
+2024-12-30 17:06:19 - root - INFO - physical table name is tff1d45fb_b868_46ce_b68f_5d876af194ea
+2024-12-30 17:06:19 - root - INFO - Parition keys are [2271, 2263, 2267, 2275, 2259, 2276, 2260, 2258, 2255, 2265, 2257, 2268, 2270, 2269, 2262, 2272, 2274, 2266, 2264, 2254, 2273, 2261, 2256]
+2024-12-30 17:06:19 - root - INFO - Checking sum size
+2024-12-30 17:06:19 - root - INFO - -------Testing slice size with multiple flushes and multiple ranges
+2024-12-30 17:06:19 - root - INFO - Checkpoint will happen at [6291, 12582, 18873]
+2024-12-30 17:06:19 - root - INFO - Executing 25164 insertions of same size rows
+2024-12-30 17:06:22 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:06:27 - root - INFO - Begin checkpoint with timestamp: 1735578382953745
+2024-12-30 17:06:27 - root - INFO - Succeeded with timestamp: 1735578382953745
+2024-12-30 17:06:32 - root - INFO - Begin checkpoint with timestamp: 1735578382958151
+2024-12-30 17:06:32 - root - INFO - Succeeded with timestamp: 1735578382958151
+2024-12-30 17:06:37 - root - INFO - Begin checkpoint with timestamp: 1735578382965748
+2024-12-30 17:06:37 - root - INFO - Succeeded with timestamp: 1735578382965748
+2024-12-30 17:06:37 - root - INFO - physical table name is t5ff954a2_73c3_47df_8bc0_34d0493ab7a0
+2024-12-30 17:06:37 - root - INFO - Parition keys are [2254]
+2024-12-30 17:06:37 - root - INFO - row_size is initialized to 206
+2024-12-30 17:06:50 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:06:55 - root - INFO - Begin checkpoint with timestamp: 1735578410681988
+2024-12-30 17:06:55 - root - INFO - Succeeded with timestamp: 1735578410681988
+2024-12-30 17:07:00 - root - INFO - Begin checkpoint with timestamp: 1735578410694118
+2024-12-30 17:07:00 - root - INFO - Succeeded with timestamp: 1735578410694118
+2024-12-30 17:07:05 - root - INFO - Begin checkpoint with timestamp: 1735578410693995
+2024-12-30 17:07:05 - root - INFO - Succeeded with timestamp: 1735578410693995
+2024-12-30 17:07:19 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:07:24 - root - INFO - Begin checkpoint with timestamp: 1735578439321970
+2024-12-30 17:07:24 - root - INFO - Succeeded with timestamp: 1735578439321970
+2024-12-30 17:07:29 - root - INFO - Begin checkpoint with timestamp: 1735578439318220
+2024-12-30 17:07:29 - root - INFO - Succeeded with timestamp: 1735578439318220
+2024-12-30 17:07:34 - root - INFO - Begin checkpoint with timestamp: 1735578439316728
+2024-12-30 17:07:34 - root - INFO - Succeeded with timestamp: 1735578439316728
+2024-12-30 17:07:48 - root - INFO - Checkpoint called by id 1
+2024-12-30 17:07:53 - root - INFO - Begin checkpoint with timestamp: 1735578468157974
+2024-12-30 17:07:53 - root - INFO - Succeeded with timestamp: 1735578468157974
+2024-12-30 17:07:58 - root - INFO - Begin checkpoint with timestamp: 1735578468158326
+2024-12-30 17:07:58 - root - INFO - Succeeded with timestamp: 1735578468158326
+2024-12-30 17:08:03 - root - INFO - Begin checkpoint with timestamp: 1735578468168264
+2024-12-30 17:08:03 - root - INFO - Succeeded with timestamp: 1735578468168264
+2024-12-30 17:08:15 - root - INFO - Checkpoint called by id 3
+2024-12-30 17:08:20 - root - INFO - Begin checkpoint with timestamp: 1735578495213864
+2024-12-30 17:08:20 - root - INFO - Succeeded with timestamp: 1735578495213864
+2024-12-30 17:08:25 - root - INFO - Begin checkpoint with timestamp: 1735578495210572
+2024-12-30 17:08:25 - root - INFO - Succeeded with timestamp: 1735578495210572
+2024-12-30 17:08:30 - root - INFO - Begin checkpoint with timestamp: 1735578495210559
+2024-12-30 17:08:30 - root - INFO - Succeeded with timestamp: 1735578495210559
+2024-12-30 17:08:30 - root - INFO - physical table name is t5ff954a2_73c3_47df_8bc0_34d0493ab7a0
+2024-12-30 17:08:30 - root - INFO - Parition keys are [2257, 2262, 2271, 2266, 2300, 2298, 2296, 2279, 2275, 2276, 2295, 2287, 2260, 2263, 2261, 2258, 2264, 2283, 2286, 2265, 2294, 2284, 2299, 2288, 2255, 2268, 2254, 2292, 2273, 2282, 2297, 2274, 2285, 2291, 2289, 2290, 2269, 2270, 2281, 2272, 2267, 2256, 2293, 2259, 2280, 2277, 2278]
+2024-12-30 17:08:30 - root - INFO - Checking sum size
+2024-12-30 17:08:31 - root - INFO - Cleaning up resources
+2024-12-30 17:08:31 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:08:31 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:08:31 - root - INFO - Closed connection to MySQL at 5.5.5-10.6.10-MariaDB-debug
+2024-12-30 17:08:31 - root - INFO - Try to stop Node id 1, its process id is 25004
+2024-12-30 17:08:31 - root - INFO - Node 1 is still running after 0, try to kill the process 25004
+2024-12-30 17:08:32 - root - INFO - Used about 1s to find Node id 1 crashes
+2024-12-30 17:08:32 - root - INFO - Try to stop Node id 2, its process id is 25089
+2024-12-30 17:08:32 - root - INFO - Node 2 is still running after 0, try to kill the process 25089
+2024-12-30 17:08:33 - root - INFO - Used about 1s to find Node id 2 crashes
+2024-12-30 17:08:33 - root - INFO - Try to stop Node id 3, its process id is 25186
+2024-12-30 17:08:33 - root - INFO - Node 3 is still running after 0, try to kill the process 25186
+2024-12-30 17:08:34 - root - INFO - Used about 1s to find Node id 3 crashes
