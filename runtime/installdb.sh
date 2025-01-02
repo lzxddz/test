@@ -1,3 +1,0 @@
-export LD_LIBRARY_PATH=/home/mono/workspace/mariadb/install/lib/
-export ASAN_OPTIONS=detect_leaks=0
-/home/mono/workspace/mariadb/install/scripts/mysql_install_db --defaults-file=/tmp/build/dce06a3d/mono_test_src/bootstrap_cnf/multi_mariadb_cass.cnf --basedir=/home/mono/workspace/mariadb/install --datadir=/tmp/build/dce06a3d/mono_test_src/runtime/test_data/datafarm0 --plugin-dir=/home/mono/workspace/mariadb/install/lib/plugin &> /tmp/build/dce06a3d/mono_test_src/runtime/install_log.log
