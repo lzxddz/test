@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/home/mono/workspace/eloqkv/cmake/install/lib/
+/home/mono/workspace/eloqkv/cmake/install/bin/eloqkv --config=/tmp/build/dce06a3d/eloq_test_src/bootstrap_cnf/redis_eloqdss_rocksdb_cloud_s3.cnf  --eloq_data_path=/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0 --logtostderr=true --bootstrap=true &>> /tmp/build/dce06a3d/eloq_test_src/runtime/install_log.log

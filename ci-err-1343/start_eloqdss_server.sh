@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/home/mono/workspace/eloqkv/cmake/install/lib
+/home/mono/workspace/eloqkv/cmake/install/bin/dss_server --config=/tmp/build/dce06a3d/eloq_test_src/bootstrap_cnf/eloqdss_server.cnf --data_path=/tmp/build/dce06a3d/eloq_test_src/runtime/eloqdss_server/data --logtostderr=true &>> /tmp/build/dce06a3d/eloq_test_src/runtime/eloqdss_server/eloqdss_server.log &

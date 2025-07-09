@@ -1,0 +1,16 @@
+2025/07/08-11:42:17.515087 18614 [cloud_fs_impl] NeedsReinitialization: checking local dir /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/ src bucket eloq-test-1751970527453 src path rocksdb_cloud dest bucket eloq-test-1751970527453 dest path rocksdb_cloud
+2025/07/08-11:42:17.515129 18614 [cloud_fs_impl] NeedsReinitialization: failed to find CLOUDMANIFEST file /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//CLOUDMANIFEST: NotFound: 
+2025/07/08-11:42:17.515133 18614 [cloud_fs_impl] SanitizeDirectory local directory /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/ cleanup needed
+2025/07/08-11:42:17.517099 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//MANIFEST-73d5518b8c014372'
+2025/07/08-11:42:17.517210 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//IDENTITY'
+2025/07/08-11:42:17.517262 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//CLOUDMANIFEST-0-0'
+2025/07/08-11:42:17.517323 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//OPTIONS-000005'
+2025/07/08-11:42:17.517375 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//OPTIONS-000007'
+2025/07/08-11:42:17.517475 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//CURRENT'
+2025/07/08-11:42:17.517506 18614 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//000003.log'
+2025/07/08-11:42:17.519418 18667 [WARN] [aws] Encountered S3 failure No response body. (code 16, http 404). Exception . retry attempt 0 max retries 10. Using default retry policy...
+2025/07/08-11:42:17.519566 18614 [ERROR] [s3] DownloadFile eloq-test-1751970527453/rocksdb_cloud/IDENTITY error .
+2025/07/08-11:42:17.520372 18614 [cloud] CloudFileSystemImpl::~CloudFileSystemImpl: Destroying CloudFileSystemImpl
+2025/07/08-11:42:17.520594 18614 [cloud] FileCache ENV-DELETE purged cache-used 0/21474836480(0%) bytes
+2025/07/08-11:42:17.520601 18614 [cloud] CloudFileSystemImpl::~CloudFileSystemImpl: Cancelling all scheduled file deletions, cloud_file_deletion_scheduler_: 0x4e196718050, size: 1
+2025/07/08-11:42:17.520606 18614 [CloudFileDeletionScheduler] CloudFileDeletionScheduler::CancelAllJobs: Cancelling all scheduled jobs, size: 0, schduler_.use_count: 1

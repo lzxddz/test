@@ -1,0 +1,918 @@
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:10:47.728771 I 13500] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:10:47.730573 I 13500] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:10:47.738354 I 13500] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:10:47.738413 I 13500] [log_instance.h:221] starting log_state
+[2025-07-08T11:10:47.738631 I 13500] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:10:47.786648 I 13500] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:10:47.786754 I 13500] [log_instance.h:247] initializing raft node
+[2025-07-08T11:10:47.786815 I 13500] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:10:47.786911 I 13530] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:10:47.787523 I 13500] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:10:47.787592 W 13500] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:10:47.787612 W 13500] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:10:47.792517 I 13500] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 4864
+[2025-07-08T11:10:47.792702 I 13500] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/snapshot/temp
+[2025-07-08T11:10:47.792838 W 13500] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:10:47.792876 I 13500] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 28
+[2025-07-08T11:10:47.792906 I 13500] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:10:47.792956 I 13500] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:10:47.798924 I 13500] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 5927
+[2025-07-08T11:10:47.798974 I 13500] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:10:47.801548 I 13503] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:10:47.805841 I 13531] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:10:47.805905 I 13531] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:10:47.808118 I 13500] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:10:47.808154 I 13500] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:10:47.808622 I 13500] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:10:51.210067 I 13503] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:10:51.210126 I 13503] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:10:51.210142 I 13503] [log_state.h:875] Create a new leader info
+[2025-07-08T11:10:51.210153 I 13503] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:10:51.210165 I 13503] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:10:51.210175 I 13503] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:10:51.210184 I 13503] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:10:51.210194 I 13503] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:10:51.210204 I 13503] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:10:51.210373 I 13503] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:10:51.210832 I 13646] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:10:51.213557 I 13646] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:10:51.215397 I 13646] [log_shipping_agent.h:362] thread: 140678859298560 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:10:51.221424 I 13646] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 6024 microseconds, 0 eagains
+[2025-07-08T11:10:51.864614 I 13508] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x7ff220023dc0)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:10:53.808811 I 13648] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:10:53.814522 I 13648] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:10:53.819959 I 13648] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:10:53.820000 I 13648] [log_instance.h:221] starting log_state
+[2025-07-08T11:10:53.820219 I 13648] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:10:53.862474 I 13648] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:10:53.862573 I 13648] [log_instance.h:247] initializing raft node
+[2025-07-08T11:10:53.862630 I 13648] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:10:53.862784 I 13678] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:10:53.863291 I 13648] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:10:53.863355 W 13648] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:10:53.863394 W 13648] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:10:53.871058 I 13648] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 3581
+[2025-07-08T11:10:53.871349 W 13648] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:10:53.871412 I 13648] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 38
+[2025-07-08T11:10:53.871455 I 13648] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:10:53.871511 I 13648] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:10:53.879565 I 13648] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 8008
+[2025-07-08T11:10:53.879616 I 13648] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:10:53.881541 I 13659] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:10:53.887914 I 13682] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:10:53.887974 I 13682] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:10:53.888293 I 13648] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:10:53.888324 I 13648] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:10:53.888753 I 13648] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:10:59.784786 I 13659] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:10:59.784839 I 13659] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:10:59.784855 I 13659] [log_state.h:875] Create a new leader info
+[2025-07-08T11:10:59.784868 I 13659] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:10:59.784880 I 13659] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:10:59.784893 I 13659] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:10:59.784904 I 13659] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:10:59.784916 I 13659] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:10:59.784927 I 13659] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:10:59.785095 I 13659] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:10:59.785307 I 13884] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:10:59.789709 I 13884] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:10:59.789747 I 13884] [log_shipping_agent.h:362] thread: 139322109949696 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:10:59.795411 I 13884] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 5657 microseconds, 0 eagains
+[2025-07-08T11:11:27.233484 I 13655] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:11:27.233544 I 13655] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:11:27.233562 I 13655] [log_state.h:875] Create a new leader info
+[2025-07-08T11:11:27.233573 I 13655] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:11:27.233585 I 13655] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:11:27.233596 I 13655] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:11:27.235314 I 13655] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:11:27.235357 I 13655] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:11:27.235371 I 13655] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:11:27.235595 I 13655] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:11:27.235711 I 13972] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:11:27.239925 I 13972] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:11:27.239964 I 13972] [log_shipping_agent.h:362] thread: 139321917892352 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:11:27.242355 I 13972] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 2386 microseconds, 0 eagains
+[2025-07-08T11:14:51.847255 I 13655] [log_state.h:887] Removing cc node group, ng:0,term:2
+[2025-07-08T11:14:51.847298 I 13655] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:14:52.884336 I 13659] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x7eb63c023dc0)
+[2025-07-08T11:15:12.879010 I 13659] [socket.cpp:2848] Checking Socket{id=340 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7eb640001040)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:15:14.860783 I 14113] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:15:14.862694 I 14113] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:15:14.867041 I 14113] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:15:14.867079 I 14113] [log_instance.h:221] starting log_state
+[2025-07-08T11:15:14.867283 I 14113] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:15:14.947744 I 14113] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:15:14.947849 I 14113] [log_instance.h:247] initializing raft node
+[2025-07-08T11:15:14.947853 I 14143] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:15:14.947922 I 14113] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:15:14.948606 I 14113] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:15:14.948674 W 14113] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:15:14.948695 W 14113] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:15:14.953094 I 14113] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 4357
+[2025-07-08T11:15:14.953397 W 14113] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:15:14.953444 I 14113] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 55
+[2025-07-08T11:15:14.953480 I 14113] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:15:14.953538 I 14113] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:15:14.967984 I 14113] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 14390
+[2025-07-08T11:15:14.968068 I 14113] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:15:14.968751 I 14118] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:15:14.972929 I 14113] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:15:14.980491 I 14113] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:15:14.980950 I 14113] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:15:14.972951 I 14146] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:15:14.981012 I 14146] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:15:20.708416 I 14145] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:15:20.708467 I 14145] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:15:20.708482 I 14145] [log_state.h:875] Create a new leader info
+[2025-07-08T11:15:20.708495 I 14145] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:15:20.708508 I 14145] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:15:20.708520 I 14145] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:15:20.708532 I 14145] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:15:20.708544 I 14145] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:15:20.708556 I 14145] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:15:20.708712 I 14145] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:15:20.709393 I 14349] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:15:20.711769 I 14349] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:15:20.711819 I 14349] [log_shipping_agent.h:362] thread: 126731096667904 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:15:20.711864 I 14349] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 45 microseconds, 0 eagains
+[2025-07-08T11:15:45.436569 I 14151] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:15:45.438421 I 14151] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:15:45.438452 I 14151] [log_state.h:875] Create a new leader info
+[2025-07-08T11:15:45.438464 I 14151] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:15:45.438474 I 14151] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:15:45.438485 I 14151] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:15:45.440521 I 14151] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:15:45.440558 I 14151] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:15:45.440572 I 14151] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:15:45.440759 I 14151] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:15:45.440860 I 14437] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:15:45.443442 I 14437] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:15:45.443483 I 14437] [log_shipping_agent.h:362] thread: 126730363619072 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:15:45.445580 I 14437] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 2093 microseconds, 0 eagains
+[2025-07-08T11:18:14.789927 I 14145] [node.cpp:976] node lg0:127.0.0.1:9000:0:0 starts to do snapshot
+[2025-07-08T11:18:14.845629 I 14145] [log_instance.cpp:1130] log server generate snapshot cost 20 millseconds
+[2025-07-08T11:18:14.862393 I 14145] [log_instance.cpp:1137] Save snapshot start
+[2025-07-08T11:18:14.862521 I 14145] [log_state.h:1077] write snapshot leader info size: 2
+[2025-07-08T11:18:14.862540 I 14145] [log_state.h:1101] write leader info, ng_id: 1, term: 2, leader_ip_len: 9, leader_ip: 127.0.0.1, leader_port: 17582, latest_txn_no: 14208, last_ckpt_ts: 1751973493861295
+[2025-07-08T11:18:14.862553 I 14145] [log_state.h:1101] write leader info, ng_id: 0, term: 2, leader_ip_len: 9, leader_ip: 127.0.0.1, leader_port: 17482, latest_txn_no: 6240, last_ckpt_ts: 1751973490717542
+[2025-07-08T11:18:14.862566 I 14145] [log_state.h:1111] write catalog ops size: 0
+[2025-07-08T11:18:14.862577 I 14145] [log_state.h:1142] write split range ops size: 0
+[2025-07-08T11:18:14.862589 I 14145] [log_state.h:1165] write cluster scale ops size: 1
+[2025-07-08T11:18:14.867218 I 14145] [log_state.h:1179] write cluster scale op, txn: 6239, stage: 2, commit_ts: 1751973342488791
+[2025-07-08T11:18:14.867296 I 14145] [log_state_rocksdb_impl.cpp:264] log state rocksdbImpl doing checkpoint
+[2025-07-08T11:18:15.738420 I 14126] [log_state_rocksdb_impl.cpp:719] Flush sst end, file: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/rocksdb/0/000008.sst ,job_id: 2 ,thread: 14126 ,file_number: 8 ,triggered_writes_slowdown: 0 ,triggered_writes_stop: 0 ,smallest_seqno: 1 ,largest_seqno: 15000 ,flush_reason: kGetLiveFiles ,file_size: 0.5MB
+[2025-07-08T11:18:15.738962 I 14143] [log_state_rocksdb_impl.cpp:523] sst files size on disk: 0.5MB
+[2025-07-08T11:18:16.157472 I 14145] [log_instance.cpp:1147] adding snapshot file: data
+[2025-07-08T11:18:16.157555 I 14145] [log_instance.cpp:1147] adding snapshot file: rocksdb_ckpt/000008.sst
+[2025-07-08T11:18:16.157572 I 14145] [log_instance.cpp:1147] adding snapshot file: rocksdb_ckpt/OPTIONS-000007
+[2025-07-08T11:18:16.157582 I 14145] [log_instance.cpp:1147] adding snapshot file: rocksdb_ckpt/CURRENT
+[2025-07-08T11:18:16.157600 I 14145] [log_instance.cpp:1147] adding snapshot file: rocksdb_ckpt/MANIFEST-000005
+[2025-07-08T11:18:16.160398 I 14145] [log_instance.cpp:1259] Save snapshot done
+[2025-07-08T11:18:16.413422 I 14145] [snapshot.cpp:642] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/snapshot/snapshot_00000000000000015052
+[2025-07-08T11:18:16.413496 I 14145] [snapshot.cpp:648] Renaming /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/snapshot/temp to /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/snapshot/snapshot_00000000000000015052
+[2025-07-08T11:18:16.413563 I 14145] [snapshot_executor.cpp:234] node lg0:127.0.0.1:9000:0:0 snapshot_save_done, last_included_index=15052 last_included_term=2
+[2025-07-08T11:19:41.754702 I 14146] [log_state.h:887] Removing cc node group, ng:0,term:2
+[2025-07-08T11:19:41.754736 I 14146] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:19:42.908473 I 14145] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x7342b0023dc0)
+[2025-07-08T11:20:11.244577 I 14145] [socket.cpp:2848] Checking Socket{id=425 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7342ac001040)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:20:13.290951 I 14608] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:20:13.292975 I 14608] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:20:13.299559 I 14608] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:20:13.317930 I 14608] [log_instance.h:221] starting log_state
+[2025-07-08T11:20:13.323765 I 14608] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:20:14.588508 I 14608] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:20:14.588590 I 14608] [log_instance.h:247] initializing raft node
+[2025-07-08T11:20:14.588647 I 14608] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:20:14.588774 I 14672] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:20:14.589217 I 14608] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:20:14.589270 W 14608] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:20:14.589288 W 14608] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:20:15.030033 I 14608] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 440702
+[2025-07-08T11:20:15.030247 I 14608] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/snapshot/temp
+[2025-07-08T11:20:15.030429 W 14608] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:20:15.030478 I 14608] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 36
+[2025-07-08T11:20:15.030516 I 14608] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:20:15.030579 I 14608] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:20:15.182716 I 14608] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 152082
+[2025-07-08T11:20:15.182790 I 14608] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:20:15.184715 I 14613] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:20:15.187312 I 14608] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:20:15.187350 I 14608] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:20:15.187903 I 14608] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:20:15.259546 I 14613] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:20:15.284621 I 14613] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:20:21.398248 I 14611] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:20:21.398291 I 14611] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:20:21.398305 I 14611] [log_state.h:875] Create a new leader info
+[2025-07-08T11:20:21.398316 I 14611] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:20:21.398334 I 14611] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:20:21.398344 I 14611] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:20:21.398353 I 14611] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:20:21.398361 I 14611] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:20:21.398370 I 14611] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:20:21.398556 I 14611] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:20:21.398774 I 14840] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:20:21.402487 I 14840] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:20:21.402526 I 14840] [log_shipping_agent.h:362] thread: 129256529045248 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:20:21.402576 I 14840] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 49 microseconds, 0 eagains
+[2025-07-08T11:20:45.528465 I 14619] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:20:45.528508 I 14619] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:20:45.528522 I 14619] [log_state.h:875] Create a new leader info
+[2025-07-08T11:20:45.528532 I 14619] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:20:45.528542 I 14619] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:20:45.528553 I 14619] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:20:45.530294 I 14619] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:20:45.530328 I 14619] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:20:45.530339 I 14619] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:20:45.530529 I 14619] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:20:45.532003 I 14932] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:20:45.532586 I 14932] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:20:45.532613 I 14932] [log_shipping_agent.h:362] thread: 129255788599040 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:20:45.535015 I 14932] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 2399 microseconds, 0 eagains
+[2025-07-08T11:22:03.907164 I 14619] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x758eac023dc0)
+[2025-07-08T11:22:09.912102 I 14673] [socket.cpp:2908] Revived Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x758eac023dc0) (Connectable)
+[2025-07-08T11:22:10.550139 I 14674] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:22:10.550186 I 14674] [log_state.h:834] Updating node group term, ng:0,term:4
+[2025-07-08T11:22:10.550200 I 14674] [log_state.h:848] Update leader_info.term_:2 to: 4
+[2025-07-08T11:22:10.550210 I 14674] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:22:10.550221 I 14674] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-08T11:22:10.550231 I 14674] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 4 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:22:10.550242 I 14674] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:22:10.550252 I 14674] [log_instance.cpp:851] start replaying from ts 1751973721350410
+[2025-07-08T11:22:10.550275 I 14674] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:22:10.550285 I 14674] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:22:10.550295 I 14674] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:22:10.550441 I 15172] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 4 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:22:10.550513 I 14674] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:22:10.551216 I 15172] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:22:10.551244 I 15172] [log_shipping_agent.h:362] thread: 129255780206336 send log item list to replay service of cc node group: 0, term: 4
+[2025-07-08T11:22:10.551306 I 15172] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 4 finished, sent 0 messages, took 59 microseconds, 0 eagains
+[2025-07-08T11:22:10.564767 I 14617] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:22:10.564807 I 14617] [log_state.h:834] Updating node group term, ng:1,term:3
+[2025-07-08T11:22:10.564818 I 14617] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-08T11:22:10.564827 I 14617] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:22:10.564836 I 14617] [log_state.h:852] Update leader_info.leader_port_17582 to: 17582
+[2025-07-08T11:22:10.564846 I 14617] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:22:10.564854 I 14617] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:22:10.564863 I 14617] [log_instance.cpp:851] start replaying from ts 1751973723078463
+[2025-07-08T11:22:10.564873 I 14617] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:22:10.564882 I 14617] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:22:10.564891 I 14617] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:22:10.565011 I 15173] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:22:10.565171 I 14617] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:22:10.565498 I 15173] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:22:10.565528 I 15173] [log_shipping_agent.h:362] thread: 129256529045248 send log item list to replay service of cc node group: 1, term: 3
+[2025-07-08T11:22:10.565757 I 15173] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 3 finished, sent 0 messages, took 211 microseconds, 0 eagains
+[2025-07-08T11:22:11.565207 I 14673] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:22:11.565259 I 14673] [log_state.h:834] Updating node group term, ng:0,term:5
+[2025-07-08T11:22:11.565274 I 14673] [log_state.h:848] Update leader_info.term_:4 to: 5
+[2025-07-08T11:22:11.565284 I 14673] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:22:11.565294 I 14673] [log_state.h:852] Update leader_info.leader_port_17582 to: 17482
+[2025-07-08T11:22:11.565304 I 14673] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 5 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:22:11.565315 I 14673] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:22:11.565325 I 14673] [log_instance.cpp:851] start replaying from ts 1751973721350410
+[2025-07-08T11:22:11.565336 I 14673] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:22:11.565346 I 14673] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:22:11.565356 I 14673] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:22:11.565542 I 14673] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:22:11.565678 I 15194] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 5 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:22:11.568966 I 15194] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:22:11.570410 I 15194] [log_shipping_agent.h:362] thread: 129255788599040 send log item list to replay service of cc node group: 0, term: 5
+[2025-07-08T11:22:11.570492 I 15194] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 5 finished, sent 0 messages, took 83 microseconds, 0 eagains
+[2025-07-08T11:24:09.519436 I 14674] [log_state.h:887] Removing cc node group, ng:0,term:5
+[2025-07-08T11:24:09.519482 I 14674] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:24:10.499804 I 14619] [socket.cpp:2848] Checking Socket{id=765 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x758ea4064fc0)
+[2025-07-08T11:24:31.563691 I 14619] [socket.cpp:2848] Checking Socket{id=425 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x758ea0001040)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:24:33.529467 I 15278] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:24:33.532018 I 15278] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:24:33.539048 I 15278] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:24:33.539083 I 15278] [log_instance.h:221] starting log_state
+[2025-07-08T11:24:33.539301 I 15278] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:24:33.590240 I 15278] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:24:33.590334 I 15278] [log_instance.h:247] initializing raft node
+[2025-07-08T11:24:33.590416 I 15278] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:24:33.591078 I 15278] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:24:33.591145 W 15278] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:24:33.591166 W 15278] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:24:33.590337 I 15308] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:24:33.594856 I 15278] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 3652
+[2025-07-08T11:24:33.595129 W 15278] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:24:33.595173 I 15278] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 36
+[2025-07-08T11:24:33.595207 I 15278] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:24:33.595275 I 15278] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:24:33.598726 I 15278] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 3404
+[2025-07-08T11:24:33.598773 I 15278] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:24:33.599406 I 15287] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:24:33.603583 I 15278] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:24:33.603615 I 15278] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:24:33.604009 I 15278] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:24:33.604593 I 15312] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:24:33.604645 I 15312] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:24:39.235178 I 15281] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:24:39.235225 I 15281] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:24:39.235240 I 15281] [log_state.h:875] Create a new leader info
+[2025-07-08T11:24:39.235251 I 15281] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:24:39.235265 I 15281] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:24:39.235275 I 15281] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:24:39.235287 I 15281] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:24:39.235298 I 15281] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:24:39.235311 I 15281] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:24:39.235496 I 15281] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:24:39.235706 I 15514] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:24:39.238500 I 15514] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:24:39.238540 I 15514] [log_shipping_agent.h:362] thread: 138595306305280 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:24:39.238590 I 15514] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 48 microseconds, 0 eagains
+[2025-07-08T11:24:57.482753 I 15282] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:24:57.490418 I 15282] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:24:57.490454 I 15282] [log_state.h:875] Create a new leader info
+[2025-07-08T11:24:57.490466 I 15282] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:24:57.490478 I 15282] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:24:57.490490 I 15282] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:24:57.492314 I 15282] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:24:57.492347 I 15282] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:24:57.492359 I 15282] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:24:57.492551 I 15282] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:24:57.492655 I 15600] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:24:57.497047 I 15600] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:24:57.497097 I 15600] [log_shipping_agent.h:362] thread: 138595172087552 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:24:57.504408 I 15600] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 7306 microseconds, 0 eagains
+[2025-07-08T11:26:07.496027 I 15313] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x7e0d34023dc0)
+[2025-07-08T11:26:11.717476 I 15285] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:26:11.717525 I 15285] [log_state.h:834] Updating node group term, ng:1,term:3
+[2025-07-08T11:26:11.717537 I 15285] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-08T11:26:11.717550 I 15285] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:26:11.717561 I 15285] [log_state.h:852] Update leader_info.leader_port_17582 to: 17582
+[2025-07-08T11:26:11.717571 I 15285] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:26:11.717583 I 15285] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:26:11.717597 I 15285] [log_instance.cpp:851] start replaying from ts 1751973964817437
+[2025-07-08T11:26:11.717607 I 15285] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:26:11.717618 I 15285] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:26:11.717629 I 15285] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:26:11.717753 I 15811] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:26:11.717819 I 15285] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:26:11.719285 I 15811] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:26:11.719316 I 15811] [log_shipping_agent.h:362] thread: 138595163694848 send log item list to replay service of cc node group: 1, term: 3
+[2025-07-08T11:26:11.719368 I 15811] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 3 finished, sent 0 messages, took 51 microseconds, 0 eagains
+[2025-07-08T11:26:13.474722 I 15309] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:26:13.474769 I 15309] [log_state.h:834] Updating node group term, ng:0,term:4
+[2025-07-08T11:26:13.474785 I 15309] [log_state.h:848] Update leader_info.term_:2 to: 4
+[2025-07-08T11:26:13.474797 I 15309] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:26:13.474820 I 15309] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-08T11:26:13.474833 I 15309] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 4 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:26:13.474844 I 15309] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:26:13.474855 I 15309] [log_instance.cpp:851] start replaying from ts 1751973959177077
+[2025-07-08T11:26:13.474867 I 15309] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:26:13.474879 I 15309] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:26:13.474890 I 15309] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:26:13.475009 I 15844] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 4 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:26:13.475051 I 15309] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:26:13.480175 I 15844] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:26:13.480209 I 15844] [log_shipping_agent.h:362] thread: 138595172087552 send log item list to replay service of cc node group: 0, term: 4
+[2025-07-08T11:26:13.480250 I 15844] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 4 finished, sent 0 messages, took 40 microseconds, 0 eagains
+[2025-07-08T11:26:14.617764 I 15282] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:26:14.676904 I 15282] [log_state.h:834] Updating node group term, ng:0,term:5
+[2025-07-08T11:26:14.676952 I 15282] [log_state.h:848] Update leader_info.term_:4 to: 5
+[2025-07-08T11:26:14.676964 I 15282] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:26:14.676975 I 15282] [log_state.h:852] Update leader_info.leader_port_17582 to: 17482
+[2025-07-08T11:26:14.676987 I 15282] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 5 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:26:14.676999 I 15282] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:26:14.677011 I 15282] [log_instance.cpp:851] start replaying from ts 1751973959177077
+[2025-07-08T11:26:14.677022 I 15282] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:26:14.677033 I 15282] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:26:14.677043 I 15282] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:26:14.677253 I 15282] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:26:14.677253 I 15865] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 5 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:26:14.679004 I 15865] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:26:14.679039 I 15865] [log_shipping_agent.h:362] thread: 138595306305280 send log item list to replay service of cc node group: 0, term: 5
+[2025-07-08T11:26:14.679168 I 15865] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 5 finished, sent 0 messages, took 129 microseconds, 0 eagains
+[2025-07-08T11:27:45.861001 I 15288] [log_state.h:887] Removing cc node group, ng:0,term:5
+[2025-07-08T11:27:45.917178 I 15288] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:27:46.771562 I 15313] [socket.cpp:2848] Checking Socket{id=680 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x7e0d3406a380)
+[2025-07-08T11:28:00.528090 I 15313] [socket.cpp:2848] Checking Socket{id=425 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7e0d2c001040)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:28:03.260883 I 15949] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:28:03.262718 I 15949] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:28:03.266945 I 15949] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:28:03.266979 I 15949] [log_instance.h:221] starting log_state
+[2025-07-08T11:28:03.267168 I 15949] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:28:06.198263 I 15949] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:28:06.198519 I 15949] [log_instance.h:247] initializing raft node
+[2025-07-08T11:28:06.198572 I 16015] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:28:06.198607 I 15949] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:28:06.199440 I 15949] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:28:06.199520 W 15949] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:28:06.199542 W 15949] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:28:06.424556 I 15949] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 224967
+[2025-07-08T11:28:06.428588 W 15949] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:28:06.428646 I 15949] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 48
+[2025-07-08T11:28:06.428680 I 15949] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:28:06.428741 I 15949] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:28:06.786616 I 15949] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 357823
+[2025-07-08T11:28:06.786693 I 15949] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:28:06.787752 I 15958] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:28:06.792065 I 15949] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:28:06.792101 I 15949] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:28:06.792544 I 15949] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:28:07.001910 I 15952] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:28:07.077024 I 15952] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:28:13.111958 I 15960] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:28:13.112001 I 15960] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:28:13.112016 I 15960] [log_state.h:875] Create a new leader info
+[2025-07-08T11:28:13.112027 I 15960] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:28:13.112039 I 15960] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:28:13.112051 I 15960] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:28:13.112063 I 15960] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:28:13.112074 I 15960] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:28:13.112085 I 15960] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:28:13.112259 I 15960] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:28:13.112627 I 16185] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:28:13.114362 I 16185] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:28:13.114418 I 16185] [log_shipping_agent.h:362] thread: 126896369014528 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:28:13.114473 I 16185] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 55 microseconds, 0 eagains
+[2025-07-08T11:28:28.995270 I 15960] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:28:28.995308 I 15960] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:28:28.995321 I 15960] [log_state.h:875] Create a new leader info
+[2025-07-08T11:28:28.995332 I 15960] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:28:28.995342 I 15960] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:28:28.995353 I 15960] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:28:28.997061 I 15960] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:28:28.997089 I 15960] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:28:28.997100 I 15960] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:28:28.997246 I 15960] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:28:28.997331 I 16271] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:28:28.997814 I 16271] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:28:28.997833 I 16271] [log_shipping_agent.h:362] thread: 126895739860736 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:28:28.999951 I 16271] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 2113 microseconds, 0 eagains
+[2025-07-08T11:29:12.568933 I 15960] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x736930023dc0)
+[2025-07-08T11:29:17.609290 I 16042] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:29:17.609330 I 16042] [log_state.h:834] Updating node group term, ng:1,term:3
+[2025-07-08T11:29:17.609344 I 16042] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-08T11:29:17.609355 I 16042] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:29:17.609365 I 16042] [log_state.h:852] Update leader_info.leader_port_17582 to: 17582
+[2025-07-08T11:29:17.609391 I 16042] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:29:17.609405 I 16042] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:29:17.609416 I 16042] [log_instance.cpp:851] start replaying from ts 1751974146721187
+[2025-07-08T11:29:17.609427 I 16042] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:29:17.609438 I 16042] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:29:17.609449 I 16042] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:29:17.609551 I 16512] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:29:17.609689 I 16042] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:29:17.611006 I 16512] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:29:17.611035 I 16512] [log_shipping_agent.h:362] thread: 126895731468032 send log item list to replay service of cc node group: 1, term: 3
+[2025-07-08T11:29:17.611081 I 16512] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 3 finished, sent 0 messages, took 45 microseconds, 0 eagains
+[2025-07-08T11:29:18.569712 I 16040] [socket.cpp:2908] Revived Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x736930023dc0) (Connectable)
+[2025-07-08T11:29:19.305749 I 16038] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:29:19.305791 I 16038] [log_state.h:834] Updating node group term, ng:0,term:4
+[2025-07-08T11:29:19.305819 I 16038] [log_state.h:848] Update leader_info.term_:2 to: 4
+[2025-07-08T11:29:19.305830 I 16038] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:29:19.305840 I 16038] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-08T11:29:19.305850 I 16038] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 4 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:29:19.305860 I 16038] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:29:19.305871 I 16038] [log_instance.cpp:851] start replaying from ts 1751974142979880
+[2025-07-08T11:29:19.305881 I 16038] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:29:19.305891 I 16038] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:29:19.305902 I 16038] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:29:19.306017 I 16514] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 4 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:29:19.306069 I 16038] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:29:19.306636 I 16514] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:29:19.306669 I 16514] [log_shipping_agent.h:362] thread: 126895739860736 send log item list to replay service of cc node group: 0, term: 4
+[2025-07-08T11:29:19.306708 I 16514] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 4 finished, sent 0 messages, took 38 microseconds, 0 eagains
+[2025-07-08T11:29:20.298864 I 16040] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:29:20.298907 I 16040] [log_state.h:834] Updating node group term, ng:0,term:5
+[2025-07-08T11:29:20.298923 I 16040] [log_state.h:848] Update leader_info.term_:4 to: 5
+[2025-07-08T11:29:20.298934 I 16040] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:29:20.298946 I 16040] [log_state.h:852] Update leader_info.leader_port_17582 to: 17482
+[2025-07-08T11:29:20.298957 I 16040] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 5 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:29:20.298969 I 16040] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:29:20.298980 I 16040] [log_instance.cpp:851] start replaying from ts 1751974142979880
+[2025-07-08T11:29:20.298992 I 16040] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:29:20.299005 I 16040] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:29:20.299015 I 16040] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:29:20.299168 I 16535] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 5 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:29:20.299197 I 16040] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:29:20.299635 I 16535] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:29:20.299661 I 16535] [log_shipping_agent.h:362] thread: 126896369014528 send log item list to replay service of cc node group: 0, term: 5
+[2025-07-08T11:29:20.299715 I 16535] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 5 finished, sent 0 messages, took 53 microseconds, 0 eagains
+[2025-07-08T11:30:23.600689 I 16039] [log_state.h:887] Removing cc node group, ng:0,term:5
+[2025-07-08T11:30:23.600729 I 16039] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:30:24.719870 I 15960] [socket.cpp:2848] Checking Socket{id=765 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x73693006a380)
+[2025-07-08T11:30:40.545415 I 15960] [socket.cpp:2848] Checking Socket{id=425 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x73692c001040)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:30:42.498989 I 16617] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:30:42.500718 I 16617] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:30:42.504901 I 16617] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:30:42.504938 I 16617] [log_instance.h:221] starting log_state
+[2025-07-08T11:30:42.505153 I 16617] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:30:42.559154 I 16617] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:30:42.559252 I 16617] [log_instance.h:247] initializing raft node
+[2025-07-08T11:30:42.559309 I 16617] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:30:42.559291 I 16647] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:30:42.559963 I 16617] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:30:42.560029 W 16617] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:30:42.560047 W 16617] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:30:42.566077 I 16617] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 5992
+[2025-07-08T11:30:42.566613 W 16617] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:30:42.566680 I 16617] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 60
+[2025-07-08T11:30:42.566730 I 16617] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:30:42.566810 I 16617] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:30:42.571419 I 16617] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 4562
+[2025-07-08T11:30:42.571462 I 16617] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:30:42.572098 I 16623] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:30:42.581147 I 16617] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:30:42.581212 I 16617] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:30:42.581671 I 16617] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:30:42.589048 I 16648] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:30:42.589107 I 16648] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:30:49.304535 I 16650] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:30:49.304580 I 16650] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:30:49.304603 I 16650] [log_state.h:875] Create a new leader info
+[2025-07-08T11:30:49.304615 I 16650] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:30:49.304626 I 16650] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:30:49.304638 I 16650] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:30:49.304649 I 16650] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:30:49.304661 I 16650] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:30:49.304672 I 16650] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:30:49.304847 I 16650] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:30:49.305078 I 16853] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:30:49.308964 I 16853] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:30:49.308995 I 16853] [log_shipping_agent.h:362] thread: 126370713675520 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:30:49.309417 I 16853] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 418 microseconds, 0 eagains
+[2025-07-08T11:31:06.662706 I 16627] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:31:06.662746 I 16627] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:31:06.662760 I 16627] [log_state.h:875] Create a new leader info
+[2025-07-08T11:31:06.662770 I 16627] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:31:06.662787 I 16627] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:31:06.662798 I 16627] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:31:06.664537 I 16627] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:31:06.664567 I 16627] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:31:06.664578 I 16627] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:31:06.664745 I 16627] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:31:06.664834 I 16939] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:31:06.669054 I 16939] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:31:06.669087 I 16939] [log_shipping_agent.h:362] thread: 126370448254720 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:31:06.676298 I 16939] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 7205 microseconds, 0 eagains
+[2025-07-08T11:32:11.698693 I 16627] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x72eec8023dc0)
+[2025-07-08T11:32:14.700959 I 16648] [socket.cpp:2908] Revived Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x72eec8023dc0) (Connectable)
+[2025-07-08T11:32:17.714059 I 16623] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:32:17.714102 I 16623] [log_state.h:834] Updating node group term, ng:0,term:4
+[2025-07-08T11:32:17.714115 I 16623] [log_state.h:848] Update leader_info.term_:2 to: 4
+[2025-07-08T11:32:17.714126 I 16623] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:32:17.714136 I 16623] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-08T11:32:17.714147 I 16623] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 4 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:32:17.714167 I 16623] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:32:17.714177 I 16623] [log_instance.cpp:851] start replaying from ts 1751974329235136
+[2025-07-08T11:32:17.714187 I 16623] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:32:17.714196 I 16623] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:32:17.714206 I 16623] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:32:17.714334 I 17132] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 4 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:32:17.714416 I 16623] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:32:17.715284 I 17132] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:32:17.715310 I 17132] [log_shipping_agent.h:362] thread: 126370439862016 send log item list to replay service of cc node group: 0, term: 4
+[2025-07-08T11:32:17.715368 I 17132] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 4 finished, sent 0 messages, took 57 microseconds, 0 eagains
+[2025-07-08T11:32:18.711601 I 16648] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:32:18.711642 I 16648] [log_state.h:834] Updating node group term, ng:0,term:5
+[2025-07-08T11:32:18.711655 I 16648] [log_state.h:848] Update leader_info.term_:4 to: 5
+[2025-07-08T11:32:18.711666 I 16648] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:32:18.711678 I 16648] [log_state.h:852] Update leader_info.leader_port_17582 to: 17482
+[2025-07-08T11:32:18.711688 I 16648] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 5 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:32:18.711700 I 16648] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:32:18.711710 I 16648] [log_instance.cpp:851] start replaying from ts 1751974329235136
+[2025-07-08T11:32:18.711722 I 16648] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:32:18.711733 I 16648] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:32:18.711743 I 16648] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:32:18.712113 I 17153] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 5 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:32:18.712788 I 16648] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:32:18.713675 I 17153] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:32:18.713704 I 17153] [log_shipping_agent.h:362] thread: 126370713675520 send log item list to replay service of cc node group: 0, term: 5
+[2025-07-08T11:32:18.713748 I 17153] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 5 finished, sent 0 messages, took 44 microseconds, 0 eagains
+[2025-07-08T11:33:53.596067 I 16649] [log_state.h:887] Removing cc node group, ng:0,term:5
+[2025-07-08T11:33:53.596128 I 16649] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:33:54.766320 I 16627] [socket.cpp:2848] Checking Socket{id=510 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x72eec806a380)
+[2025-07-08T11:34:14.117141 I 16627] [socket.cpp:2848] Checking Socket{id=340 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x72eebc001040)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:34:16.069157 I 17234] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:34:16.070760 I 17234] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:34:16.075663 I 17234] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:34:16.103513 I 17234] [log_instance.h:221] starting log_state
+[2025-07-08T11:34:16.103900 I 17234] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:34:16.409560 I 17234] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:34:16.409648 I 17234] [log_instance.h:247] initializing raft node
+[2025-07-08T11:34:16.409703 I 17234] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:34:16.410315 I 17234] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:34:16.410367 W 17234] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:34:16.410406 W 17234] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:34:16.413411 I 17264] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:34:16.431444 I 17234] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 20995
+[2025-07-08T11:34:16.431767 W 17234] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:34:16.431823 I 17234] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 37
+[2025-07-08T11:34:16.431862 I 17234] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:34:16.431926 I 17234] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:34:16.437089 I 17234] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 5110
+[2025-07-08T11:34:16.437146 I 17234] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:34:16.437892 I 17240] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:34:16.442132 I 17244] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:34:16.442189 I 17244] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:34:16.444362 I 17234] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:34:16.444413 I 17234] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:34:16.444857 I 17234] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:34:22.874598 I 17267] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:34:22.874642 I 17267] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:34:22.874655 I 17267] [log_state.h:875] Create a new leader info
+[2025-07-08T11:34:22.874665 I 17267] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:34:22.874675 I 17267] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:34:22.874686 I 17267] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:34:22.874703 I 17267] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:34:22.874712 I 17267] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:34:22.874722 I 17267] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:34:22.874894 I 17267] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:34:22.875128 I 17470] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:34:22.876467 I 17470] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:34:22.876502 I 17470] [log_shipping_agent.h:362] thread: 130044219352832 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:34:22.876549 I 17470] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 45 microseconds, 0 eagains
+[2025-07-08T11:34:42.465423 I 17272] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:34:42.465462 I 17272] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:34:42.465474 I 17272] [log_state.h:875] Create a new leader info
+[2025-07-08T11:34:42.465484 I 17272] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:34:42.465493 I 17272] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:34:42.465503 I 17272] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:34:42.466868 I 17272] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:34:42.466897 I 17272] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:34:42.466908 I 17272] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:34:42.467058 I 17272] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:34:42.467156 I 17556] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:34:42.469638 I 17556] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:34:42.469664 I 17556] [log_shipping_agent.h:362] thread: 130044103816960 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:34:42.471900 I 17556] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 2231 microseconds, 0 eagains
+[2025-07-08T11:35:55.776039 I 17238] [socket.cpp:2848] Checking Socket{id=340 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x76460c001040)
+[2025-07-08T11:36:01.108556 I 17267] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:36:01.114540 I 17267] [log_state.h:834] Updating node group term, ng:0,term:3
+[2025-07-08T11:36:01.114576 I 17267] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-08T11:36:01.114588 I 17267] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:36:01.114598 I 17267] [log_state.h:852] Update leader_info.leader_port_17482 to: 17482
+[2025-07-08T11:36:01.114609 I 17267] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 3 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:36:01.114619 I 17267] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:36:01.114630 I 17267] [log_instance.cpp:851] start replaying from ts 1751974552809521
+[2025-07-08T11:36:01.114641 I 17267] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:36:01.114651 I 17267] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:36:01.114661 I 17267] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:36:01.114787 I 17796] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 3 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:36:01.114845 I 17267] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:36:01.116585 I 17796] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:36:01.116617 I 17796] [log_shipping_agent.h:362] thread: 130043623765760 send log item list to replay service of cc node group: 0, term: 3
+[2025-07-08T11:36:01.116675 I 17796] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 3 finished, sent 0 messages, took 58 microseconds, 0 eagains
+[2025-07-08T11:36:01.797096 I 17272] [socket.cpp:2908] Revived Socket{id=340 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x76460c001040) (Connectable)
+[2025-07-08T11:36:01.863140 I 17272] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:36:01.863186 I 17272] [log_state.h:834] Updating node group term, ng:1,term:4
+[2025-07-08T11:36:01.863198 I 17272] [log_state.h:848] Update leader_info.term_:2 to: 4
+[2025-07-08T11:36:01.863209 I 17272] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:36:01.863219 I 17272] [log_state.h:852] Update leader_info.leader_port_17582 to: 17482
+[2025-07-08T11:36:01.863229 I 17272] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 4 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:36:01.863240 I 17272] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:36:01.863250 I 17272] [log_instance.cpp:851] start replaying from ts 1751974550354997
+[2025-07-08T11:36:01.863260 I 17272] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:36:01.863270 I 17272] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:36:01.863281 I 17272] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:36:01.863407 I 17798] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 4 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:36:01.863488 I 17272] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:36:01.867646 I 17798] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:36:01.867687 I 17798] [log_shipping_agent.h:362] thread: 130044219352832 send log item list to replay service of cc node group: 1, term: 4
+[2025-07-08T11:36:01.867745 I 17798] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 4 finished, sent 0 messages, took 57 microseconds, 0 eagains
+[2025-07-08T11:36:02.855088 I 17244] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:36:02.855155 I 17244] [log_state.h:834] Updating node group term, ng:1,term:5
+[2025-07-08T11:36:02.855170 I 17244] [log_state.h:848] Update leader_info.term_:4 to: 5
+[2025-07-08T11:36:02.855180 I 17244] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:36:02.855192 I 17244] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-08T11:36:02.855202 I 17244] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 5 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:36:02.855211 I 17244] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:36:02.855221 I 17244] [log_instance.cpp:851] start replaying from ts 1751974550354997
+[2025-07-08T11:36:02.855232 I 17244] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:36:02.855242 I 17244] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:36:02.855250 I 17244] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:36:02.855451 I 17244] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:36:02.858469 I 17819] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 5 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:36:02.860021 I 17819] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:36:02.860708 I 17819] [log_shipping_agent.h:362] thread: 130044103816960 send log item list to replay service of cc node group: 1, term: 5
+[2025-07-08T11:36:02.860777 I 17819] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 5 finished, sent 0 messages, took 70 microseconds, 0 eagains
+[2025-07-08T11:37:54.754348 I 17271] [log_state.h:887] Removing cc node group, ng:0,term:3
+[2025-07-08T11:37:54.754406 I 17271] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:37:55.902173 I 17238] [socket.cpp:2848] Checking Socket{id=170 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x764618023dc0)
+[2025-07-08T11:38:17.480691 I 17238] [socket.cpp:2848] Checking Socket{id=680 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7646180b2e40)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:38:19.429939 I 17902] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:38:19.431746 I 17902] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:38:19.437717 I 17902] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:38:19.437754 I 17902] [log_instance.h:221] starting log_state
+[2025-07-08T11:38:19.437971 I 17902] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:38:19.477813 I 17902] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:38:19.477900 I 17902] [log_instance.h:247] initializing raft node
+[2025-07-08T11:38:19.477903 I 17932] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:38:19.477964 I 17902] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:38:19.478605 I 17902] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:38:19.478672 W 17902] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:38:19.478691 W 17902] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:38:19.485285 I 17902] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 3523
+[2025-07-08T11:38:19.485599 W 17902] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:38:19.485651 I 17902] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 40
+[2025-07-08T11:38:19.485685 I 17902] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:38:19.485749 I 17902] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:38:19.490181 I 17902] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 4387
+[2025-07-08T11:38:19.490231 I 17902] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:38:19.491632 I 17907] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:38:19.497887 I 17902] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:38:19.497927 I 17902] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:38:19.498374 I 17902] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:38:19.500901 I 17905] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:38:19.500955 I 17905] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:38:25.329345 I 17934] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:38:25.329609 I 17934] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-08T11:38:25.329641 I 17934] [log_state.h:875] Create a new leader info
+[2025-07-08T11:38:25.329654 I 17934] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:38:25.329666 I 17934] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:38:25.329679 I 17934] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:38:25.329690 I 17934] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:38:25.329702 I 17934] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:38:25.329713 I 17934] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:38:25.329900 I 17934] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:38:25.330102 I 18138] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:38:25.330833 I 18138] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:38:25.330871 I 18138] [log_shipping_agent.h:362] thread: 139997009147648 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-08T11:38:25.330907 I 18138] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 35 microseconds, 0 eagains
+[2025-07-08T11:38:43.664458 I 17940] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:38:43.664507 I 17940] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-07-08T11:38:43.664523 I 17940] [log_state.h:875] Create a new leader info
+[2025-07-08T11:38:43.664536 I 17940] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:38:43.664551 I 17940] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:38:43.664563 I 17940] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-08T11:38:43.665889 I 17940] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-07-08T11:38:43.665925 I 17940] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:38:43.665938 I 17940] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:38:43.666119 I 17940] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:38:43.668608 I 18224] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:38:43.672729 I 18224] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:38:43.674240 I 18224] [log_shipping_agent.h:362] thread: 139996794136320 send log item list to replay service of cc node group: 1, term: 2
+[2025-07-08T11:38:43.679829 I 18224] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 5000 messages, took 5587 microseconds, 0 eagains
+[2025-07-08T11:39:50.676317 I 17907] [socket.cpp:2848] Checking Socket{id=340 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7f5384001040)
+[2025-07-08T11:39:55.649178 I 17940] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:39:55.649221 I 17940] [log_state.h:834] Updating node group term, ng:0,term:3
+[2025-07-08T11:39:55.649235 I 17940] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-08T11:39:55.649245 I 17940] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:39:55.649256 I 17940] [log_state.h:852] Update leader_info.leader_port_17482 to: 17482
+[2025-07-08T11:39:55.649267 I 17940] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 3 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:39:55.649278 I 17940] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:39:55.649291 I 17940] [log_instance.cpp:851] start replaying from ts 1751974785300739
+[2025-07-08T11:39:55.649302 I 17940] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:39:55.649314 I 17940] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:39:55.649325 I 17940] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:39:55.649561 I 17940] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:39:55.650466 I 18466] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 3 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:39:55.653012 I 18466] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-08T11:39:55.653048 I 18466] [log_shipping_agent.h:362] thread: 139996785743616 send log item list to replay service of cc node group: 0, term: 3
+[2025-07-08T11:39:55.653108 I 18466] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 3 finished, sent 0 messages, took 60 microseconds, 0 eagains
+[2025-07-08T11:39:56.678097 I 17933] [socket.cpp:2908] Revived Socket{id=340 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7f5384001040) (Connectable)
+[2025-07-08T11:39:57.344676 I 17906] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:39:57.344715 I 17906] [log_state.h:834] Updating node group term, ng:1,term:4
+[2025-07-08T11:39:57.344729 I 17906] [log_state.h:848] Update leader_info.term_:2 to: 4
+[2025-07-08T11:39:57.344739 I 17906] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:39:57.344749 I 17906] [log_state.h:852] Update leader_info.leader_port_17582 to: 17482
+[2025-07-08T11:39:57.344761 I 17906] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 4 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-08T11:39:57.344772 I 17906] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-08T11:39:57.344784 I 17906] [log_instance.cpp:851] start replaying from ts 1751974781549188
+[2025-07-08T11:39:57.344795 I 17906] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:39:57.344806 I 17906] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:39:57.344816 I 17906] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:39:57.344957 I 18468] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 4 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-08T11:39:57.345177 I 17906] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:39:57.345352 I 18468] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:39:57.345396 I 18468] [log_shipping_agent.h:362] thread: 139997009147648 send log item list to replay service of cc node group: 1, term: 4
+[2025-07-08T11:39:57.345510 I 18468] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 4 finished, sent 0 messages, took 113 microseconds, 0 eagains
+[2025-07-08T11:39:58.349435 I 17911] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-08T11:39:58.349481 I 17911] [log_state.h:834] Updating node group term, ng:1,term:5
+[2025-07-08T11:39:58.349494 I 17911] [log_state.h:848] Update leader_info.term_:4 to: 5
+[2025-07-08T11:39:58.349504 I 17911] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-08T11:39:58.349529 I 17911] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-08T11:39:58.349540 I 17911] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 5 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-08T11:39:58.349551 I 17911] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-08T11:39:58.349561 I 17911] [log_instance.cpp:851] start replaying from ts 1751974781549188
+[2025-07-08T11:39:58.349572 I 17911] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-08T11:39:58.349582 I 17911] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-08T11:39:58.349592 I 17911] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-08T11:39:58.349741 I 18489] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 5 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-08T11:39:58.349751 I 17911] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-08T11:39:58.352344 I 18489] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-07-08T11:39:58.352401 I 18489] [log_shipping_agent.h:362] thread: 139996794136320 send log item list to replay service of cc node group: 1, term: 5
+[2025-07-08T11:39:58.352507 I 18489] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 5 finished, sent 0 messages, took 106 microseconds, 0 eagains
+[2025-07-08T11:41:48.637552 I 17909] [log_state.h:887] Removing cc node group, ng:0,term:3
+[2025-07-08T11:41:48.637594 I 17909] [log_state.h:900] Removed cc node group:0
+[2025-07-08T11:41:49.816594 I 17907] [socket.cpp:2848] Checking Socket{id=425 remote addr=127.0.0.1:17482 local addr=0.0.0.0:0} (0x7f538c06a380)
+[2025-07-08T11:42:12.320634 I 17907] [socket.cpp:2848] Checking Socket{id=595 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7f5384040f00)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:42:14.285526 I 18572] [launch_sv.cpp:503] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-07-08T11:42:14.287236 I 18572] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-07-08T11:42:14.295439 I 18572] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-07-08T11:42:14.295478 I 18572] [log_instance.h:221] starting log_state
+[2025-07-08T11:42:14.295656 I 18572] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:42:14.355342 I 18572] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:42:14.355451 I 18572] [log_instance.h:247] initializing raft node
+[2025-07-08T11:42:14.355509 I 18572] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-07-08T11:42:14.355633 I 18602] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:42:14.356161 I 18572] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:42:14.356217 W 18572] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:42:14.356242 W 18572] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-07-08T11:42:14.388108 I 18572] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 31823
+[2025-07-08T11:42:14.389554 W 18572] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:42:14.391206 I 18572] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 1662
+[2025-07-08T11:42:14.391264 I 18572] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-07-08T11:42:14.391324 I 18572] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:42:14.394627 I 18572] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 3260
+[2025-07-08T11:42:14.394675 I 18572] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-07-08T11:42:14.395251 I 18581] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-07-08T11:42:14.399412 I 18572] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-07-08T11:42:14.399448 I 18572] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:9000 in web browser.
+[2025-07-08T11:42:14.399868 I 18572] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-07-08T11:42:14.403591 I 18607] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-07-08T11:42:14.403648 I 18607] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes

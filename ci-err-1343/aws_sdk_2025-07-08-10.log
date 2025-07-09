@@ -1,0 +1,962 @@
+[INFO] 2025-07-08 10:50:34.095 Aws_Init_Cleanup [125454301781120] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:50:34.095 aws-c-common [125454301781120] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:50:34.095 tls-handler [125454301781120] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:50:34.097 GlobalEnumOverflowContainer [125454301781120] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:50:34.097 Aws::Config::AWSConfigFileProfileConfigLoader [125454301781120] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:50:34.097 Aws::Config::AWSConfigFileProfileConfigLoader [125454301781120] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:50:34.097 Aws::Config::AWSConfigFileProfileConfigLoader [125454301781120] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:50:34.097 Aws::Config::AWSProfileConfigLoaderBase [125454301781120] Failed to reload configuration.
+[INFO] 2025-07-08 10:50:34.097 Aws::Config::AWSConfigFileProfileConfigLoader [125454301781120] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:50:34.097 Aws::Config::AWSProfileConfigLoaderBase [125454301781120] Failed to reload configuration.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b05607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b05607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b05607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454284875520] id=0x325b05607d0: main loop started
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454284875520] id=0x325b05607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b05608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b05608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b05608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454268090112] id=0x325b0560870: main loop started
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454268090112] id=0x325b0560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454259697408] id=0x325b05608c0: main loop started
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454259697408] id=0x325b05608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.097 event-loop [125454301781120] id=0x325b0560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454251304704] id=0x325b0560910: main loop started
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454251304704] id=0x325b0560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454301781120] id=0x325b05609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454301781120] id=0x325b05609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454301781120] id=0x325b05609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454301781120] id=0x325b0560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454301781120] id=0x325b0560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:34.098 event-loop [125454301781120] id=0x325b0560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:34.098 dns [125454301781120] id=0x325b0152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:50:34.098 channel-bootstrap [125454301781120] id=0x325b01828b0: Initializing client bootstrap with event-loop group 0x325b0167da0
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454242912000] id=0x325b0560960: main loop started
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454276482816] id=0x325b0560820: main loop started
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454242912000] id=0x325b0560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454276482816] id=0x325b0560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454234519296] id=0x325b05609b0: main loop started
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454234519296] id=0x325b05609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454226126592] id=0x325b0560a00: main loop started
+[INFO] 2025-07-08 10:50:34.101 event-loop [125454226126592] id=0x325b0560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:34.110 CurlHttpClient [125454301781120] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:50:34.110 EC2MetadataClient [125454301781120] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:50:34.110 EC2MetadataClient [125454301781120] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:50:34.110 CurlHandleContainer [125454301781120] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:50:34.321 Aws_Init_Cleanup [125454301781120] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:50:34.321 CurlHandleContainer [125454301781120] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:50:34.321 event-loop [125454057133824] id=0x325b0560a00: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.321 event-loop [125454057133824] id=0x325b0560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.322 event-loop [125454057133824] id=0x325b05609b0: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.322 event-loop [125454057133824] id=0x325b05609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.322 event-loop [125454057133824] id=0x325b0560960: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.322 event-loop [125454057133824] id=0x325b0560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.322 event-loop [125454057133824] id=0x325b0560910: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.322 event-loop [125454057133824] id=0x325b0560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b05608c0: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b05608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b0560870: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b0560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b0560820: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b0560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b05607d0: Destroying event_loop
+[INFO] 2025-07-08 10:50:34.323 event-loop [125454057133824] id=0x325b05607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.601 Aws_Init_Cleanup [135546241973376] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:50:45.602 aws-c-common [135546241973376] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:50:45.602 tls-handler [135546241973376] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:50:45.603 GlobalEnumOverflowContainer [135546241973376] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:50:45.603 Aws::Config::AWSConfigFileProfileConfigLoader [135546241973376] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:50:45.603 Aws::Config::AWSConfigFileProfileConfigLoader [135546241973376] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:50:45.603 Aws::Config::AWSConfigFileProfileConfigLoader [135546241973376] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:50:45.603 Aws::Config::AWSProfileConfigLoaderBase [135546241973376] Failed to reload configuration.
+[INFO] 2025-07-08 10:50:45.604 Aws::Config::AWSConfigFileProfileConfigLoader [135546241973376] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:50:45.604 Aws::Config::AWSProfileConfigLoaderBase [135546241973376] Failed to reload configuration.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe845607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe845607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe845607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546225067776] id=0x4fe845607d0: main loop started
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546225067776] id=0x4fe845607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546216675072] id=0x4fe84560820: main loop started
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546216675072] id=0x4fe84560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe845608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe845608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe845608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546241973376] id=0x4fe84560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546199889664] id=0x4fe845608c0: main loop started
+[INFO] 2025-07-08 10:50:45.604 event-loop [135546199889664] id=0x4fe845608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.605 event-loop [135546208282368] id=0x4fe84560870: main loop started
+[INFO] 2025-07-08 10:50:45.605 event-loop [135546208282368] id=0x4fe84560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.605 event-loop [135546241973376] id=0x4fe84560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe84560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe84560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe84560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546191496960] id=0x4fe84560910: main loop started
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546191496960] id=0x4fe84560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe845609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe845609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe845609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546183104256] id=0x4fe84560960: main loop started
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546183104256] id=0x4fe84560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe84560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe84560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546241973376] id=0x4fe84560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546174711552] id=0x4fe845609b0: main loop started
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546174711552] id=0x4fe845609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.606 dns [135546241973376] id=0x4fe84152d00: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546166310656] id=0x4fe84560a00: main loop started
+[INFO] 2025-07-08 10:50:45.606 channel-bootstrap [135546241973376] id=0x4fe841828b0: Initializing client bootstrap with event-loop group 0x4fe84167da0
+[INFO] 2025-07-08 10:50:45.606 event-loop [135546166310656] id=0x4fe84560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:50:45.616 CurlHttpClient [135546241973376] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:50:45.617 EC2MetadataClient [135546241973376] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:50:45.617 EC2MetadataClient [135546241973376] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:50:45.617 CurlHandleContainer [135546241973376] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:50:45.786 Aws_Init_Cleanup [135546241973376] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:50:45.786 CurlHandleContainer [135546241973376] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:50:45.786 event-loop [135545997326080] id=0x4fe84560a00: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.786 event-loop [135545997326080] id=0x4fe84560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.786 event-loop [135545997326080] id=0x4fe845609b0: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.786 event-loop [135545997326080] id=0x4fe845609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.786 event-loop [135545997326080] id=0x4fe84560960: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.786 event-loop [135545997326080] id=0x4fe84560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.789 event-loop [135545997326080] id=0x4fe84560910: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.789 event-loop [135545997326080] id=0x4fe84560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.793 event-loop [135545997326080] id=0x4fe845608c0: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.793 event-loop [135545997326080] id=0x4fe845608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.793 event-loop [135545997326080] id=0x4fe84560870: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.793 event-loop [135545997326080] id=0x4fe84560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.793 event-loop [135545997326080] id=0x4fe84560820: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.793 event-loop [135545997326080] id=0x4fe84560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:50:45.794 event-loop [135545997326080] id=0x4fe845607d0: Destroying event_loop
+[INFO] 2025-07-08 10:50:45.794 event-loop [135545997326080] id=0x4fe845607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.706 Aws_Init_Cleanup [131894653488256] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:51:25.707 aws-c-common [131894653488256] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:51:25.707 tls-handler [131894653488256] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:51:25.708 GlobalEnumOverflowContainer [131894653488256] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:51:25.708 Aws::Config::AWSConfigFileProfileConfigLoader [131894653488256] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:51:25.708 Aws::Config::AWSConfigFileProfileConfigLoader [131894653488256] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:51:25.708 Aws::Config::AWSConfigFileProfileConfigLoader [131894653488256] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:51:25.708 Aws::Config::AWSProfileConfigLoaderBase [131894653488256] Failed to reload configuration.
+[INFO] 2025-07-08 10:51:25.708 Aws::Config::AWSConfigFileProfileConfigLoader [131894653488256] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:51:25.708 Aws::Config::AWSProfileConfigLoaderBase [131894653488256] Failed to reload configuration.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894619797248] id=0x5e75a560870: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894619797248] id=0x5e75a560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894611404544] id=0x5e75a5608c0: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894636582656] id=0x5e75a5607d0: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894611404544] id=0x5e75a5608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894636582656] id=0x5e75a5607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894603011840] id=0x5e75a560910: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894603011840] id=0x5e75a560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a5609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894594619136] id=0x5e75a560960: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894594619136] id=0x5e75a560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894653488256] id=0x5e75a560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894586226432] id=0x5e75a5609b0: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894586226432] id=0x5e75a5609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894628189952] id=0x5e75a560820: main loop started
+[INFO] 2025-07-08 10:51:25.709 dns [131894653488256] id=0x5e75a152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894628189952] id=0x5e75a560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.709 channel-bootstrap [131894653488256] id=0x5e75a182920: Initializing client bootstrap with event-loop group 0x5e75a167da0
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894577833728] id=0x5e75a560a00: main loop started
+[INFO] 2025-07-08 10:51:25.709 event-loop [131894577833728] id=0x5e75a560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:25.719 CurlHttpClient [131894653488256] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:51:25.719 EC2MetadataClient [131894653488256] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:51:25.719 EC2MetadataClient [131894653488256] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:51:25.719 CurlHandleContainer [131894653488256] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:51:25.897 Aws_Init_Cleanup [131894653488256] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:51:25.897 CurlHandleContainer [131894653488256] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:51:25.898 event-loop [131894408840960] id=0x5e75a560a00: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.898 event-loop [131894408840960] id=0x5e75a560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.898 event-loop [131894408840960] id=0x5e75a5609b0: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.898 event-loop [131894408840960] id=0x5e75a5609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560960: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560910: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a5608c0: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a5608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560870: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560820: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.899 event-loop [131894408840960] id=0x5e75a560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:25.900 event-loop [131894408840960] id=0x5e75a5607d0: Destroying event_loop
+[INFO] 2025-07-08 10:51:25.900 event-loop [131894408840960] id=0x5e75a5607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.245 Aws_Init_Cleanup [128832391359616] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:51:42.246 aws-c-common [128832391359616] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:51:42.246 tls-handler [128832391359616] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:51:42.248 GlobalEnumOverflowContainer [128832391359616] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:51:42.248 Aws::Config::AWSConfigFileProfileConfigLoader [128832391359616] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:51:42.248 Aws::Config::AWSConfigFileProfileConfigLoader [128832391359616] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:51:42.248 Aws::Config::AWSConfigFileProfileConfigLoader [128832391359616] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:51:42.248 Aws::Config::AWSProfileConfigLoaderBase [128832391359616] Failed to reload configuration.
+[INFO] 2025-07-08 10:51:42.248 Aws::Config::AWSConfigFileProfileConfigLoader [128832391359616] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:51:42.248 Aws::Config::AWSProfileConfigLoaderBase [128832391359616] Failed to reload configuration.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832374454016] id=0x220f25607d0: main loop started
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832374454016] id=0x220f25607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832349275904] id=0x220f25608c0: main loop started
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832349275904] id=0x220f25608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832340883200] id=0x220f2560910: main loop started
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832340883200] id=0x220f2560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f25609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832332490496] id=0x220f2560960: main loop started
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832332490496] id=0x220f2560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832391359616] id=0x220f2560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832324097792] id=0x220f25609b0: main loop started
+[INFO] 2025-07-08 10:51:42.248 event-loop [128832324097792] id=0x220f25609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.248 dns [128832391359616] id=0x220f2152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:51:42.249 channel-bootstrap [128832391359616] id=0x220f2182920: Initializing client bootstrap with event-loop group 0x220f2167da0
+[INFO] 2025-07-08 10:51:42.249 event-loop [128832315705088] id=0x220f2560a00: main loop started
+[INFO] 2025-07-08 10:51:42.249 event-loop [128832315705088] id=0x220f2560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.250 event-loop [128832357668608] id=0x220f2560870: main loop started
+[INFO] 2025-07-08 10:51:42.250 event-loop [128832357668608] id=0x220f2560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.251 event-loop [128832366061312] id=0x220f2560820: main loop started
+[INFO] 2025-07-08 10:51:42.251 event-loop [128832366061312] id=0x220f2560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:42.261 CurlHttpClient [128832391359616] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:51:42.262 EC2MetadataClient [128832391359616] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:51:42.262 EC2MetadataClient [128832391359616] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:51:42.262 CurlHandleContainer [128832391359616] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:51:42.438 Aws_Init_Cleanup [128832391359616] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:51:42.438 CurlHandleContainer [128832391359616] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:51:42.438 event-loop [128832146712320] id=0x220f2560a00: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.438 event-loop [128832146712320] id=0x220f2560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.438 event-loop [128832146712320] id=0x220f25609b0: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.438 event-loop [128832146712320] id=0x220f25609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560960: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560910: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f25608c0: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f25608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560870: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560820: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.439 event-loop [128832146712320] id=0x220f2560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:42.440 event-loop [128832146712320] id=0x220f25607d0: Destroying event_loop
+[INFO] 2025-07-08 10:51:42.440 event-loop [128832146712320] id=0x220f25607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.752 Aws_Init_Cleanup [126419197992064] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:51:54.753 aws-c-common [126419197992064] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:51:54.753 tls-handler [126419197992064] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:51:54.754 GlobalEnumOverflowContainer [126419197992064] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:51:54.754 Aws::Config::AWSConfigFileProfileConfigLoader [126419197992064] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:51:54.754 Aws::Config::AWSConfigFileProfileConfigLoader [126419197992064] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:51:54.754 Aws::Config::AWSConfigFileProfileConfigLoader [126419197992064] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:51:54.754 Aws::Config::AWSProfileConfigLoaderBase [126419197992064] Failed to reload configuration.
+[INFO] 2025-07-08 10:51:54.754 Aws::Config::AWSConfigFileProfileConfigLoader [126419197992064] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:51:54.754 Aws::Config::AWSProfileConfigLoaderBase [126419197992064] Failed to reload configuration.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419181086464] id=0x3af3a5607d0: main loop started
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419181086464] id=0x3af3a5607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419172693760] id=0x3af3a560820: main loop started
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419172693760] id=0x3af3a560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419164301056] id=0x3af3a560870: main loop started
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419164301056] id=0x3af3a560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419155908352] id=0x3af3a5608c0: main loop started
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419155908352] id=0x3af3a5608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419147515648] id=0x3af3a560910: main loop started
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419147515648] id=0x3af3a560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a5609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419139122944] id=0x3af3a560960: main loop started
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419139122944] id=0x3af3a560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:51:54.755 event-loop [126419197992064] id=0x3af3a560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:51:54.755 dns [126419197992064] id=0x3af3a152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:51:54.755 channel-bootstrap [126419197992064] id=0x3af3a182920: Initializing client bootstrap with event-loop group 0x3af3a167da0
+[INFO] 2025-07-08 10:51:54.756 event-loop [126419130730240] id=0x3af3a5609b0: main loop started
+[INFO] 2025-07-08 10:51:54.756 event-loop [126419130730240] id=0x3af3a5609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.759 event-loop [126419122337536] id=0x3af3a560a00: main loop started
+[INFO] 2025-07-08 10:51:54.759 event-loop [126419122337536] id=0x3af3a560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:51:54.765 CurlHttpClient [126419197992064] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:51:54.765 EC2MetadataClient [126419197992064] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:51:54.765 EC2MetadataClient [126419197992064] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:51:54.765 CurlHandleContainer [126419197992064] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:51:54.892 Aws_Init_Cleanup [126419197992064] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:51:54.892 CurlHandleContainer [126419197992064] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a560a00: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a5609b0: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a5609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a560960: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a560910: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.893 event-loop [126418953344768] id=0x3af3a560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.894 event-loop [126418953344768] id=0x3af3a5608c0: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.894 event-loop [126418953344768] id=0x3af3a5608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.894 event-loop [126418953344768] id=0x3af3a560870: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.894 event-loop [126418953344768] id=0x3af3a560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.894 event-loop [126418953344768] id=0x3af3a560820: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.894 event-loop [126418953344768] id=0x3af3a560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:51:54.895 event-loop [126418953344768] id=0x3af3a5607d0: Destroying event_loop
+[INFO] 2025-07-08 10:51:54.895 event-loop [126418953344768] id=0x3af3a5607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:46.799 Aws_Init_Cleanup [126767225343104] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:53:46.800 aws-c-common [126767225343104] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:53:46.800 tls-handler [126767225343104] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:53:46.805 GlobalEnumOverflowContainer [126767225343104] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:53:46.805 Aws::Config::AWSConfigFileProfileConfigLoader [126767225343104] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:53:46.805 Aws::Config::AWSConfigFileProfileConfigLoader [126767225343104] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:53:46.805 Aws::Config::AWSConfigFileProfileConfigLoader [126767225343104] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:53:46.805 Aws::Config::AWSProfileConfigLoaderBase [126767225343104] Failed to reload configuration.
+[INFO] 2025-07-08 10:53:46.805 Aws::Config::AWSConfigFileProfileConfigLoader [126767225343104] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:53:46.805 Aws::Config::AWSProfileConfigLoaderBase [126767225343104] Failed to reload configuration.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767208437504] id=0x535365607d0: main loop started
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767208437504] id=0x535365607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767191652096] id=0x53536560870: main loop started
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767191652096] id=0x53536560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x535365609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767225343104] id=0x53536560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767158081280] id=0x535365609b0: main loop started
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767158081280] id=0x535365609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767183259392] id=0x535365608c0: main loop started
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767183259392] id=0x535365608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767174866688] id=0x53536560910: main loop started
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767174866688] id=0x53536560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.806 dns [126767225343104] id=0x53536152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767149688576] id=0x53536560a00: main loop started
+[INFO] 2025-07-08 10:53:46.806 channel-bootstrap [126767225343104] id=0x53536182920: Initializing client bootstrap with event-loop group 0x53536167da0
+[INFO] 2025-07-08 10:53:46.806 event-loop [126767149688576] id=0x53536560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.807 event-loop [126767166473984] id=0x53536560960: main loop started
+[INFO] 2025-07-08 10:53:46.807 event-loop [126767166473984] id=0x53536560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.807 event-loop [126767200044800] id=0x53536560820: main loop started
+[INFO] 2025-07-08 10:53:46.807 event-loop [126767200044800] id=0x53536560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:53:46.815 CurlHttpClient [126767225343104] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:53:46.815 EC2MetadataClient [126767225343104] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:53:46.815 EC2MetadataClient [126767225343104] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:53:46.815 CurlHandleContainer [126767225343104] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:53:46.997 Aws_Init_Cleanup [126767225343104] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:53:46.997 CurlHandleContainer [126767225343104] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:53:46.997 event-loop [126766980695808] id=0x53536560a00: Destroying event_loop
+[INFO] 2025-07-08 10:53:46.997 event-loop [126766980695808] id=0x53536560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.001 event-loop [126766980695808] id=0x535365609b0: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.001 event-loop [126766980695808] id=0x535365609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.001 event-loop [126766980695808] id=0x53536560960: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.001 event-loop [126766980695808] id=0x53536560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.007 event-loop [126766980695808] id=0x53536560910: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.007 event-loop [126766980695808] id=0x53536560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.007 event-loop [126766980695808] id=0x535365608c0: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.007 event-loop [126766980695808] id=0x535365608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.007 event-loop [126766980695808] id=0x53536560870: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.008 event-loop [126766980695808] id=0x53536560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.008 event-loop [126766980695808] id=0x53536560820: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.008 event-loop [126766980695808] id=0x53536560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:53:47.008 event-loop [126766980695808] id=0x535365607d0: Destroying event_loop
+[INFO] 2025-07-08 10:53:47.008 event-loop [126766980695808] id=0x535365607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.681 Aws_Init_Cleanup [136770991307904] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:54:21.681 aws-c-common [136770991307904] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:54:21.681 tls-handler [136770991307904] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:54:21.682 GlobalEnumOverflowContainer [136770991307904] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:54:21.682 Aws::Config::AWSConfigFileProfileConfigLoader [136770991307904] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:54:21.682 Aws::Config::AWSConfigFileProfileConfigLoader [136770991307904] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:54:21.682 Aws::Config::AWSConfigFileProfileConfigLoader [136770991307904] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:54:21.682 Aws::Config::AWSProfileConfigLoaderBase [136770991307904] Failed to reload configuration.
+[INFO] 2025-07-08 10:54:21.682 Aws::Config::AWSConfigFileProfileConfigLoader [136770991307904] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:54:21.682 Aws::Config::AWSProfileConfigLoaderBase [136770991307904] Failed to reload configuration.
+[INFO] 2025-07-08 10:54:21.682 event-loop [136770991307904] id=0x4686c5607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.682 event-loop [136770991307904] id=0x4686c5607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.682 event-loop [136770991307904] id=0x4686c5607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770974402304] id=0x4686c5607d0: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770974402304] id=0x4686c5607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770966009600] id=0x4686c560820: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770966009600] id=0x4686c560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c5608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c5608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c5608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770957616896] id=0x4686c560870: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770957616896] id=0x4686c560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770949224192] id=0x4686c5608c0: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770949224192] id=0x4686c5608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770940831488] id=0x4686c560910: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770940831488] id=0x4686c560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c5609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c5609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c5609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770932438784] id=0x4686c560960: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770932438784] id=0x4686c560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770991307904] id=0x4686c560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770924046080] id=0x4686c5609b0: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770924046080] id=0x4686c5609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.683 dns [136770991307904] id=0x4686c152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:54:21.683 channel-bootstrap [136770991307904] id=0x4686c182920: Initializing client bootstrap with event-loop group 0x4686c167da0
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770915653376] id=0x4686c560a00: main loop started
+[INFO] 2025-07-08 10:54:21.683 event-loop [136770915653376] id=0x4686c560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:21.689 CurlHttpClient [136770991307904] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:54:21.690 EC2MetadataClient [136770991307904] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:54:21.690 EC2MetadataClient [136770991307904] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:54:21.690 CurlHandleContainer [136770991307904] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:54:21.800 Aws_Init_Cleanup [136770991307904] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:54:21.800 CurlHandleContainer [136770991307904] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:54:21.800 event-loop [136770746660608] id=0x4686c560a00: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.800 event-loop [136770746660608] id=0x4686c560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.801 event-loop [136770746660608] id=0x4686c5609b0: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.801 event-loop [136770746660608] id=0x4686c5609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.801 event-loop [136770746660608] id=0x4686c560960: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.801 event-loop [136770746660608] id=0x4686c560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.801 event-loop [136770746660608] id=0x4686c560910: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.801 event-loop [136770746660608] id=0x4686c560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c5608c0: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c5608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c560870: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c560820: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c5607d0: Destroying event_loop
+[INFO] 2025-07-08 10:54:21.802 event-loop [136770746660608] id=0x4686c5607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.225 Aws_Init_Cleanup [125769872530560] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:54:52.226 aws-c-common [125769872530560] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:54:52.226 tls-handler [125769872530560] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:54:52.228 GlobalEnumOverflowContainer [125769872530560] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:54:52.228 Aws::Config::AWSConfigFileProfileConfigLoader [125769872530560] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:54:52.228 Aws::Config::AWSConfigFileProfileConfigLoader [125769872530560] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:54:52.228 Aws::Config::AWSConfigFileProfileConfigLoader [125769872530560] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:54:52.228 Aws::Config::AWSProfileConfigLoaderBase [125769872530560] Failed to reload configuration.
+[INFO] 2025-07-08 10:54:52.228 Aws::Config::AWSConfigFileProfileConfigLoader [125769872530560] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:54:52.228 Aws::Config::AWSProfileConfigLoaderBase [125769872530560] Failed to reload configuration.
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e5607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e5607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e5607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769855624960] id=0x3217e5607d0: main loop started
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769855624960] id=0x3217e5607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.228 event-loop [125769872530560] id=0x3217e560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769847232256] id=0x3217e560820: main loop started
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769847232256] id=0x3217e560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e5608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e5608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e5608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769838839552] id=0x3217e560870: main loop started
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769838839552] id=0x3217e560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e5609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e5609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e5609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769813661440] id=0x3217e560960: main loop started
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769813661440] id=0x3217e560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:54:52.229 event-loop [125769872530560] id=0x3217e560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:54:52.229 dns [125769872530560] id=0x3217e152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:54:52.229 channel-bootstrap [125769872530560] id=0x3217e182920: Initializing client bootstrap with event-loop group 0x3217e167da0
+[INFO] 2025-07-08 10:54:52.233 event-loop [125769822054144] id=0x3217e560910: main loop started
+[INFO] 2025-07-08 10:54:52.233 event-loop [125769822054144] id=0x3217e560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.235 event-loop [125769830446848] id=0x3217e5608c0: main loop started
+[INFO] 2025-07-08 10:54:52.235 event-loop [125769830446848] id=0x3217e5608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.235 event-loop [125769805268736] id=0x3217e5609b0: main loop started
+[INFO] 2025-07-08 10:54:52.235 event-loop [125769805268736] id=0x3217e5609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.235 event-loop [125769796876032] id=0x3217e560a00: main loop started
+[INFO] 2025-07-08 10:54:52.235 event-loop [125769796876032] id=0x3217e560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:54:52.241 CurlHttpClient [125769872530560] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:54:52.241 EC2MetadataClient [125769872530560] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:54:52.241 EC2MetadataClient [125769872530560] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:54:52.241 CurlHandleContainer [125769872530560] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:54:52.430 Aws_Init_Cleanup [125769872530560] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:54:52.430 CurlHandleContainer [125769872530560] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:54:52.430 event-loop [125769627883264] id=0x3217e560a00: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.430 event-loop [125769627883264] id=0x3217e560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.431 event-loop [125769627883264] id=0x3217e5609b0: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.431 event-loop [125769627883264] id=0x3217e5609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.431 event-loop [125769627883264] id=0x3217e560960: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.431 event-loop [125769627883264] id=0x3217e560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.432 event-loop [125769627883264] id=0x3217e560910: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.432 event-loop [125769627883264] id=0x3217e560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.435 event-loop [125769627883264] id=0x3217e5608c0: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.435 event-loop [125769627883264] id=0x3217e5608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.435 event-loop [125769627883264] id=0x3217e560870: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.435 event-loop [125769627883264] id=0x3217e560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.435 event-loop [125769627883264] id=0x3217e560820: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.435 event-loop [125769627883264] id=0x3217e560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:54:52.436 event-loop [125769627883264] id=0x3217e5607d0: Destroying event_loop
+[INFO] 2025-07-08 10:54:52.436 event-loop [125769627883264] id=0x3217e5607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.577 Aws_Init_Cleanup [123157432892544] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:55:31.577 aws-c-common [123157432892544] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:55:31.577 tls-handler [123157432892544] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:55:31.582 GlobalEnumOverflowContainer [123157432892544] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:55:31.582 Aws::Config::AWSConfigFileProfileConfigLoader [123157432892544] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:55:31.582 Aws::Config::AWSConfigFileProfileConfigLoader [123157432892544] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:55:31.582 Aws::Config::AWSConfigFileProfileConfigLoader [123157432892544] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:55:31.582 Aws::Config::AWSProfileConfigLoaderBase [123157432892544] Failed to reload configuration.
+[INFO] 2025-07-08 10:55:31.582 Aws::Config::AWSConfigFileProfileConfigLoader [123157432892544] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:55:31.582 Aws::Config::AWSProfileConfigLoaderBase [123157432892544] Failed to reload configuration.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd285607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd285607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd285607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd28560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd28560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd28560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157415986944] id=0x2cd285607d0: main loop started
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd28560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd28560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157432892544] id=0x2cd28560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157415986944] id=0x2cd285607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.582 event-loop [123157407594240] id=0x2cd28560820: main loop started
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd285608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157407594240] id=0x2cd28560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd285608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd285608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157399201536] id=0x2cd28560870: main loop started
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157399201536] id=0x2cd28560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157382416128] id=0x2cd28560910: main loop started
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd285609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157382416128] id=0x2cd28560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd285609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd285609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157374023424] id=0x2cd28560960: main loop started
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157374023424] id=0x2cd28560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157432892544] id=0x2cd28560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157365630720] id=0x2cd285609b0: main loop started
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157365630720] id=0x2cd285609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.583 dns [123157432892544] id=0x2cd28152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:55:31.583 channel-bootstrap [123157432892544] id=0x2cd28182fb0: Initializing client bootstrap with event-loop group 0x2cd28167da0
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157357238016] id=0x2cd28560a00: main loop started
+[INFO] 2025-07-08 10:55:31.583 event-loop [123157357238016] id=0x2cd28560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.586 event-loop [123157390808832] id=0x2cd285608c0: main loop started
+[INFO] 2025-07-08 10:55:31.586 event-loop [123157390808832] id=0x2cd285608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:55:31.598 CurlHttpClient [123157432892544] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:55:31.599 EC2MetadataClient [123157432892544] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:55:31.599 EC2MetadataClient [123157432892544] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:55:31.599 CurlHandleContainer [123157432892544] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:55:31.778 Aws_Init_Cleanup [123157432892544] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:55:31.778 CurlHandleContainer [123157432892544] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:55:31.780 event-loop [123157188245248] id=0x2cd28560a00: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.780 event-loop [123157188245248] id=0x2cd28560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.780 event-loop [123157188245248] id=0x2cd285609b0: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.780 event-loop [123157188245248] id=0x2cd285609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.780 event-loop [123157188245248] id=0x2cd28560960: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.780 event-loop [123157188245248] id=0x2cd28560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.781 event-loop [123157188245248] id=0x2cd28560910: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.781 event-loop [123157188245248] id=0x2cd28560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.781 event-loop [123157188245248] id=0x2cd285608c0: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.781 event-loop [123157188245248] id=0x2cd285608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.785 event-loop [123157188245248] id=0x2cd28560870: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.785 event-loop [123157188245248] id=0x2cd28560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.785 event-loop [123157188245248] id=0x2cd28560820: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.785 event-loop [123157188245248] id=0x2cd28560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:55:31.785 event-loop [123157188245248] id=0x2cd285607d0: Destroying event_loop
+[INFO] 2025-07-08 10:55:31.785 event-loop [123157188245248] id=0x2cd285607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.229 Aws_Init_Cleanup [123279284685952] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:56:11.229 aws-c-common [123279284685952] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:56:11.229 tls-handler [123279284685952] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:56:11.231 GlobalEnumOverflowContainer [123279284685952] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:56:11.231 Aws::Config::AWSConfigFileProfileConfigLoader [123279284685952] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:56:11.231 Aws::Config::AWSConfigFileProfileConfigLoader [123279284685952] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:56:11.231 Aws::Config::AWSConfigFileProfileConfigLoader [123279284685952] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:56:11.231 Aws::Config::AWSProfileConfigLoaderBase [123279284685952] Failed to reload configuration.
+[INFO] 2025-07-08 10:56:11.231 Aws::Config::AWSConfigFileProfileConfigLoader [123279284685952] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:56:11.231 Aws::Config::AWSProfileConfigLoaderBase [123279284685952] Failed to reload configuration.
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279284685952] id=0x424785607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279284685952] id=0x424785607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279284685952] id=0x424785607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279284685952] id=0x42478560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279284685952] id=0x42478560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279284685952] id=0x42478560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279267780352] id=0x424785607d0: main loop started
+[INFO] 2025-07-08 10:56:11.231 event-loop [123279267780352] id=0x424785607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279259387648] id=0x42478560820: main loop started
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279259387648] id=0x42478560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x424785608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x424785608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x424785608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279250994944] id=0x42478560870: main loop started
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279250994944] id=0x42478560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279242602240] id=0x424785608c0: main loop started
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279242602240] id=0x424785608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279234209536] id=0x42478560910: main loop started
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279234209536] id=0x42478560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x424785609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x424785609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x424785609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279225816832] id=0x42478560960: main loop started
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279225816832] id=0x42478560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279284685952] id=0x42478560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279217424128] id=0x424785609b0: main loop started
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279217424128] id=0x424785609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.232 dns [123279284685952] id=0x42478152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279209023232] id=0x42478560a00: main loop started
+[INFO] 2025-07-08 10:56:11.232 channel-bootstrap [123279284685952] id=0x42478182920: Initializing client bootstrap with event-loop group 0x42478167da0
+[INFO] 2025-07-08 10:56:11.232 event-loop [123279209023232] id=0x42478560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:11.242 CurlHttpClient [123279284685952] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:56:11.242 EC2MetadataClient [123279284685952] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:56:11.242 EC2MetadataClient [123279284685952] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:56:11.242 CurlHandleContainer [123279284685952] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:56:11.380 Aws_Init_Cleanup [123279284685952] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:56:11.380 CurlHandleContainer [123279284685952] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:56:11.380 event-loop [123279040038656] id=0x42478560a00: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.380 event-loop [123279040038656] id=0x42478560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.380 event-loop [123279040038656] id=0x424785609b0: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.380 event-loop [123279040038656] id=0x424785609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560960: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560910: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x424785608c0: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x424785608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560870: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560820: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.381 event-loop [123279040038656] id=0x42478560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:11.386 event-loop [123279040038656] id=0x424785607d0: Destroying event_loop
+[INFO] 2025-07-08 10:56:11.386 event-loop [123279040038656] id=0x424785607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.790 Aws_Init_Cleanup [136689480817792] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:56:33.791 aws-c-common [136689480817792] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:56:33.791 tls-handler [136689480817792] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:56:33.792 GlobalEnumOverflowContainer [136689480817792] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:56:33.792 Aws::Config::AWSConfigFileProfileConfigLoader [136689480817792] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:56:33.792 Aws::Config::AWSConfigFileProfileConfigLoader [136689480817792] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:56:33.792 Aws::Config::AWSConfigFileProfileConfigLoader [136689480817792] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:56:33.792 Aws::Config::AWSProfileConfigLoaderBase [136689480817792] Failed to reload configuration.
+[INFO] 2025-07-08 10:56:33.792 Aws::Config::AWSConfigFileProfileConfigLoader [136689480817792] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:56:33.792 Aws::Config::AWSProfileConfigLoaderBase [136689480817792] Failed to reload configuration.
+[INFO] 2025-07-08 10:56:33.792 event-loop [136689480817792] id=0x4af8e5607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689463912192] id=0x4af8e5607d0: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689463912192] id=0x4af8e5607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689455519488] id=0x4af8e560820: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689455519488] id=0x4af8e560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689447126784] id=0x4af8e560870: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689447126784] id=0x4af8e560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689438734080] id=0x4af8e5608c0: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689438734080] id=0x4af8e5608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689430341376] id=0x4af8e560910: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689430341376] id=0x4af8e560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e5609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689421948672] id=0x4af8e560960: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689421948672] id=0x4af8e560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689480817792] id=0x4af8e560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689413555968] id=0x4af8e5609b0: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689413555968] id=0x4af8e5609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.793 dns [136689480817792] id=0x4af8e152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:56:33.793 channel-bootstrap [136689480817792] id=0x4af8e182920: Initializing client bootstrap with event-loop group 0x4af8e167da0
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689405155072] id=0x4af8e560a00: main loop started
+[INFO] 2025-07-08 10:56:33.793 event-loop [136689405155072] id=0x4af8e560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:33.802 CurlHttpClient [136689480817792] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:56:33.802 EC2MetadataClient [136689480817792] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:56:33.802 EC2MetadataClient [136689480817792] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:56:33.802 CurlHandleContainer [136689480817792] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:56:33.911 Aws_Init_Cleanup [136689480817792] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:56:33.911 CurlHandleContainer [136689480817792] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e560a00: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e5609b0: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e5609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e560960: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e560910: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e5608c0: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.912 event-loop [136689236170496] id=0x4af8e5608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.913 event-loop [136689236170496] id=0x4af8e560870: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.913 event-loop [136689236170496] id=0x4af8e560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.913 event-loop [136689236170496] id=0x4af8e560820: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.913 event-loop [136689236170496] id=0x4af8e560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:33.913 event-loop [136689236170496] id=0x4af8e5607d0: Destroying event_loop
+[INFO] 2025-07-08 10:56:33.913 event-loop [136689236170496] id=0x4af8e5607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.191 Aws_Init_Cleanup [140113331948672] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:56:52.192 aws-c-common [140113331948672] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:56:52.192 tls-handler [140113331948672] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:56:52.193 GlobalEnumOverflowContainer [140113331948672] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:56:52.193 Aws::Config::AWSConfigFileProfileConfigLoader [140113331948672] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:56:52.193 Aws::Config::AWSConfigFileProfileConfigLoader [140113331948672] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:56:52.193 Aws::Config::AWSConfigFileProfileConfigLoader [140113331948672] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:56:52.193 Aws::Config::AWSProfileConfigLoaderBase [140113331948672] Failed to reload configuration.
+[INFO] 2025-07-08 10:56:52.193 Aws::Config::AWSConfigFileProfileConfigLoader [140113331948672] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:56:52.193 Aws::Config::AWSProfileConfigLoaderBase [140113331948672] Failed to reload configuration.
+[INFO] 2025-07-08 10:56:52.193 event-loop [140113331948672] id=0x266dc5607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.193 event-loop [140113331948672] id=0x266dc5607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113315043072] id=0x266dc5607d0: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113315043072] id=0x266dc5607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113306650368] id=0x266dc560820: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113306650368] id=0x266dc560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113298257664] id=0x266dc560870: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113298257664] id=0x266dc560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113289864960] id=0x266dc5608c0: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113289864960] id=0x266dc5608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113281472256] id=0x266dc560910: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113281472256] id=0x266dc560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc5609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113273079552] id=0x266dc560960: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113273079552] id=0x266dc560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113331948672] id=0x266dc560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113264686848] id=0x266dc5609b0: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113264686848] id=0x266dc5609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.194 dns [140113331948672] id=0x266dc152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:56:52.194 channel-bootstrap [140113331948672] id=0x266dc182920: Initializing client bootstrap with event-loop group 0x266dc167da0
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113256285952] id=0x266dc560a00: main loop started
+[INFO] 2025-07-08 10:56:52.194 event-loop [140113256285952] id=0x266dc560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:56:52.202 CurlHttpClient [140113331948672] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:56:52.203 EC2MetadataClient [140113331948672] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:56:52.203 EC2MetadataClient [140113331948672] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:56:52.203 CurlHandleContainer [140113331948672] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:56:52.330 Aws_Init_Cleanup [140113331948672] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:56:52.330 CurlHandleContainer [140113331948672] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:56:52.330 event-loop [140113087301376] id=0x266dc560a00: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.330 event-loop [140113087301376] id=0x266dc560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.331 event-loop [140113087301376] id=0x266dc5609b0: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.331 event-loop [140113087301376] id=0x266dc5609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.331 event-loop [140113087301376] id=0x266dc560960: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.331 event-loop [140113087301376] id=0x266dc560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.331 event-loop [140113087301376] id=0x266dc560910: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.331 event-loop [140113087301376] id=0x266dc560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc5608c0: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc5608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc560870: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc560820: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc5607d0: Destroying event_loop
+[INFO] 2025-07-08 10:56:52.332 event-loop [140113087301376] id=0x266dc5607d0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.253 Aws_Init_Cleanup [124009352711296] Initiate AWS SDK for C++ with Version:1.11.446
+[INFO] 2025-07-08 10:59:01.253 aws-c-common [124009352711296] static: libnuma.so failed to load
+[INFO] 2025-07-08 10:59:01.253 tls-handler [124009352711296] static: Initializing TLS using s2n.
+[INFO] 2025-07-08 10:59:01.255 GlobalEnumOverflowContainer [124009352711296] Initialized AWS-CRT-CPP with version 0.32.8
+[INFO] 2025-07-08 10:59:01.255 Aws::Config::AWSConfigFileProfileConfigLoader [124009352711296] Initializing config loader against fileName /home/mono/.aws/credentials and using profilePrefix = 0
+[INFO] 2025-07-08 10:59:01.255 Aws::Config::AWSConfigFileProfileConfigLoader [124009352711296] Initializing config loader against fileName /home/mono/.aws/config and using profilePrefix = 1
+[INFO] 2025-07-08 10:59:01.255 Aws::Config::AWSConfigFileProfileConfigLoader [124009352711296] Unable to open config file /home/mono/.aws/credentials for reading.
+[INFO] 2025-07-08 10:59:01.255 Aws::Config::AWSProfileConfigLoaderBase [124009352711296] Failed to reload configuration.
+[INFO] 2025-07-08 10:59:01.255 Aws::Config::AWSConfigFileProfileConfigLoader [124009352711296] Unable to open config file /home/mono/.aws/config for reading.
+[INFO] 2025-07-08 10:59:01.255 Aws::Config::AWSProfileConfigLoaderBase [124009352711296] Failed to reload configuration.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa25607d0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa25607d0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa25607d0: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560820: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560820: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560820: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009335805696] id=0x22fa25607d0: main loop started
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009335805696] id=0x22fa25607d0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560870: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560870: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560870: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009327412992] id=0x22fa2560820: main loop started
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa25608c0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009327412992] id=0x22fa2560820: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa25608c0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa25608c0: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009319020288] id=0x22fa2560870: main loop started
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009319020288] id=0x22fa2560870: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560910: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560910: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560910: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009310627584] id=0x22fa25608c0: main loop started
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009310627584] id=0x22fa25608c0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560960: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560960: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009352711296] id=0x22fa2560960: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.255 event-loop [124009302234880] id=0x22fa2560910: main loop started
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009302234880] id=0x22fa2560910: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009352711296] id=0x22fa25609b0: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009352711296] id=0x22fa25609b0: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009352711296] id=0x22fa25609b0: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009293842176] id=0x22fa2560960: main loop started
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009293842176] id=0x22fa2560960: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009352711296] id=0x22fa2560a00: Initializing edge-triggered epoll
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009352711296] id=0x22fa2560a00: Using eventfd for cross-thread notifications.
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009352711296] id=0x22fa2560a00: Starting event-loop thread.
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009285449472] id=0x22fa25609b0: main loop started
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009285449472] id=0x22fa25609b0: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.256 dns [124009352711296] id=0x22fa2152f80: Initializing default host resolver with 8 max host entries.
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009277048576] id=0x22fa2560a00: main loop started
+[INFO] 2025-07-08 10:59:01.256 channel-bootstrap [124009352711296] id=0x22fa2182920: Initializing client bootstrap with event-loop group 0x22fa2167da0
+[INFO] 2025-07-08 10:59:01.256 event-loop [124009277048576] id=0x22fa2560a00: default timeout 100000, and max events to process per tick 100
+[INFO] 2025-07-08 10:59:01.268 CurlHttpClient [124009352711296] Initializing Curl library with version: 7.68.0, ssl version: OpenSSL/1.1.1f
+[INFO] 2025-07-08 10:59:01.268 EC2MetadataClient [124009352711296] Using IMDS endpoint: http://169.254.169.254
+[INFO] 2025-07-08 10:59:01.268 EC2MetadataClient [124009352711296] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2025-07-08 10:59:01.268 CurlHandleContainer [124009352711296] Initializing CurlHandleContainer with size 2
+[INFO] 2025-07-08 10:59:01.437 Aws_Init_Cleanup [124009352711296] Shutdown AWS SDK for C++.
+[INFO] 2025-07-08 10:59:01.437 CurlHandleContainer [124009352711296] Cleaning up CurlHandleContainer.
+[INFO] 2025-07-08 10:59:01.438 event-loop [124009108064000] id=0x22fa2560a00: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.438 event-loop [124009108064000] id=0x22fa2560a00: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.438 event-loop [124009108064000] id=0x22fa25609b0: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.438 event-loop [124009108064000] id=0x22fa25609b0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.442 event-loop [124009108064000] id=0x22fa2560960: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.442 event-loop [124009108064000] id=0x22fa2560960: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.442 event-loop [124009108064000] id=0x22fa2560910: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.442 event-loop [124009108064000] id=0x22fa2560910: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa25608c0: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa25608c0: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa2560870: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa2560870: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa2560820: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa2560820: Stopping event-loop thread.
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa25607d0: Destroying event_loop
+[INFO] 2025-07-08 10:59:01.443 event-loop [124009108064000] id=0x22fa25607d0: Stopping event-loop thread.

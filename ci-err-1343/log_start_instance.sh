@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/home/mono/workspace/eloqkv/cmake/install/lib
+/home/mono/workspace/eloqkv/cmake/install/bin/launch_sv --conf=127.0.0.1:9000 --node_id=0 --storage_path=/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0 --start_log_group_id=0 --log_group_replica_num=1 --logtostderr=true &>> /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log &

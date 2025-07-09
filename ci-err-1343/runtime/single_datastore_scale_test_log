@@ -1,0 +1,657 @@
+2025-07-08 11:10:45 - root - INFO - rocksdbcloud cleanup: s3 bucket eloq-test-1751970527453 not exists
+2025-07-08 11:10:45 - root - INFO - Bootstrapping
+2025-07-08 11:10:48 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:10:48 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:10:49 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:10:51 - root - INFO - Cleaning up resources
+2025-07-08 11:10:51 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:10:51 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:10:51 - root - INFO - Try to stop Node id 1, its process id is 13541
+2025-07-08 11:10:51 - root - INFO - Node 1 is still running after 0, try to kill the process 13541
+2025-07-08 11:10:52 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:10:53 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:10:53 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:10:54 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:10:54 - root - INFO - Bootstrapping
+2025-07-08 11:10:57 - root - INFO - starting nodes
+2025-07-08 11:10:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:10:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:10:58 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:10:58 - root - INFO - wait for connectting to node 1
+2025-07-08 11:11:00 - root - INFO - connectted to node 1
+2025-07-08 11:11:00 - root - INFO - -------Testing data store migration-----------
+2025-07-08 11:11:24 - root - INFO - Unique id = cluster_id#490658d2-5bec-11f0-ba76-5e570cda10a9
+2025-07-08 11:11:24 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:11:24 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:11:24 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:11:25 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:11:26 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:11:27 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:11:27 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:11:28 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:11:28 - root - INFO - waiting scale status, event cluster_id#490658d2-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:11:29 - root - INFO - waiting scale status, event cluster_id#490658d2-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:11:30 - root - INFO - waiting scale status, event cluster_id#490658d2-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:11:31 - root - INFO - waiting scale status, event cluster_id#490658d2-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:12:05 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:12:56 - root - INFO - Data store migration finished.
+2025-07-08 11:14:49 - root - INFO - Unique id = cluster_id#c3557578-5bec-11f0-ba76-5e570cda10a9
+2025-07-08 11:14:49 - root - INFO - waiting scale status, event cluster_id#c3557578-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:14:50 - root - INFO - waiting scale status, event cluster_id#c3557578-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:14:51 - root - INFO - waiting scale status, event cluster_id#c3557578-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:14:52 - root - INFO - Try to stop Node id 1, its process id is 13779
+2025-07-08 11:14:52 - root - INFO - Node 1 is still running after 0, try to kill the process 13779
+2025-07-08 11:14:53 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:14:53 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:15:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:12 - root - INFO - Try to stop Node id 2, its process id is 13916
+2025-07-08 11:15:12 - root - INFO - Node 2 is still running after 0, try to kill the process 13916
+2025-07-08 11:15:13 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:15:13 - root - INFO - stop logservice nodes
+2025-07-08 11:15:13 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:15:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:15:13 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:15:13 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:15:13 - root - INFO - Cleaning up resources
+2025-07-08 11:15:14 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:15:14 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:15:15 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:15:15 - root - INFO - Bootstrapping
+2025-07-08 11:15:18 - root - INFO - starting nodes
+2025-07-08 11:15:19 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:15:19 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:15:19 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:15:20 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:15:20 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:15:21 - root - INFO - connectted to node 1
+2025-07-08 11:15:21 - root - INFO - -------Testing data store migration with write-----------
+2025-07-08 11:15:42 - root - INFO - Unique id = cluster_id#e2db819e-5bec-11f0-ba76-5e570cda10a9
+2025-07-08 11:15:42 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:15:42 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:15:42 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:15:43 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:15:45 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:15:45 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:15:46 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:15:46 - root - INFO - waiting scale status, event cluster_id#e2db819e-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:15:47 - root - INFO - waiting scale status, event cluster_id#e2db819e-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:15:48 - root - INFO - waiting scale status, event cluster_id#e2db819e-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:15:49 - root - INFO - waiting scale status, event cluster_id#e2db819e-5bec-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:16:21 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:19:39 - root - INFO - Unique id = cluster_id#703a7cc0-5bed-11f0-ba76-5e570cda10a9
+2025-07-08 11:19:39 - root - INFO - waiting scale status, event cluster_id#703a7cc0-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:19:40 - root - INFO - waiting scale status, event cluster_id#703a7cc0-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:19:41 - root - INFO - waiting scale status, event cluster_id#703a7cc0-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:19:42 - root - INFO - Try to stop Node id 1, its process id is 14244
+2025-07-08 11:19:42 - root - INFO - Node 1 is still running after 0, try to kill the process 14244
+2025-07-08 11:19:43 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:19:43 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:11 - root - INFO - Try to stop Node id 2, its process id is 14381
+2025-07-08 11:20:11 - root - INFO - Node 2 is still running after 0, try to kill the process 14381
+2025-07-08 11:20:12 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:20:12 - root - INFO - stop logservice nodes
+2025-07-08 11:20:12 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:20:12 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:20:12 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:20:12 - root - INFO - Cleaning up resources
+2025-07-08 11:20:13 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:20:13 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:20:14 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:20:14 - root - INFO - Bootstrapping
+2025-07-08 11:20:18 - root - INFO - starting nodes
+2025-07-08 11:20:19 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:20:19 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:20:20 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:20:20 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:20:21 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:20:21 - root - INFO - connectted to node 1
+2025-07-08 11:20:21 - root - INFO - -------Testing data store migration recover-----------
+2025-07-08 11:20:42 - root - INFO - Unique id = cluster_id#95cca4cc-5bed-11f0-ba76-5e570cda10a9
+2025-07-08 11:20:42 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:20:42 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:20:42 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:20:43 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:20:45 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:20:45 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:20:46 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:20:46 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:20:46 - root - INFO - waiting scale status, event cluster_id#95cca4cc-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:20:47 - root - INFO - waiting scale status, event cluster_id#95cca4cc-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:20:48 - root - INFO - waiting scale status, event cluster_id#95cca4cc-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:20:49 - root - INFO - waiting scale status, event cluster_id#95cca4cc-5bed-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:21:22 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:22:02 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:22:02 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:22:03 - root - INFO - crash_reconnect begin, killed_id 0
+2025-07-08 11:22:04 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:22:05 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:22:05 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:06 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:06 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:07 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:07 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:08 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:08 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:09 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:09 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:22:11 - root - INFO - crash_reconnect end, killed_id 0
+2025-07-08 11:24:04 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:24:04 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:24:05 - root - INFO - Unique id = cluster_id#0e6f2986-5bee-11f0-ba76-5e570cda10a9
+2025-07-08 11:24:05 - root - INFO - waiting scale status, event cluster_id#0e6f2986-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:24:06 - root - INFO - waiting scale status, event cluster_id#0e6f2986-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:24:07 - root - INFO - waiting scale status, event cluster_id#0e6f2986-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:24:08 - root - INFO - waiting scale status, event cluster_id#0e6f2986-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:24:09 - root - INFO - waiting scale status, event cluster_id#0e6f2986-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:24:10 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:24:10 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:24:10 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:24:10 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:24:10 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:24:10 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:24:10 - root - INFO - Try to stop Node id 1, its process id is 15017
+2025-07-08 11:24:10 - root - INFO - Node 1 is still running after 0, try to kill the process 15017
+2025-07-08 11:24:11 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:24:11 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:31 - root - INFO - Try to stop Node id 2, its process id is 14876
+2025-07-08 11:24:31 - root - INFO - Node 2 is still running after 0, try to kill the process 14876
+2025-07-08 11:24:32 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:24:32 - root - INFO - stop logservice nodes
+2025-07-08 11:24:32 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:24:32 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:24:32 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:24:32 - root - INFO - Cleaning up resources
+2025-07-08 11:24:33 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:24:33 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:24:34 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:24:34 - root - INFO - Bootstrapping
+2025-07-08 11:24:36 - root - INFO - starting nodes
+2025-07-08 11:24:37 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:24:37 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:24:38 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:24:38 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:24:39 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:24:39 - root - INFO - connectted to node 1
+2025-07-08 11:24:39 - root - INFO - -------Testing data store migration recover-----------
+2025-07-08 11:24:54 - root - INFO - Unique id = cluster_id#2bda129c-5bee-11f0-ba76-5e570cda10a9
+2025-07-08 11:24:54 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:24:54 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:24:54 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:24:55 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:24:56 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:24:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:24:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:24:58 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:24:58 - root - INFO - waiting scale status, event cluster_id#2bda129c-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:24:59 - root - INFO - waiting scale status, event cluster_id#2bda129c-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:25:00 - root - INFO - waiting scale status, event cluster_id#2bda129c-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:25:01 - root - INFO - waiting scale status, event cluster_id#2bda129c-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:25:31 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:26:06 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:26:06 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:26:07 - root - INFO - crash_reconnect begin, killed_id 0
+2025-07-08 11:26:08 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:26:09 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:26:09 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:09 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:11 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:11 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:12 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:12 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:13 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:26:13 - root - INFO - crash_reconnect end, killed_id 0
+2025-07-08 11:27:39 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:27:39 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:27:40 - root - INFO - Unique id = cluster_id#8e96a652-5bee-11f0-ba76-5e570cda10a9
+2025-07-08 11:27:40 - root - INFO - waiting scale status, event cluster_id#8e96a652-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:27:41 - root - INFO - waiting scale status, event cluster_id#8e96a652-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:27:42 - root - INFO - waiting scale status, event cluster_id#8e96a652-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:27:44 - root - INFO - waiting scale status, event cluster_id#8e96a652-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:27:45 - root - INFO - waiting scale status, event cluster_id#8e96a652-5bee-11f0-ba76-5e570cda10a9, status 0, expect 3
+2025-07-08 11:27:46 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:27:46 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:27:46 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:27:46 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:27:46 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:27:46 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:27:46 - root - INFO - Try to stop Node id 1, its process id is 15688
+2025-07-08 11:27:46 - root - INFO - Node 1 is still running after 0, try to kill the process 15688
+2025-07-08 11:27:47 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:27:47 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:00 - root - INFO - Try to stop Node id 2, its process id is 15544
+2025-07-08 11:28:00 - root - INFO - Node 2 is still running after 0, try to kill the process 15544
+2025-07-08 11:28:01 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:28:01 - root - INFO - stop logservice nodes
+2025-07-08 11:28:01 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:28:01 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:28:01 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:28:01 - root - INFO - Cleaning up resources
+2025-07-08 11:28:02 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:28:02 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:28:04 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:28:04 - root - INFO - Bootstrapping
+2025-07-08 11:28:09 - root - INFO - starting nodes
+2025-07-08 11:28:10 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:28:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:28:11 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:28:11 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:28:12 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:28:12 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:28:13 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:28:13 - root - INFO - connectted to node 1
+2025-07-08 11:28:13 - root - INFO - -------Testing data store migration recover-----------
+2025-07-08 11:28:26 - root - INFO - Unique id = cluster_id#aa468a84-5bee-11f0-ba76-5e570cda10a9
+2025-07-08 11:28:26 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:28:26 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:28:26 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:28:27 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:28:28 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:28:29 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:28:29 - root - INFO - waiting scale status, event cluster_id#aa468a84-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:28:30 - root - INFO - waiting scale status, event cluster_id#aa468a84-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:28:31 - root - INFO - waiting scale status, event cluster_id#aa468a84-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:28:49 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:29:08 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:29:08 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:29:09 - root - INFO - crash_reconnect begin, killed_id 0
+2025-07-08 11:29:13 - root - INFO - Used about 4s to find Node id 1 crashes
+2025-07-08 11:29:14 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:29:14 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:14 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:17 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:17 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:18 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:18 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:19 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:29:19 - root - INFO - crash_reconnect end, killed_id 0
+2025-07-08 11:30:20 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:30:20 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:30:21 - root - INFO - Unique id = cluster_id#eeca2aee-5bee-11f0-ba76-5e570cda10a9
+2025-07-08 11:30:21 - root - INFO - waiting scale status, event cluster_id#eeca2aee-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:30:22 - root - INFO - waiting scale status, event cluster_id#eeca2aee-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:30:23 - root - INFO - waiting scale status, event cluster_id#eeca2aee-5bee-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:30:24 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:30:24 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:30:24 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:30:24 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:30:24 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:30:24 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:30:24 - root - INFO - Try to stop Node id 1, its process id is 16407
+2025-07-08 11:30:24 - root - INFO - Node 1 is still running after 0, try to kill the process 16407
+2025-07-08 11:30:25 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:30:25 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:40 - root - INFO - Try to stop Node id 2, its process id is 16215
+2025-07-08 11:30:40 - root - INFO - Node 2 is still running after 0, try to kill the process 16215
+2025-07-08 11:30:41 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:30:41 - root - INFO - stop logservice nodes
+2025-07-08 11:30:41 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:30:41 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:30:41 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:30:41 - root - INFO - Cleaning up resources
+2025-07-08 11:30:42 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:30:42 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:30:43 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:30:43 - root - INFO - Bootstrapping
+2025-07-08 11:30:46 - root - INFO - starting nodes
+2025-07-08 11:30:47 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:30:47 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:30:48 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:30:48 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:30:49 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:30:49 - root - INFO - connectted to node 1
+2025-07-08 11:30:49 - root - INFO - -------Testing data store migration recover-----------
+2025-07-08 11:31:03 - root - INFO - Unique id = cluster_id#07d85c04-5bef-11f0-ba76-5e570cda10a9
+2025-07-08 11:31:03 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:31:03 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:31:03 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:31:04 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:31:05 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:31:06 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:31:06 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:31:07 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:31:07 - root - INFO - waiting scale status, event cluster_id#07d85c04-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:31:08 - root - INFO - waiting scale status, event cluster_id#07d85c04-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:31:09 - root - INFO - waiting scale status, event cluster_id#07d85c04-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:31:10 - root - INFO - waiting scale status, event cluster_id#07d85c04-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:31:36 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:32:08 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:32:08 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:32:09 - root - INFO - crash_reconnect begin, killed_id 0
+2025-07-08 11:32:12 - root - INFO - Used about 3s to find Node id 1 crashes
+2025-07-08 11:32:13 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:32:13 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:13 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:14 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:14 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:17 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:32:17 - root - INFO - crash_reconnect end, killed_id 0
+2025-07-08 11:33:50 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:33:50 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:33:51 - root - INFO - Unique id = cluster_id#6bf21e14-5bef-11f0-ba76-5e570cda10a9
+2025-07-08 11:33:51 - root - INFO - waiting scale status, event cluster_id#6bf21e14-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:33:52 - root - INFO - waiting scale status, event cluster_id#6bf21e14-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:33:53 - root - INFO - waiting scale status, event cluster_id#6bf21e14-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:33:54 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:33:54 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:33:54 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:33:54 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:33:54 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:33:54 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:33:54 - root - INFO - Try to stop Node id 1, its process id is 17075
+2025-07-08 11:33:54 - root - INFO - Node 1 is still running after 0, try to kill the process 17075
+2025-07-08 11:33:55 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:33:55 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:13 - root - INFO - Try to stop Node id 2, its process id is 16883
+2025-07-08 11:34:13 - root - INFO - Node 2 is still running after 0, try to kill the process 16883
+2025-07-08 11:34:14 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:34:14 - root - INFO - stop logservice nodes
+2025-07-08 11:34:14 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:34:15 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:34:15 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:34:15 - root - INFO - Cleaning up resources
+2025-07-08 11:34:16 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:34:16 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:34:17 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:34:17 - root - INFO - Bootstrapping
+2025-07-08 11:34:20 - root - INFO - starting nodes
+2025-07-08 11:34:21 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:34:21 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:34:21 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:34:22 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:34:22 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:34:23 - root - INFO - connectted to node 1
+2025-07-08 11:34:23 - root - INFO - -------Testing data store migration recover-----------
+2025-07-08 11:34:40 - root - INFO - Unique id = cluster_id#88df5da2-5bef-11f0-ba76-5e570cda10a9
+2025-07-08 11:34:40 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:34:40 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:34:40 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:34:41 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:34:42 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:34:42 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:34:43 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:34:43 - root - INFO - waiting scale status, event cluster_id#88df5da2-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:34:44 - root - INFO - waiting scale status, event cluster_id#88df5da2-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:34:45 - root - INFO - waiting scale status, event cluster_id#88df5da2-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:34:46 - root - INFO - waiting scale status, event cluster_id#88df5da2-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:34:47 - root - INFO - waiting scale status, event cluster_id#88df5da2-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:35:13 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:35:52 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:35:52 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:35:53 - root - INFO - crash_reconnect begin, killed_id 1
+2025-07-08 11:35:56 - root - INFO - Used about 3s to find Node id 2 crashes
+2025-07-08 11:35:57 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:35:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:35:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:35:58 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:35:58 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:35:59 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:35:59 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:36:00 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:36:00 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:36:01 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:36:01 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:36:02 - root - INFO - crash_reconnect end, killed_id 1
+2025-07-08 11:37:51 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:37:51 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:37:52 - root - INFO - Unique id = cluster_id#fbb0cf82-5bef-11f0-ba76-5e570cda10a9
+2025-07-08 11:37:52 - root - INFO - waiting scale status, event cluster_id#fbb0cf82-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:37:53 - root - INFO - waiting scale status, event cluster_id#fbb0cf82-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:37:54 - root - INFO - waiting scale status, event cluster_id#fbb0cf82-5bef-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:37:55 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:37:55 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:37:55 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:37:55 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:37:55 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:37:55 - root - INFO - Try to stop Node id 1, its process id is 17365
+2025-07-08 11:37:55 - root - INFO - Node 1 is still running after 0, try to kill the process 17365
+2025-07-08 11:37:56 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:37:56 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:17 - root - INFO - Try to stop Node id 2, its process id is 17690
+2025-07-08 11:38:17 - root - INFO - Node 2 is still running after 0, try to kill the process 17690
+2025-07-08 11:38:18 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:38:18 - root - INFO - stop logservice nodes
+2025-07-08 11:38:18 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:38:18 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:38:18 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:38:18 - root - INFO - Cleaning up resources
+2025-07-08 11:38:19 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:38:19 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:38:20 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:38:20 - root - INFO - Bootstrapping
+2025-07-08 11:38:22 - root - INFO - starting nodes
+2025-07-08 11:38:23 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-08 11:38:23 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:38:24 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:38:24 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:38:25 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7479. Connection refused.
+2025-07-08 11:38:25 - root - INFO - connectted to node 1
+2025-07-08 11:38:25 - root - INFO - -------Testing data store migration recover-----------
+2025-07-08 11:38:41 - root - INFO - Unique id = cluster_id#189ee75a-5bf0-11f0-ba76-5e570cda10a9
+2025-07-08 11:38:41 - root - INFO - Scale event has now reached cluster config stage. Starting new node-2...
+2025-07-08 11:38:41 - root - INFO - nodes = 2, new_nodes = 1, redis_port=7579,tx_port=17579
+2025-07-08 11:38:41 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-07-08 11:38:42 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:38:43 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:38:43 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:38:44 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-07-08 11:38:44 - root - INFO - waiting scale status, event cluster_id#189ee75a-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:38:45 - root - INFO - waiting scale status, event cluster_id#189ee75a-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:38:46 - root - INFO - waiting scale status, event cluster_id#189ee75a-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:38:47 - root - INFO - waiting scale status, event cluster_id#189ee75a-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:39:09 - root - INFO - Cluster scale add-node-2 is finished.
+2025-07-08 11:39:47 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:39:47 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:39:48 - root - INFO - crash_reconnect begin, killed_id 1
+2025-07-08 11:39:51 - root - INFO - Used about 3s to find Node id 2 crashes
+2025-07-08 11:39:52 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-08 11:39:52 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:52 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:53 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:53 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:54 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:54 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:55 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:55 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:56 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:56 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7579. Connection refused.
+2025-07-08 11:39:57 - root - INFO - crash_reconnect end, killed_id 1
+2025-07-08 11:41:45 - root - INFO - fault inject to DataStore node 1
+2025-07-08 11:41:45 - root - INFO - fault inject to DataStore node 2
+2025-07-08 11:41:46 - root - INFO - Unique id = cluster_id#871ccdfa-5bf0-11f0-ba76-5e570cda10a9
+2025-07-08 11:41:46 - root - INFO - waiting scale status, event cluster_id#871ccdfa-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:41:47 - root - INFO - waiting scale status, event cluster_id#871ccdfa-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:41:48 - root - INFO - waiting scale status, event cluster_id#871ccdfa-5bf0-11f0-ba76-5e570cda10a9, status 2, expect 3
+2025-07-08 11:41:49 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:41:49 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:41:49 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:41:49 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:41:49 - root - INFO - Closed connection to Redis server id: 1
+2025-07-08 11:41:49 - root - INFO - Try to stop Node id 1, its process id is 18033
+2025-07-08 11:41:49 - root - INFO - Node 1 is still running after 0, try to kill the process 18033
+2025-07-08 11:41:50 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-08 11:41:50 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:12 - root - INFO - Try to stop Node id 2, its process id is 18360
+2025-07-08 11:42:12 - root - INFO - Node 2 is still running after 0, try to kill the process 18360
+2025-07-08 11:42:13 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-08 11:42:13 - root - INFO - stop logservice nodes
+2025-07-08 11:42:13 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - Closed connection to Redis server id: 2
+2025-07-08 11:42:13 - root - INFO - nodes = 1, new_nodes = 1, redis_port=7479,tx_port=17479
+2025-07-08 11:42:13 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-07-08 11:42:13 - root - INFO - Cleaning up resources
+2025-07-08 11:42:14 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:42:14 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.
+2025-07-08 11:42:15 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-07-08 11:42:15 - root - INFO - Bootstrapping
+2025-07-08 11:42:17 - root - INFO - Cleaning up resources
+2025-07-08 11:42:18 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-07-08 11:42:18 - root - INFO - rocksdbcloud bucket#eloq-test-1751970527453 has been cleaned up.

@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/home/mono/workspace/eloqkv/cmake/install/lib
+/home/mono/workspace/eloqkv/cmake/install/bin/eloqkv --config=/tmp/build/dce06a3d/eloq_test_src/runtime/my_1.cnf --cmd_read_catalog=true --logtostderr=true &>> /tmp/build/dce06a3d/eloq_test_src/runtime/node1_log &

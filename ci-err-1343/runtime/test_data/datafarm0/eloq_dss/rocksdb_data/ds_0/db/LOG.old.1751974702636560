@@ -1,0 +1,321 @@
+2025/07/08-11:34:20.268037 17276 [cloud_fs_impl] NeedsReinitialization: checking local dir /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/ src bucket eloq-test-1751970527453 src path rocksdb_cloud dest bucket eloq-test-1751970527453 dest path rocksdb_cloud
+2025/07/08-11:34:20.268077 17276 [cloud_fs_impl] NeedsReinitialization: failed to find CLOUDMANIFEST file /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//CLOUDMANIFEST: NotFound: 
+2025/07/08-11:34:20.268081 17276 [cloud_fs_impl] SanitizeDirectory local directory /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/ cleanup needed
+2025/07/08-11:34:20.268247 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//IDENTITY'
+2025/07/08-11:34:20.268291 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//CLOUDMANIFEST-0-0'
+2025/07/08-11:34:20.268337 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//OPTIONS-000005'
+2025/07/08-11:34:20.268394 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//OPTIONS-000007'
+2025/07/08-11:34:20.268444 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//MANIFEST-7ef3052125841b3'
+2025/07/08-11:34:20.268483 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//CURRENT'
+2025/07/08-11:34:20.268511 17276 [cloud_fs_impl] SanitizeDirectory cleaned-up: '/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//000003.log'
+2025/07/08-11:34:20.273673 17329 [WARN] [aws] Encountered S3 failure No response body. (code 16, http 404). Exception . retry attempt 0 max retries 10. Using default retry policy...
+2025/07/08-11:34:20.273818 17276 [ERROR] [s3] DownloadFile eloq-test-1751970527453/rocksdb_cloud/IDENTITY error No response body..
+2025/07/08-11:34:20.273888 17276 [cloud_fs_impl] No valid dbs in src bucket eloq-test-1751970527453 src path rocksdb_cloud or dest bucket eloq-test-1751970527453 dest path rocksdb_cloud
+2025/07/08-11:34:20.275879 17330 [WARN] [aws] Encountered S3 failure No response body. (code 16, http 404). Exception . retry attempt 0 max retries 10. Using default retry policy...
+2025/07/08-11:34:20.275970 17276 [ERROR] [s3] DownloadFile eloq-test-1751970527453/rocksdb_cloud/CLOUDMANIFEST error No response body..
+2025/07/08-11:34:20.276013 17276 [cloud_fs_impl] FetchCloudManifest: No cloud manifest
+2025/07/08-11:34:20.276018 17276 CLOUDMANIFEST not found in the cloud, assuming this is a new database
+2025/07/08-11:34:20.284045 17276 RocksDB version: 9.1.1
+2025/07/08-11:34:20.284053 17276 Git sha f66f59a2aa71109814fa2517e8d55e3d5122c7e9
+2025/07/08-11:34:20.284056 17276 Compile date 2025-07-03 11:44:22
+2025/07/08-11:34:20.284059 17276 DB SUMMARY
+2025/07/08-11:34:20.284063 17276 Host name (Env):  3610aad3-1356-4e29-b9d8-500386bc38e9
+2025/07/08-11:34:20.284065 17276 DB Session ID:  SNU4Q3IZMK6811KAHEIA
+2025/07/08-11:34:20.286655 17276 SST files in /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/ dir, Total Num: 0, files: 
+2025/07/08-11:34:20.286663 17276 Write Ahead Log file in /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/: 
+2025/07/08-11:34:20.286667 17276                         Options.error_if_exists: 0
+2025/07/08-11:34:20.286669 17276                       Options.create_if_missing: 1
+2025/07/08-11:34:20.286672 17276                         Options.paranoid_checks: 1
+2025/07/08-11:34:20.286674 17276             Options.flush_verify_memtable_count: 1
+2025/07/08-11:34:20.286676 17276          Options.compaction_verify_record_count: 1
+2025/07/08-11:34:20.286678 17276                               Options.track_and_verify_wals_in_manifest: 0
+2025/07/08-11:34:20.286680 17276        Options.verify_sst_unique_id_in_manifest: 1
+2025/07/08-11:34:20.286682 17276                                     Options.env: 0x4d04616a020
+2025/07/08-11:34:20.286684 17276                                      Options.fs: aws
+2025/07/08-11:34:20.286687 17276                                Options.info_log: 0x4d04676a510
+2025/07/08-11:34:20.286689 17276                Options.max_file_opening_threads: 16
+2025/07/08-11:34:20.286691 17276                              Options.statistics: (nil)
+2025/07/08-11:34:20.286693 17276                               Options.use_fsync: 0
+2025/07/08-11:34:20.286695 17276                       Options.max_log_file_size: 0
+2025/07/08-11:34:20.286697 17276                  Options.max_manifest_file_size: 4194304
+2025/07/08-11:34:20.286699 17276                   Options.log_file_time_to_roll: 0
+2025/07/08-11:34:20.286701 17276                       Options.keep_log_file_num: 1000
+2025/07/08-11:34:20.286703 17276                    Options.recycle_log_file_num: 0
+2025/07/08-11:34:20.286705 17276                         Options.allow_fallocate: 1
+2025/07/08-11:34:20.286707 17276                        Options.allow_mmap_reads: 0
+2025/07/08-11:34:20.286709 17276                       Options.allow_mmap_writes: 0
+2025/07/08-11:34:20.286711 17276                        Options.use_direct_reads: 0
+2025/07/08-11:34:20.286713 17276                        Options.use_direct_io_for_flush_and_compaction: 0
+2025/07/08-11:34:20.286715 17276          Options.create_missing_column_families: 1
+2025/07/08-11:34:20.286717 17276                              Options.db_log_dir: 
+2025/07/08-11:34:20.286719 17276                                 Options.wal_dir: 
+2025/07/08-11:34:20.286721 17276                Options.table_cache_numshardbits: 6
+2025/07/08-11:34:20.286723 17276                         Options.WAL_ttl_seconds: 0
+2025/07/08-11:34:20.286725 17276                       Options.WAL_size_limit_MB: 0
+2025/07/08-11:34:20.286727 17276                        Options.max_write_batch_group_size_bytes: 1048576
+2025/07/08-11:34:20.286730 17276             Options.manifest_preallocation_size: 4194304
+2025/07/08-11:34:20.286732 17276                     Options.is_fd_close_on_exec: 1
+2025/07/08-11:34:20.286734 17276                   Options.advise_random_on_open: 1
+2025/07/08-11:34:20.286736 17276                    Options.db_write_buffer_size: 0
+2025/07/08-11:34:20.286738 17276                    Options.write_buffer_manager: 0x4d04615b900
+2025/07/08-11:34:20.286740 17276           Options.random_access_max_buffer_size: 1048576
+2025/07/08-11:34:20.286742 17276                      Options.use_adaptive_mutex: 0
+2025/07/08-11:34:20.286749 17276                            Options.rate_limiter: (nil)
+2025/07/08-11:34:20.286752 17276     Options.sst_file_manager.rate_bytes_per_sec: 0
+2025/07/08-11:34:20.286754 17276                       Options.wal_recovery_mode: 2
+2025/07/08-11:34:20.286756 17276                  Options.enable_thread_tracking: 0
+2025/07/08-11:34:20.286758 17276                  Options.enable_pipelined_write: 0
+2025/07/08-11:34:20.286760 17276                  Options.unordered_write: 1
+2025/07/08-11:34:20.286762 17276         Options.allow_concurrent_memtable_write: 1
+2025/07/08-11:34:20.286764 17276      Options.enable_write_thread_adaptive_yield: 1
+2025/07/08-11:34:20.286766 17276             Options.write_thread_max_yield_usec: 100
+2025/07/08-11:34:20.286768 17276            Options.write_thread_slow_yield_usec: 3
+2025/07/08-11:34:20.286770 17276                               Options.row_cache: None
+2025/07/08-11:34:20.286772 17276                              Options.wal_filter: None
+2025/07/08-11:34:20.286774 17276             Options.avoid_flush_during_recovery: 0
+2025/07/08-11:34:20.286784 17276             Options.allow_ingest_behind: 0
+2025/07/08-11:34:20.286786 17276             Options.two_write_queues: 0
+2025/07/08-11:34:20.286788 17276             Options.manual_wal_flush: 0
+2025/07/08-11:34:20.286790 17276             Options.wal_compression: 0
+2025/07/08-11:34:20.286792 17276             Options.atomic_flush: 1
+2025/07/08-11:34:20.286794 17276             Options.avoid_unnecessary_blocking_io: 0
+2025/07/08-11:34:20.286796 17276                 Options.persist_stats_to_disk: 0
+2025/07/08-11:34:20.286798 17276                 Options.write_dbid_to_manifest: 0
+2025/07/08-11:34:20.286800 17276                 Options.log_readahead_size: 0
+2025/07/08-11:34:20.286802 17276                 Options.file_checksum_gen_factory: Unknown
+2025/07/08-11:34:20.286804 17276                 Options.best_efforts_recovery: 0
+2025/07/08-11:34:20.286806 17276                Options.max_bgerror_resume_count: 2147483647
+2025/07/08-11:34:20.286808 17276            Options.bgerror_resume_retry_interval: 1000000
+2025/07/08-11:34:20.286810 17276             Options.allow_data_in_errors: 0
+2025/07/08-11:34:20.286812 17276            Options.disable_manifest_sync: 0
+2025/07/08-11:34:20.286814 17276             Options.db_host_id: __hostname__
+2025/07/08-11:34:20.286816 17276             Options.enforce_single_del_contracts: true
+2025/07/08-11:34:20.286818 17276    Options.disable_delete_obsolete_files_on_open: false
+2025/07/08-11:34:20.286820 17276               Options.max_num_replication_epochs: 100
+2025/07/08-11:34:20.286823 17276             Options.max_background_jobs: 4
+2025/07/08-11:34:20.286825 17276             Options.max_background_compactions: -1
+2025/07/08-11:34:20.286827 17276             Options.max_subcompactions: 1
+2025/07/08-11:34:20.286829 17276             Options.avoid_flush_during_shutdown: 0
+2025/07/08-11:34:20.286831 17276           Options.writable_file_max_buffer_size: 1048576
+2025/07/08-11:34:20.286833 17276             Options.delayed_write_rate : 16777216
+2025/07/08-11:34:20.286835 17276             Options.max_total_wal_size: 0
+2025/07/08-11:34:20.286837 17276             Options.delete_obsolete_files_period_micros: 21600000000
+2025/07/08-11:34:20.286839 17276                   Options.stats_dump_period_sec: 600
+2025/07/08-11:34:20.286841 17276                 Options.stats_persist_period_sec: 600
+2025/07/08-11:34:20.286843 17276                 Options.stats_history_buffer_size: 1048576
+2025/07/08-11:34:20.286845 17276                          Options.max_open_files: 20
+2025/07/08-11:34:20.286847 17276                          Options.bytes_per_sync: 0
+2025/07/08-11:34:20.286849 17276                      Options.wal_bytes_per_sync: 0
+2025/07/08-11:34:20.286851 17276                   Options.strict_bytes_per_sync: 0
+2025/07/08-11:34:20.286853 17276       Options.compaction_readahead_size: 2097152
+2025/07/08-11:34:20.286855 17276                  Options.max_background_flushes: -1
+2025/07/08-11:34:20.286861 17276 Options.daily_offpeak_time_utc: 00:00-05:00
+2025/07/08-11:34:20.286863 17276 Compression algorithms supported:
+2025/07/08-11:34:20.286865 17276 	kZSTDNotFinalCompression supported: 1
+2025/07/08-11:34:20.286868 17276 	kZSTD supported: 1
+2025/07/08-11:34:20.286870 17276 	kXpressCompression supported: 0
+2025/07/08-11:34:20.286872 17276 	kLZ4HCCompression supported: 1
+2025/07/08-11:34:20.286874 17276 	kLZ4Compression supported: 1
+2025/07/08-11:34:20.286876 17276 	kBZip2Compression supported: 1
+2025/07/08-11:34:20.286879 17276 	kZlibCompression supported: 1
+2025/07/08-11:34:20.286881 17276 	kSnappyCompression supported: 1
+2025/07/08-11:34:20.286884 17276 Fast CRC32 supported: Not supported on x86
+2025/07/08-11:34:20.286887 17276 DMutex implementation: pthread_mutex_t
+2025/07/08-11:34:20.286889 17276 Jemalloc supported: 0
+2025/07/08-11:34:20.302979 17276 [s3] PutCloudObject eloq-test-1751970527453/rocksdb_cloud/IDENTITY, size 36, OK
+2025/07/08-11:34:20.308596 17276 [eloq-test-1751970527453] Bucket aws SaveDbid dbid e67eb5e4-4a6f-4239-814a-9412ce841bf4 dirname rocksdb_cloud ok
+2025/07/08-11:34:20.311663 17276 [/db_impl/db_impl_open.cc:326] Creating manifest 1 
+2025/07/08-11:34:20.313973 17276 [WARN] [aws] Encountered S3 failure No response body. (code 16, http 404). Exception . retry attempt 0 max retries 10. Using default retry policy...
+2025/07/08-11:34:20.325829 17276 [s3] PutCloudObject eloq-test-1751970527453/rocksdb_cloud/MANIFEST-b0174e64f46773ee, size 13, OK
+2025/07/08-11:34:20.334905 17276 [/version_set.cc:6213] Recovering from manifest file: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/MANIFEST-000001
+2025/07/08-11:34:20.335005 17276 [/column_family.cc:626] --------------- Options for column family [default]:
+2025/07/08-11:34:20.335009 17276               Options.comparator: leveldb.BytewiseComparator
+2025/07/08-11:34:20.335012 17276           Options.merge_operator: None
+2025/07/08-11:34:20.335015 17276        Options.compaction_filter: TTLCompactionFilter
+2025/07/08-11:34:20.335017 17276        Options.compaction_filter_factory: None
+2025/07/08-11:34:20.335019 17276  Options.sst_partitioner_factory: None
+2025/07/08-11:34:20.335021 17276         Options.memtable_factory: SkipListFactory
+2025/07/08-11:34:20.335023 17276            Options.table_factory: BlockBasedTable
+2025/07/08-11:34:20.335063 17276            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x4d046e17f20)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 0x4d04615b0f0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 33554432
+    num_shard_bits : 6
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 6
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2025/07/08-11:34:20.335066 17276        Options.write_buffer_size: 67108864
+2025/07/08-11:34:20.335069 17276  Options.max_write_buffer_number: 8
+2025/07/08-11:34:20.335071 17276          Options.compression: Snappy
+2025/07/08-11:34:20.335074 17276                  Options.bottommost_compression: Disabled
+2025/07/08-11:34:20.335076 17276       Options.prefix_extractor: nullptr
+2025/07/08-11:34:20.335078 17276   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2025/07/08-11:34:20.335080 17276             Options.num_levels: 7
+2025/07/08-11:34:20.335082 17276        Options.min_write_buffer_number_to_merge: 1
+2025/07/08-11:34:20.335084 17276     Options.max_write_buffer_number_to_maintain: 0
+2025/07/08-11:34:20.335087 17276     Options.max_write_buffer_size_to_maintain: 0
+2025/07/08-11:34:20.335089 17276            Options.bottommost_compression_opts.window_bits: -14
+2025/07/08-11:34:20.335091 17276                  Options.bottommost_compression_opts.level: 32767
+2025/07/08-11:34:20.335093 17276               Options.bottommost_compression_opts.strategy: 0
+2025/07/08-11:34:20.335109 17276         Options.bottommost_compression_opts.max_dict_bytes: 0
+2025/07/08-11:34:20.335111 17276         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2025/07/08-11:34:20.335113 17276         Options.bottommost_compression_opts.parallel_threads: 1
+2025/07/08-11:34:20.335115 17276                  Options.bottommost_compression_opts.enabled: false
+2025/07/08-11:34:20.335118 17276         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2025/07/08-11:34:20.335120 17276         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2025/07/08-11:34:20.335122 17276            Options.compression_opts.window_bits: -14
+2025/07/08-11:34:20.335124 17276                  Options.compression_opts.level: 32767
+2025/07/08-11:34:20.335126 17276               Options.compression_opts.strategy: 0
+2025/07/08-11:34:20.335129 17276         Options.compression_opts.max_dict_bytes: 0
+2025/07/08-11:34:20.335131 17276         Options.compression_opts.zstd_max_train_bytes: 0
+2025/07/08-11:34:20.335133 17276         Options.compression_opts.use_zstd_dict_trainer: true
+2025/07/08-11:34:20.335135 17276         Options.compression_opts.parallel_threads: 1
+2025/07/08-11:34:20.335137 17276                  Options.compression_opts.enabled: false
+2025/07/08-11:34:20.335139 17276         Options.compression_opts.max_dict_buffer_bytes: 0
+2025/07/08-11:34:20.335141 17276      Options.level0_file_num_compaction_trigger: 4
+2025/07/08-11:34:20.335143 17276          Options.level0_slowdown_writes_trigger: 20
+2025/07/08-11:34:20.335145 17276              Options.level0_stop_writes_trigger: 36
+2025/07/08-11:34:20.335147 17276                   Options.target_file_size_base: 67108864
+2025/07/08-11:34:20.335150 17276             Options.target_file_size_multiplier: 1
+2025/07/08-11:34:20.335152 17276                Options.max_bytes_for_level_base: 268435456
+2025/07/08-11:34:20.335154 17276 Options.level_compaction_dynamic_level_bytes: 1
+2025/07/08-11:34:20.335156 17276          Options.max_bytes_for_level_multiplier: 10.000000
+2025/07/08-11:34:20.335159 17276 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2025/07/08-11:34:20.335161 17276 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2025/07/08-11:34:20.335164 17276 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2025/07/08-11:34:20.335166 17276 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2025/07/08-11:34:20.335168 17276 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2025/07/08-11:34:20.335170 17276 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2025/07/08-11:34:20.335172 17276 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2025/07/08-11:34:20.335174 17276       Options.max_sequential_skip_in_iterations: 8
+2025/07/08-11:34:20.335176 17276                    Options.max_compaction_bytes: 1677721600
+2025/07/08-11:34:20.335178 17276                        Options.arena_block_size: 1048576
+2025/07/08-11:34:20.335180 17276   Options.soft_pending_compaction_bytes_limit: 68719476736
+2025/07/08-11:34:20.335182 17276   Options.hard_pending_compaction_bytes_limit: 274877906944
+2025/07/08-11:34:20.335185 17276                Options.disable_auto_compactions: 0
+2025/07/08-11:34:20.335187 17276                        Options.compaction_style: kCompactionStyleLevel
+2025/07/08-11:34:20.335190 17276                          Options.compaction_pri: kMinOverlappingRatio
+2025/07/08-11:34:20.335192 17276 Options.compaction_options_universal.size_ratio: 1
+2025/07/08-11:34:20.335194 17276 Options.compaction_options_universal.min_merge_width: 2
+2025/07/08-11:34:20.335197 17276 Options.compaction_options_universal.max_merge_width: 4294967295
+2025/07/08-11:34:20.335199 17276 Options.compaction_options_universal.max_size_amplification_percent: 200
+2025/07/08-11:34:20.335201 17276 Options.compaction_options_universal.compression_size_percent: -1
+2025/07/08-11:34:20.335203 17276 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2025/07/08-11:34:20.335205 17276 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2025/07/08-11:34:20.335207 17276 Options.compaction_options_fifo.allow_compaction: 0
+2025/07/08-11:34:20.335215 17276                   Options.table_properties_collectors: 
+2025/07/08-11:34:20.335217 17276                   Options.inplace_update_support: 0
+2025/07/08-11:34:20.335219 17276                 Options.inplace_update_num_locks: 10000
+2025/07/08-11:34:20.335221 17276               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2025/07/08-11:34:20.335224 17276               Options.memtable_whole_key_filtering: 0
+2025/07/08-11:34:20.335226 17276   Options.memtable_huge_page_size: 0
+2025/07/08-11:34:20.335228 17276                           Options.bloom_locality: 0
+2025/07/08-11:34:20.335230 17276                    Options.max_successive_merges: 0
+2025/07/08-11:34:20.335232 17276             Options.strict_max_successive_merges: 0
+2025/07/08-11:34:20.335234 17276                Options.optimize_filters_for_hits: 0
+2025/07/08-11:34:20.335236 17276                Options.paranoid_file_checks: 0
+2025/07/08-11:34:20.335238 17276                Options.force_consistency_checks: 1
+2025/07/08-11:34:20.335240 17276                Options.report_bg_io_stats: 0
+2025/07/08-11:34:20.335242 17276                               Options.ttl: 2592000
+2025/07/08-11:34:20.335244 17276          Options.periodic_compaction_seconds: 86400
+2025/07/08-11:34:20.335247 17276                        Options.default_temperature: kUnknown
+2025/07/08-11:34:20.335249 17276  Options.preclude_last_level_data_seconds: 0
+2025/07/08-11:34:20.335251 17276    Options.preserve_internal_time_seconds: 0
+2025/07/08-11:34:20.335253 17276                       Options.enable_blob_files: false
+2025/07/08-11:34:20.335255 17276                           Options.min_blob_size: 0
+2025/07/08-11:34:20.335257 17276                          Options.blob_file_size: 268435456
+2025/07/08-11:34:20.335259 17276                   Options.blob_compression_type: NoCompression
+2025/07/08-11:34:20.335261 17276          Options.enable_blob_garbage_collection: false
+2025/07/08-11:34:20.335263 17276      Options.blob_garbage_collection_age_cutoff: 0.250000
+2025/07/08-11:34:20.335266 17276 Options.blob_garbage_collection_force_threshold: 1.000000
+2025/07/08-11:34:20.335268 17276          Options.blob_compaction_readahead_size: 0
+2025/07/08-11:34:20.335270 17276                      Options.disable_auto_flush: 0
+2025/07/08-11:34:20.335272 17276                     Options.disable_write_stall: 0
+2025/07/08-11:34:20.335274 17276                Options.blob_file_starting_level: 0
+2025/07/08-11:34:20.335276 17276         Options.experimental_mempurge_threshold: 0.000000
+2025/07/08-11:34:20.335279 17276            Options.memtable_max_range_deletions: 0
+2025/07/08-11:34:20.338054 17276 [/version_set.cc:6256] Recovered from manifest file:/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2025/07/08-11:34:20.338065 17276 [/version_set.cc:6271] Column family [default] (ID 0), log number is 0, next epoch number is 1
+2025/07/08-11:34:20.338122 17276 [/db_impl/db_impl_open.cc:653] DB ID: e67eb5e4-4a6f-4239-814a-9412ce841bf4
+2025/07/08-11:34:20.358486 17276 [/db_impl/db_impl_open.cc:2212] SstFileManager instance 0x4d04737a480
+2025/07/08-11:34:20.363121 17276 DB pointer 0x4d046ac5400
+2025/07/08-11:34:20.370118 17276 [s3] PutCloudObject eloq-test-1751970527453/rocksdb_cloud/CLOUDMANIFEST-0-0, size 34, OK
+2025/07/08-11:34:20.370137 17276 Opened cloud db with local dir /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db/ dbid e67eb5e4-4a6f-4239-814a-9412ce841bf4. OK
+2025/07/08-11:34:20.370314 17357 WarmUp: start to fetch file from cloud storage
+2025/07/08-11:34:20.370330 17357 WarmUp: stop to fetch file from cloud storage
+2025/07/08-11:34:20.380849 17276 [/db_impl/db_impl.cc:2017] SetDBOptions(), inputs:
+2025/07/08-11:34:20.380857 17276 [/db_impl/db_impl.cc:2019] max_open_files: -1
+2025/07/08-11:34:20.380860 17276 [/db_impl/db_impl.cc:2023] SetDBOptions() succeeded
+2025/07/08-11:34:20.380863 17276             Options.max_background_jobs: 4
+2025/07/08-11:34:20.380865 17276             Options.max_background_compactions: -1
+2025/07/08-11:34:20.380867 17276             Options.max_subcompactions: 1
+2025/07/08-11:34:20.380869 17276             Options.avoid_flush_during_shutdown: 0
+2025/07/08-11:34:20.380871 17276           Options.writable_file_max_buffer_size: 1048576
+2025/07/08-11:34:20.380874 17276             Options.delayed_write_rate : 16777216
+2025/07/08-11:34:20.380876 17276             Options.max_total_wal_size: 0
+2025/07/08-11:34:20.380878 17276             Options.delete_obsolete_files_period_micros: 21600000000
+2025/07/08-11:34:20.380880 17276                   Options.stats_dump_period_sec: 600
+2025/07/08-11:34:20.380882 17276                 Options.stats_persist_period_sec: 600
+2025/07/08-11:34:20.380885 17276                 Options.stats_history_buffer_size: 1048576
+2025/07/08-11:34:20.380887 17276                          Options.max_open_files: -1
+2025/07/08-11:34:20.380889 17276                          Options.bytes_per_sync: 1048576
+2025/07/08-11:34:20.380891 17276                      Options.wal_bytes_per_sync: 0
+2025/07/08-11:34:20.380893 17276                   Options.strict_bytes_per_sync: 0
+2025/07/08-11:34:20.380895 17276       Options.compaction_readahead_size: 2097152
+2025/07/08-11:34:20.380897 17276                  Options.max_background_flushes: -1
+2025/07/08-11:34:20.380899 17276 Options.daily_offpeak_time_utc: 00:00-05:00
+2025/07/08-11:34:20.390082 17312 [/db_impl/db_impl_compaction_flush.cc:1984] [default] Manual flush start.
+2025/07/08-11:34:20.390125 17312 [/db_impl/db_impl_write.cc:2376] [default] New memtable created with log file: #3. Immutable memtables: 0.
+2025/07/08-11:34:20.390414 17291 (Original Log Time 2025/07/08-11:34:20.390276) [/db_impl/db_impl_compaction_flush.cc:3278] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2025/07/08-11:34:20.390423 17291 [/flush_job.cc:896] [default] [JOB 2] Flushing memtable with next log file: 3, replication sequence (hex) 
+2025/07/08-11:34:20.390464 17291 EVENT_LOG_v1 {"time_micros": 1751974460390442, "job": 2, "event": "flush_started", "num_memtables": 1, "num_entries": 17, "num_deletes": 0, "total_data_size": 1023, "memory_usage": 2192, "num_range_deletes": 0, "flush_reason": "Manual Flush"}
+2025/07/08-11:34:20.390469 17291 [/flush_job.cc:933] [default] [JOB 2] Level-0 flush table #8: started. Epoch number: 1
+2025/07/08-11:34:20.402493 17291 [s3] PutCloudObject eloq-test-1751970527453/rocksdb_cloud/000008.sst-b0174e64f46773ee, size 1341, OK
+2025/07/08-11:34:20.402550 17291 [aws] FileCache /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//000008.sst-b0174e64f46773ee insert cache-used 1533/21474836480(0%) bytes
+2025/07/08-11:34:20.402987 17291 EVENT_LOG_v1 {"time_micros": 1751974460402922, "cf_name": "default", "job": 2, "event": "table_file_creation", "file_number": 8, "file_size": 1341, "file_checksum": "", "file_checksum_func_name": "Unknown", "smallest_seqno": 1, "largest_seqno": 17, "table_properties": {"data_size": 261, "index_size": 47, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 639, "raw_average_key_size": 37, "raw_value_size": 350, "raw_average_value_size": 20, "num_data_blocks": 1, "num_entries": 17, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "user_defined_timestamps_persisted": 1, "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; use_zstd_dict_trainer=1; ", "creation_time": 1751974460, "oldest_key_time": 1751974460, "file_creation_time": 1751974460, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "e67eb5e4-4a6f-4239-814a-9412ce841bf4", "db_session_id": "SNU4Q3IZMK6811KAHEIA", "orig_file_number": 8, "seqno_to_time_mapping": "N/A"}}
+2025/07/08-11:34:20.403200 17291 [/flush_job.cc:1071] [default] [JOB 2] Flush lasted 12827 microseconds, and 1250 cpu microseconds.
+2025/07/08-11:34:20.406288 17291 [/version_set.cc:5672] Creating manifest 9
+2025/07/08-11:34:20.421346 17291 [s3] PutCloudObject eloq-test-1751970527453/rocksdb_cloud/MANIFEST-b0174e64f46773ee, size 225, OK
+2025/07/08-11:34:20.429563 17291 (Original Log Time 2025/07/08-11:34:20.403178) [/flush_job.cc:1020] [default] [JOB 2] Level-0 flush table #8: 1341 bytes OK
+2025/07/08-11:34:20.429569 17291 (Original Log Time 2025/07/08-11:34:20.403223) EVENT_LOG_v1 {"time_micros": 1751974460403215, "job": 2, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [0, 0, 0, 0, 0, 0, 0], "immutable_memtables": 1}
+2025/07/08-11:34:20.429573 17291 (Original Log Time 2025/07/08-11:34:20.429444) [/memtable_list.cc:967] [default] Level-0 commit table #8: memtable #1 done
+2025/07/08-11:34:20.429576 17291 (Original Log Time 2025/07/08-11:34:20.429492) [/db_impl/db_impl_compaction_flush.cc:859] [default] Level summary: files[1 0 0 0 0 0 0] max score 0.25, estimated pending compaction bytes 0
+2025/07/08-11:34:20.429628 17312 [/db_impl/db_impl_compaction_flush.cc:1994] [default] Manual flush finished, status: OK
+2025/07/08-11:34:20.439150 17276 [/db_impl/db_impl.cc:499] Shutdown: canceling all background work
+2025/07/08-11:34:20.441697 17276 [/db_impl/db_impl.cc:693] Shutdown complete
+2025/07/08-11:34:20.441900 17276 [cloud] CloudFileSystemImpl::~CloudFileSystemImpl: Destroying CloudFileSystemImpl
+2025/07/08-11:34:20.441994 17276 [cloud] FileCache /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0/db//000008.sst-b0174e64f46773ee purged cache-used 0/21474836480(0%) bytes
+2025/07/08-11:34:20.442001 17276 [cloud] FileCache ENV-DELETE purged cache-used 0/21474836480(0%) bytes
+2025/07/08-11:34:20.442004 17276 [cloud] CloudFileSystemImpl::~CloudFileSystemImpl: Cancelling all scheduled file deletions, cloud_file_deletion_scheduler_: 0x4d046718050, size: 1
+2025/07/08-11:34:20.442008 17276 [CloudFileDeletionScheduler] CloudFileDeletionScheduler::CancelAllJobs: Cancelling all scheduled jobs, size: 0, schduler_.use_count: 1

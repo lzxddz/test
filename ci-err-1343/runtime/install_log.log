@@ -1,0 +1,794 @@
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:10:45.283955 I 13411] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:10:45.286175 I 13411] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:10:45.286556 I 13411] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:10:45.302342 I 13411] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:10:45.302402 I 13411] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:10:45.308072 I 13411] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:10:45.308173 I 13411] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:10:45.311830 I 13411] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:10:45.315410 I 13411] [log_instance.h:221] starting log_state
+[2025-07-08T11:10:45.315699 I 13411] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:10:45.356810 I 13411] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:10:45.356905 I 13411] [log_instance.h:247] initializing raft node
+[2025-07-08T11:10:45.356961 I 13411] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:10:45.357616 I 13411] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:10:45.357681 W 13411] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:10:45.357697 W 13411] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log is empty
+[2025-07-08T11:10:45.358035 I 13443] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:10:45.361088 I 13411] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 3358
+[2025-07-08T11:10:45.361435 W 13411] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-08T11:10:45.361495 I 13411] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 38
+[2025-07-08T11:10:45.361537 I 13411] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:10:45.361598 I 13411] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 1 start vote and grant vote self
+[2025-07-08T11:10:45.364926 I 13411] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 2 votedfor 127.0.0.1:17481:0:0 time: 3279
+[2025-07-08T11:10:45.364970 I 13411] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 2 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:10:45.366314 I 13424] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_inprogress_00000000000000000001' with fd=27
+[2025-07-08T11:10:45.370689 I 13424] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:10:45.370746 I 13424] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-08T11:10:45.370828 I 13424] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:10:45.370844 I 13424] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:10:45.370921 I 13444] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:10:45.370961 I 13444] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:10:45.370975 I 13444] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:10:45.373487 I 13411] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:10:45.373528 I 13411] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:10:45.374007 I 13411] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:10:45.406636 I 13411] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:10:47.430030 I 13411] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:10:47.430083 I 13411] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-08T11:10:47.430105 I 13411] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:10:47.553267 I 13411] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 123 ms
+[2025-07-08T11:10:47.565554 I 13411] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:10:47.567679 I 13411] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:10:47.567716 I 13411] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:10:47.567731 I 13411] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:10:47.567899 I 13411] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:10:47.636328 I 13411] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:10:47.636399 I 13411] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:10:47.636418 I 13411] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:10:47.637959 I 13411] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:10:47.643513 I 13411] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:10:47.643654 I 13411] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:10:47.643674 I 13411] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:10:47.643687 I 13411] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:10:47.643697 I 13411] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:10:47.644513 I 13411] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:10:47.646358 I 13411] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:10:47.646492 I 13411] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:10:47.646507 I 13411] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:10:47.646714 I 13411] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 2 state LEADER
+[2025-07-08T11:10:47.646785 I 13411] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:10:47.646787 I 13424] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:10:47.647070 I 13411] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 2 state SHUTDOWN
+[2025-07-08T11:10:47.647100 I 13411] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 2 state SHUTDOWN
+[2025-07-08T11:10:47.654651 I 13411] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:10:47.662586 I 13411] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:10:54.862512 I 13690] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:10:54.863829 I 13690] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:10:54.867769 I 13690] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:10:54.892423 I 13690] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:10:54.892463 I 13690] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:10:54.911114 I 13690] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:10:54.911209 I 13690] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:10:54.919996 I 13690] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:10:54.920048 I 13690] [log_instance.h:221] starting log_state
+[2025-07-08T11:10:54.920094 I 13690] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:10:54.962044 I 13690] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:10:54.962148 I 13690] [log_instance.h:247] initializing raft node
+[2025-07-08T11:10:54.962208 I 13690] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:10:54.962764 I 13690] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:10:54.962883 I 13690] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 91
+[2025-07-08T11:10:54.962945 I 13690] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:10:54.963229 I 13690] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 2 votedfor 127.0.0.1:17481:0:0 time: 21
+[2025-07-08T11:10:54.963267 I 13690] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 2 last_log_id: (index=1,term=2) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:10:54.963327 I 13690] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 2 start vote and grant vote self
+[2025-07-08T11:10:54.964455 I 13722] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:10:54.973766 I 13690] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 3 votedfor 127.0.0.1:17481:0:0 time: 6333
+[2025-07-08T11:10:54.973829 I 13690] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 3 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:10:54.977289 I 13690] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:10:54.977622 I 13703] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:10:54.977664 I 13703] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 3, leader lease valid? yes
+[2025-07-08T11:10:54.977725 I 13703] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:10:54.977746 I 13703] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:10:54.977331 I 13690] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:10:54.979211 I 13690] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:10:54.979333 I 13690] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:10:54.979362 I 13690] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:10:54.983485 I 13724] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:10:54.983533 I 13724] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:10:54.983546 I 13724] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:10:54.996034 I 13690] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:10:57.030516 I 13690] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:10:57.030568 I 13690] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-08T11:10:57.030588 I 13690] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:10:57.118779 I 13690] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 88 ms
+[2025-07-08T11:10:57.140651 I 13690] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:10:57.142596 I 13690] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:10:57.142630 I 13690] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:10:57.142643 I 13690] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:10:57.142788 I 13690] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:10:57.192456 I 13690] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:10:57.192502 I 13690] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:10:57.192516 I 13690] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:10:57.197760 I 13690] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:10:57.200126 I 13690] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:10:57.200258 I 13690] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:10:57.200278 I 13690] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:10:57.200290 I 13690] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:10:57.200301 I 13690] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:10:57.201143 I 13690] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:10:57.206439 I 13690] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:10:57.206476 I 13690] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:10:57.206490 I 13690] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:10:57.206722 I 13690] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 3 state LEADER
+[2025-07-08T11:10:57.206804 I 13690] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:10:57.206859 I 13703] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:10:57.209534 I 13690] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 3 state SHUTDOWN
+[2025-07-08T11:10:57.209573 I 13690] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 3 state SHUTDOWN
+[2025-07-08T11:10:57.211935 I 13690] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:10:57.220285 I 13690] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:15:15.914806 I 14155] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:15:15.918928 I 14155] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:15:15.919281 I 14155] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:15:15.931955 I 14155] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:15:15.931994 I 14155] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:15:15.938366 I 14155] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:15:15.951714 I 14155] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:15:15.959955 I 14155] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:15:15.975019 I 14155] [log_instance.h:221] starting log_state
+[2025-07-08T11:15:15.975116 I 14155] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:15:16.032488 I 14155] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:15:16.032605 I 14155] [log_instance.h:247] initializing raft node
+[2025-07-08T11:15:16.032678 I 14155] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:15:16.032858 I 14187] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:15:16.033267 I 14155] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:15:16.033394 I 14155] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 102
+[2025-07-08T11:15:16.033464 I 14155] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:15:16.033648 I 14155] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:15:16.033812 I 14155] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 3 votedfor 127.0.0.1:17481:0:0 time: 26
+[2025-07-08T11:15:16.033849 I 14155] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 3 last_log_id: (index=2,term=3) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:15:16.033914 I 14155] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 3 start vote and grant vote self
+[2025-07-08T11:15:16.040254 I 14155] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 4 votedfor 127.0.0.1:17481:0:0 time: 4689
+[2025-07-08T11:15:16.040318 I 14155] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 4 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:15:16.045120 I 14155] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:15:16.045166 I 14155] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:15:16.057613 I 14155] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:15:16.057755 I 14155] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:15:16.057799 I 14155] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:15:16.060606 I 14168] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:15:16.060684 I 14168] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 4, leader lease valid? yes
+[2025-07-08T11:15:16.060771 I 14168] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:15:16.060787 I 14168] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:15:16.060863 I 14189] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:15:16.060904 I 14189] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:15:16.060916 I 14189] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:15:16.075337 I 14155] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:15:18.098452 I 14155] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:15:18.098505 I 14155] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-08T11:15:18.098524 I 14155] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:15:18.206416 I 14155] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 107 ms
+[2025-07-08T11:15:18.219650 I 14155] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:15:18.225052 I 14155] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:15:18.225097 I 14155] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:15:18.225112 I 14155] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:15:18.225275 I 14155] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:15:18.260766 I 14155] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:15:18.260811 I 14155] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:15:18.260825 I 14155] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:15:18.265322 I 14155] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:15:18.267794 I 14155] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:15:18.267925 I 14155] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:15:18.267944 I 14155] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:15:18.267954 I 14155] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:15:18.267964 I 14155] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:15:18.268724 I 14155] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:15:18.274473 I 14155] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:15:18.275712 I 14155] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:15:18.275740 I 14155] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:15:18.276995 I 14155] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 4 state LEADER
+[2025-07-08T11:15:18.277084 I 14155] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:15:18.277136 I 14168] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:15:18.277401 I 14155] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 4 state SHUTDOWN
+[2025-07-08T11:15:18.277434 I 14155] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 4 state SHUTDOWN
+[2025-07-08T11:15:18.279546 I 14155] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:15:18.284358 I 14155] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:20:14.548833 I 14640] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:20:14.550287 I 14640] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:20:14.550763 I 14640] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:20:14.563505 I 14640] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:20:14.563539 I 14640] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:20:14.567909 I 14640] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:20:14.571620 I 14640] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:20:14.574406 I 14640] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:20:14.574441 I 14640] [log_instance.h:221] starting log_state
+[2025-07-08T11:20:14.574492 I 14640] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:20:15.398463 I 14640] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:20:15.398578 I 14640] [log_instance.h:247] initializing raft node
+[2025-07-08T11:20:15.398654 I 14640] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:20:15.398820 I 14682] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:20:15.399207 I 14640] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:20:15.408828 I 14640] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 9584
+[2025-07-08T11:20:15.428850 I 14640] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:20:15.436585 I 14640] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:20:15.445825 I 14640] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 4 votedfor 127.0.0.1:17481:0:0 time: 62
+[2025-07-08T11:20:15.445901 I 14640] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 4 last_log_id: (index=3,term=4) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:20:15.445978 I 14640] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 4 start vote and grant vote self
+[2025-07-08T11:20:15.514468 I 14640] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 5 votedfor 127.0.0.1:17481:0:0 time: 65540
+[2025-07-08T11:20:15.514549 I 14640] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 5 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:20:15.522332 I 14640] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:20:15.557868 I 14640] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:20:15.558715 I 14640] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:20:15.558881 I 14640] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:20:15.558913 I 14640] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:20:15.582508 I 14652] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:20:15.582581 I 14652] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 5, leader lease valid? yes
+[2025-07-08T11:20:15.582653 I 14652] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:20:15.582669 I 14652] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:20:15.582739 I 14684] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:20:15.582782 I 14684] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:20:15.582795 I 14684] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:20:15.601213 I 14640] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:20:18.656579 I 14640] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:20:18.656631 I 14640] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-08T11:20:18.656649 I 14640] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:20:18.766475 I 14640] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 109 ms
+[2025-07-08T11:20:18.784456 I 14640] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:20:18.786549 I 14640] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:20:18.786585 I 14640] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:20:18.786600 I 14640] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:20:18.786749 I 14640] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:20:18.872745 I 14640] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:20:18.872788 I 14640] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:20:18.872802 I 14640] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:20:18.874773 I 14640] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:20:18.879433 I 14640] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:20:18.879562 I 14640] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:20:18.879578 I 14640] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:20:18.879590 I 14640] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:20:18.879599 I 14640] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:20:18.880391 I 14640] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:20:18.884588 I 14640] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:20:18.884621 I 14640] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:20:18.884634 I 14640] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:20:18.884822 I 14640] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 5 state LEADER
+[2025-07-08T11:20:18.884900 I 14653] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:20:18.884902 I 14640] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:20:18.885226 I 14640] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 5 state SHUTDOWN
+[2025-07-08T11:20:18.885248 I 14640] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 5 state SHUTDOWN
+[2025-07-08T11:20:18.886508 I 14640] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:20:18.898173 I 14640] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:24:34.579196 I 15320] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:24:34.581076 I 15320] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:24:34.581403 I 15320] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:24:34.604954 I 15320] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:24:34.604993 I 15320] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:24:34.609175 I 15320] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:24:34.609251 I 15320] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:24:34.612928 I 15320] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:24:34.612967 I 15320] [log_instance.h:221] starting log_state
+[2025-07-08T11:24:34.613009 I 15320] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:24:34.638631 I 15320] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:24:34.638734 I 15320] [log_instance.h:247] initializing raft node
+[2025-07-08T11:24:34.638790 I 15320] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:24:34.638981 I 15352] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:24:34.639364 I 15320] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:24:34.639490 I 15320] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 83
+[2025-07-08T11:24:34.639550 I 15320] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:24:34.639735 I 15320] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:24:34.639878 I 15320] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 5 votedfor 127.0.0.1:17481:0:0 time: 24
+[2025-07-08T11:24:34.639911 I 15320] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 5 last_log_id: (index=4,term=5) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:24:34.639971 I 15320] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 5 start vote and grant vote self
+[2025-07-08T11:24:34.646219 I 15320] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 6 votedfor 127.0.0.1:17481:0:0 time: 3772
+[2025-07-08T11:24:34.646270 I 15320] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 6 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:24:34.649844 I 15320] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:24:34.650791 I 15320] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:24:34.651297 I 15320] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:24:34.651430 I 15320] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:24:34.651461 I 15320] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:24:34.658576 I 15333] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:24:34.658632 I 15333] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 6, leader lease valid? yes
+[2025-07-08T11:24:34.658710 I 15333] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:24:34.658722 I 15333] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:24:34.658795 I 15354] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:24:34.658847 I 15354] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:24:34.658860 I 15354] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:24:34.675220 I 15320] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:24:36.699659 I 15320] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:24:36.699719 I 15320] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 2 ms
+[2025-07-08T11:24:36.699738 I 15320] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:24:36.779439 I 15320] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 79 ms
+[2025-07-08T11:24:36.788249 I 15320] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:24:36.790205 I 15320] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:24:36.790238 I 15320] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:24:36.790251 I 15320] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:24:36.790406 I 15320] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:24:36.834909 I 15320] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:24:36.834951 I 15320] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:24:36.834967 I 15320] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:24:36.836560 I 15320] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:24:36.839012 I 15320] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:24:36.839138 I 15320] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:24:36.839159 I 15320] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:24:36.839171 I 15320] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:24:36.839183 I 15320] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:24:36.839991 I 15320] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:24:36.841965 I 15320] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:24:36.841995 I 15320] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:24:36.842006 I 15320] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:24:36.842228 I 15320] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 6 state LEADER
+[2025-07-08T11:24:36.842308 I 15320] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:24:36.842399 I 15332] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:24:36.843653 I 15320] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 6 state SHUTDOWN
+[2025-07-08T11:24:36.843691 I 15320] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 6 state SHUTDOWN
+[2025-07-08T11:24:36.846238 I 15320] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:24:36.852329 I 15320] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:28:04.309754 I 15966] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:28:04.311002 I 15966] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:28:04.311312 I 15966] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:28:04.321712 I 15966] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:28:04.321736 I 15966] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:28:04.324510 I 15966] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:28:04.324566 I 15966] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:28:04.327239 I 15966] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:28:04.327275 I 15966] [log_instance.h:221] starting log_state
+[2025-07-08T11:28:04.327328 I 15966] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:28:05.893234 I 15966] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:28:05.893352 I 15966] [log_instance.h:247] initializing raft node
+[2025-07-08T11:28:05.893435 I 15966] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:28:05.893631 I 16013] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:28:05.894055 I 15966] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:28:05.894174 I 15966] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 91
+[2025-07-08T11:28:05.894237 I 15966] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:28:05.894486 I 15966] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:28:05.894644 I 15966] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 6 votedfor 127.0.0.1:17481:0:0 time: 24
+[2025-07-08T11:28:05.894682 I 15966] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 6 last_log_id: (index=5,term=6) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:28:05.894747 I 15966] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 6 start vote and grant vote self
+[2025-07-08T11:28:06.352982 I 15966] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 7 votedfor 127.0.0.1:17481:0:0 time: 457627
+[2025-07-08T11:28:06.353072 I 15966] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 7 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:28:06.356840 I 15966] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:28:06.356891 I 15966] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:28:06.357367 I 15966] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:28:06.357522 I 15966] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:28:06.357550 I 15966] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:28:06.368966 I 15966] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:28:06.440780 I 15978] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:28:06.440850 I 15978] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 7, leader lease valid? yes
+[2025-07-08T11:28:06.440994 I 15978] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:28:06.441008 I 15978] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:28:06.441550 I 16035] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:28:06.441578 I 16035] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:28:06.441591 I 16035] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:28:08.392568 I 15966] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:28:08.539127 I 15966] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 147 ms
+[2025-07-08T11:28:08.539184 I 15966] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:28:09.628144 I 15966] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 1088 ms
+[2025-07-08T11:28:09.643580 I 15966] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:28:09.646720 I 15966] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:28:09.646759 I 15966] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:28:09.646775 I 15966] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:28:09.646930 I 15966] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:28:09.690469 I 15966] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:28:09.690513 I 15966] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:28:09.690529 I 15966] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:28:09.693614 I 15966] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:28:09.696112 I 15966] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:28:09.696256 I 15966] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:28:09.696275 I 15966] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:28:09.696288 I 15966] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:28:09.696301 I 15966] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:28:09.697160 I 15966] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:28:09.699075 I 15966] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:28:09.699105 I 15966] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:28:09.699118 I 15966] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:28:09.699329 I 15966] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 7 state LEADER
+[2025-07-08T11:28:09.699425 I 15966] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:28:09.699503 I 15978] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:28:09.699720 I 15966] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 7 state SHUTDOWN
+[2025-07-08T11:28:09.699744 I 15966] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 7 state SHUTDOWN
+[2025-07-08T11:28:09.701226 I 15966] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:28:09.717047 I 15966] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:30:43.554507 I 16659] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:30:43.555846 I 16659] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:30:43.556171 I 16659] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:30:43.569523 I 16659] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:30:43.569564 I 16659] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:30:43.573765 I 16659] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:30:43.573855 I 16659] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:30:43.576833 I 16659] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:30:43.576890 I 16659] [log_instance.h:221] starting log_state
+[2025-07-08T11:30:43.576960 I 16659] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:30:43.611104 I 16659] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:30:43.611217 I 16659] [log_instance.h:247] initializing raft node
+[2025-07-08T11:30:43.611281 I 16659] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:30:43.611838 I 16659] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:30:43.611946 I 16659] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 82
+[2025-07-08T11:30:43.612003 I 16659] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:30:43.612217 I 16659] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:30:43.612365 I 16659] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 7 votedfor 127.0.0.1:17481:0:0 time: 23
+[2025-07-08T11:30:43.612417 I 16659] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 7 last_log_id: (index=6,term=7) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:30:43.612479 I 16659] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 7 start vote and grant vote self
+[2025-07-08T11:30:43.613173 I 16691] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:30:43.618446 I 16659] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 8 votedfor 127.0.0.1:17481:0:0 time: 2352
+[2025-07-08T11:30:43.618497 I 16659] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 8 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:30:43.622201 I 16659] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:30:43.623831 I 16671] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:30:43.623906 I 16671] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 8, leader lease valid? yes
+[2025-07-08T11:30:43.623970 I 16671] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:30:43.623982 I 16671] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:30:43.624055 I 16693] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:30:43.624100 I 16693] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:30:43.624114 I 16693] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:30:43.625011 I 16659] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:30:43.625487 I 16659] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:30:43.625598 I 16659] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:30:43.625624 I 16659] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:30:43.638525 I 16659] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:30:46.666680 I 16659] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:30:46.666733 I 16659] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-08T11:30:46.666752 I 16659] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:30:46.764206 I 16659] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 97 ms
+[2025-07-08T11:30:46.775899 I 16659] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:30:46.779139 I 16659] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:30:46.779176 I 16659] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:30:46.779191 I 16659] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:30:46.779323 I 16659] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:30:46.855692 I 16659] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:30:46.855739 I 16659] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:30:46.855753 I 16659] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:30:46.857628 I 16659] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:30:46.860689 I 16659] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:30:46.860821 I 16659] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:30:46.860839 I 16659] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:30:46.860852 I 16659] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:30:46.860862 I 16659] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:30:46.861680 I 16659] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:30:46.866022 I 16659] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:30:46.866796 I 16659] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:30:46.866824 I 16659] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:30:46.867063 I 16659] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 8 state LEADER
+[2025-07-08T11:30:46.867187 I 16671] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:30:46.867192 I 16659] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:30:46.867475 I 16659] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 8 state SHUTDOWN
+[2025-07-08T11:30:46.867506 I 16659] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 8 state SHUTDOWN
+[2025-07-08T11:30:46.869517 I 16659] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:30:46.874481 I 16659] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:34:17.123718 I 17276] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:34:17.125043 I 17276] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:34:17.125360 I 17276] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:34:17.144656 I 17276] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:34:17.144721 I 17276] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:34:17.152518 I 17276] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:34:17.152603 I 17276] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:34:17.157342 I 17276] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:34:17.157408 I 17276] [log_instance.h:221] starting log_state
+[2025-07-08T11:34:17.157466 I 17276] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:34:17.194856 I 17276] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:34:17.194967 I 17276] [log_instance.h:247] initializing raft node
+[2025-07-08T11:34:17.195421 I 17276] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:34:17.195993 I 17276] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:34:17.196100 I 17276] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 79
+[2025-07-08T11:34:17.196156 I 17276] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:34:17.196354 I 17276] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:34:17.196372 I 17308] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:34:17.196507 I 17276] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 8 votedfor 127.0.0.1:17481:0:0 time: 23
+[2025-07-08T11:34:17.196542 I 17276] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 8 last_log_id: (index=7,term=8) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:34:17.196599 I 17276] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 8 start vote and grant vote self
+[2025-07-08T11:34:17.202857 I 17276] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 9 votedfor 127.0.0.1:17481:0:0 time: 5720
+[2025-07-08T11:34:17.202908 I 17276] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 9 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:34:17.206835 I 17276] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:34:17.206871 I 17276] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:34:17.207589 I 17276] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:34:17.207909 I 17276] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:34:17.207962 I 17276] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:34:17.212248 I 17289] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:34:17.212320 I 17289] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 9, leader lease valid? yes
+[2025-07-08T11:34:17.212440 I 17289] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:34:17.212463 I 17289] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:34:17.212519 I 17310] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:34:17.212561 I 17310] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:34:17.212575 I 17310] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:34:17.226442 I 17276] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:34:20.267697 I 17276] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:34:20.267751 I 17276] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 5 ms
+[2025-07-08T11:34:20.267772 I 17276] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:34:20.370162 I 17276] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 102 ms
+[2025-07-08T11:34:20.380930 I 17276] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:34:20.383360 I 17276] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:34:20.383463 I 17276] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:34:20.383504 I 17276] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:34:20.383829 I 17276] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:34:20.429704 I 17276] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:34:20.429756 I 17276] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:34:20.429771 I 17276] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:34:20.439080 I 17276] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:34:20.441720 I 17276] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:34:20.441845 I 17276] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:34:20.441864 I 17276] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:34:20.441875 I 17276] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:34:20.441885 I 17276] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:34:20.442659 I 17276] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:34:20.443534 I 17276] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:34:20.443563 I 17276] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:34:20.443575 I 17276] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:34:20.443804 I 17276] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 9 state LEADER
+[2025-07-08T11:34:20.443874 I 17276] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:34:20.443876 I 17289] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:34:20.447705 I 17276] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 9 state SHUTDOWN
+[2025-07-08T11:34:20.447741 I 17276] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 9 state SHUTDOWN
+[2025-07-08T11:34:20.449105 I 17276] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:34:20.457482 I 17276] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:38:20.484961 I 17944] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:38:20.487356 I 17944] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:38:20.487795 I 17944] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:38:20.503961 I 17944] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:38:20.504004 I 17944] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:38:20.508244 I 17944] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:38:20.512655 I 17944] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:38:20.515596 I 17944] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:38:20.515630 I 17944] [log_instance.h:221] starting log_state
+[2025-07-08T11:38:20.515681 I 17944] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:38:20.567251 I 17944] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:38:20.567363 I 17944] [log_instance.h:247] initializing raft node
+[2025-07-08T11:38:20.567449 I 17944] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:38:20.567652 I 17976] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:38:20.567952 I 17944] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:38:20.568054 I 17944] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 78
+[2025-07-08T11:38:20.568109 I 17944] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:38:20.570147 I 17944] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:38:20.570331 I 17944] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 9 votedfor 127.0.0.1:17481:0:0 time: 31
+[2025-07-08T11:38:20.570400 I 17944] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 9 last_log_id: (index=8,term=9) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:38:20.570483 I 17944] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 9 start vote and grant vote self
+[2025-07-08T11:38:20.576761 I 17944] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 10 votedfor 127.0.0.1:17481:0:0 time: 5494
+[2025-07-08T11:38:20.576819 I 17944] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 10 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:38:20.580458 I 17957] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:38:20.580516 I 17957] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 10, leader lease valid? yes
+[2025-07-08T11:38:20.580597 I 17957] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:38:20.580615 I 17957] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:38:20.580688 I 17977] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:38:20.580731 I 17977] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:38:20.580744 I 17977] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:38:20.582012 I 17944] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:38:20.582770 I 17944] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:38:20.583257 I 17944] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:38:20.583369 I 17944] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:38:20.583456 I 17944] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:38:20.606609 I 17944] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:38:22.636294 I 17944] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:38:22.636356 I 17944] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 3 ms
+[2025-07-08T11:38:22.636402 I 17944] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:38:22.758127 I 17944] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 121 ms
+[2025-07-08T11:38:22.767884 I 17944] [rocksdb_cloud_data_store.cpp:813] RocksDB Cloud started
+[2025-07-08T11:38:22.823560 I 17944] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-08T11:38:22.823621 I 17944] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17486 in web browser.
+[2025-07-08T11:38:22.823640 I 17944] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-08T11:38:22.823822 I 17944] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-08T11:38:22.870440 I 17944] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-08T11:38:22.870931 I 17944] [redis_service.cpp:2073] Shutting down the storage handler.
+[2025-07-08T11:38:22.870980 I 17944] [data_store_service_client.cpp:80] Notify ds_serv_shutdown_indicator
+[2025-07-08T11:38:22.872877 I 17944] [rocksdb_cloud_data_store.cpp:400] RocksDBCloudDataStore Shutdown, db->Close()
+[2025-07-08T11:38:22.875458 I 17944] [rocksdb_cloud_data_store.cpp:402] RocksDBCloudDataStore Shutdown, delete db_
+[2025-07-08T11:38:22.875592 I 17944] [rocksdb_cloud_data_store.cpp:404] RocksDBCloudDataStore Shutdown, db_ = nullptr
+[2025-07-08T11:38:22.875612 I 17944] [rocksdb_cloud_data_store.cpp:406] RocksDBCloudDataStore Shutdown, ttl_compaction_filter_ = nullptr
+[2025-07-08T11:38:22.875626 I 17944] [rocksdb_cloud_data_store.cpp:409] RocksDBCloudDataStore Shutdown, cloud_env_ = nullptr
+[2025-07-08T11:38:22.875638 I 17944] [rocksdb_cloud_data_store.cpp:411] RocksDBCloudDataStore Shutdown, cloud_fs_ = nullptr
+[2025-07-08T11:38:22.876515 I 17944] [server.cpp:1189] Server[EloqDS::DataStoreService] is going to quit
+[2025-07-08T11:38:22.877487 I 17944] [redis_service.cpp:2082] Storage handler shut down.
+[2025-07-08T11:38:22.877519 I 17944] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:38:22.877533 I 17944] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:38:22.878211 I 17944] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 10 state LEADER
+[2025-07-08T11:38:22.878302 I 17944] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:38:22.878310 I 17957] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:38:22.879837 I 17944] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 10 state SHUTDOWN
+[2025-07-08T11:38:22.879885 I 17944] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 10 state SHUTDOWN
+[2025-07-08T11:38:22.881340 I 17944] [redis_service.cpp:2090] Internal logservice shut down.
+[2025-07-08T11:38:22.886114 I 17944] [redis_service.cpp:1398] bootstrap done !!!
+bootstrap done !!!
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-08T11:42:15.367551 I 18614] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-08T11:42:15.369014 I 18614] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-08T11:42:15.369364 I 18614] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-08T11:42:15.388634 I 18614] [redis_service.cpp:849] ng_id: 0
+[2025-07-08T11:42:15.396508 I 18614] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-08T11:42:15.404721 I 18614] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0
+[2025-07-08T11:42:15.404925 I 18614] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service
+[2025-07-08T11:42:15.407694 I 18614] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-08T11:42:15.407735 I 18614] [log_instance.h:221] starting log_state
+[2025-07-08T11:42:15.407790 I 18614] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-08T11:42:15.438767 I 18614] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-08T11:42:15.438856 I 18614] [log_instance.h:247] initializing raft node
+[2025-07-08T11:42:15.438918 I 18614] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0
+[2025-07-08T11:42:15.440547 I 18646] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-08T11:42:15.444625 I 18614] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-08T11:42:15.446347 I 18614] [log.cpp:1338] log load_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log/log_meta first_log_index: 1 time: 405
+[2025-07-08T11:42:15.446707 I 18614] [log.cpp:1278] load open segment, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/log first_index: 1
+[2025-07-08T11:42:15.447105 I 18614] [snapshot.cpp:463] Deleting /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/snapshot/temp
+[2025-07-08T11:42:15.447261 I 18614] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 10 votedfor 127.0.0.1:17481:0:0 time: 24
+[2025-07-08T11:42:15.447886 I 18614] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 10 last_log_id: (index=9,term=10) conf: 127.0.0.1:17481:0:0 old_conf: 
+[2025-07-08T11:42:15.447971 I 18614] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 10 start vote and grant vote self
+[2025-07-08T11:42:15.459205 I 18614] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/log_service/0/raft_meta term 11 votedfor 127.0.0.1:17481:0:0 time: 3648
+[2025-07-08T11:42:15.459285 I 18614] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 11 become leader of group 127.0.0.1:17481:0:0 
+[2025-07-08T11:42:15.463325 I 18614] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-08T11:42:15.463661 I 18626] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0, old_peers: 127.0.0.1:17481:0:0
+[2025-07-08T11:42:15.463721 I 18626] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 11, leader lease valid? yes
+[2025-07-08T11:42:15.463790 I 18626] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-08T11:42:15.463804 I 18626] [log_instance.h:486] notify_checkpointer_threshold_size: 128 MB
+[2025-07-08T11:42:15.463860 I 18648] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-08T11:42:15.463882 I 18648] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-08T11:42:15.463893 I 18648] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-08T11:42:15.463362 I 18614] [server.cpp:1132] Check out http://3610aad3-1356-4e29-b9d8-500386bc38e9:17481 in web browser.
+[2025-07-08T11:42:15.467455 I 18614] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-08T11:42:15.467576 I 18614] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-08T11:42:15.467604 I 18614] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:17486
+[2025-07-08T11:42:15.486984 I 18614] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-08T11:42:17.510972 I 18614] [rocksdb_cloud_data_store.cpp:978] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-08T11:42:17.513288 I 18614] [rocksdb_cloud_data_store.cpp:983] FindMaxTermFromCloudManifestFiles tooks 4 ms
+[2025-07-08T11:42:17.513346 I 18614] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-08T11:42:17.519688 I 18614] [rocksdb_cloud_data_store.cpp:791] DBCloud Open took 4 ms
+[2025-07-08T11:42:17.519742 E 18614] [rocksdb_cloud_data_store.cpp:797] Unable to open db at path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0/eloq_dss/rocksdb_data/ds_0 with bucket eloq-test-1751970527453 with error: IO error: 
+[2025-07-08T11:42:17.519790 E 18614] [redis_service.cpp:1252] Failed to start db instance in data store service
+[2025-07-08T11:42:17.522167 E 18614] [redis_server.cpp:81] Failed to start EloqKV server.
+[2025-07-08T11:42:17.522204 I 18614] [redis_service.cpp:2088] Shutting down the internal logservice.
+[2025-07-08T11:42:17.526465 I 18614] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-07-08T11:42:17.527069 I 18614] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 11 state LEADER
+[2025-07-08T11:42:17.527159 I 18626] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-07-08T11:42:17.527168 I 18614] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-07-08T11:42:17.527308 I 18614] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 11 state SHUTDOWN
+[2025-07-08T11:42:17.527334 I 18614] [node.cpp:994] node lg0:127.0.0.1:17481:0:0 shutdown, current_term 11 state SHUTDOWN
+[2025-07-08T11:42:17.530303 I 18614] [redis_service.cpp:2090] Internal logservice shut down.
