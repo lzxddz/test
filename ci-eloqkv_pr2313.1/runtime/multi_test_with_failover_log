@@ -1,0 +1,144 @@
+2025-07-10 06:59:36 - root - INFO - rocksdbcloud cleanup: s3 bucket eloq-test-1752128698638 not exists
+2025-07-10 06:59:37 - root - INFO - Found the process of EloqDssServer(PID: 11622). (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/eloqdss_server/eloqdss_server.log) to determine success if you are debugging.)
+2025-07-10 06:59:37 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 06:59:38 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 06:59:39 - root - INFO - EloqDssServer connected
+2025-07-10 06:59:39 - root - INFO - Bootstrapping
+2025-07-10 06:59:39 - root - INFO - EloqDssServer connected
+2025-07-10 06:59:40 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-10 06:59:43 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-10 06:59:46 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node3_log) to determine success if you are debugging.)
+2025-07-10 06:59:48 - root - INFO - Cleaning up resources
+2025-07-10 06:59:48 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 06:59:48 - root - INFO - Try to stop Node id 1, its process id is 11798
+2025-07-10 06:59:48 - root - INFO - Node 1 is still running after 0, try to kill the process 11798
+2025-07-10 06:59:49 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-10 06:59:49 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 06:59:49 - root - INFO - Try to stop Node id 2, its process id is 11874
+2025-07-10 06:59:49 - root - INFO - Node 2 is still running after 0, try to kill the process 11874
+2025-07-10 06:59:50 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-10 06:59:50 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 06:59:50 - root - INFO - Try to stop Node id 3, its process id is 11953
+2025-07-10 06:59:50 - root - INFO - Node 3 is still running after 0, try to kill the process 11953
+2025-07-10 06:59:51 - root - INFO - Used about 1s to find Node id 3 crashes
+2025-07-10 06:59:52 - root - INFO - stopping external eloq-dss-server
+2025-07-10 06:59:52 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-07-10 06:59:52 - root - INFO - rocksdbcloud bucket#eloq-test-1752128698638 has been cleaned up.
+2025-07-10 06:59:53 - root - INFO - Found the process of EloqDssServer(PID: 12030). (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/eloqdss_server/eloqdss_server.log) to determine success if you are debugging.)
+2025-07-10 06:59:53 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 06:59:54 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 06:59:55 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 06:59:56 - root - INFO - EloqDssServer connected
+2025-07-10 06:59:56 - root - INFO - Bootstrapping
+2025-07-10 06:59:57 - root - INFO - starting nodes
+2025-07-10 06:59:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 06:59:58 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-10 06:59:58 - root - INFO - starting nodes
+2025-07-10 06:59:58 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 06:59:59 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-10 06:59:59 - root - INFO - starting nodes
+2025-07-10 06:59:59 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 07:00:00 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node3_log) to determine success if you are debugging.)
+2025-07-10 07:00:00 - root - INFO - wait for connectting to node 1
+2025-07-10 07:00:02 - root - INFO - connectted to node 1
+2025-07-10 07:00:02 - root - INFO - connectted to node 2
+2025-07-10 07:00:02 - root - INFO - connectted to node 3
+2025-07-10 07:00:02 - root - INFO - leader connections [1]
+2025-07-10 07:00:04 - root - INFO - connectted to node 1
+2025-07-10 07:00:04 - root - INFO - connectted to node 2
+2025-07-10 07:00:04 - root - INFO - connectted to node 3
+2025-07-10 07:00:04 - root - INFO - leader connections [2]
+2025-07-10 07:00:04 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:04 - root - INFO - Try to stop Node id 1, its process id is 12206
+2025-07-10 07:00:04 - root - INFO - Node 1 is still running after 0, try to kill the process 12206
+2025-07-10 07:00:05 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-10 07:00:05 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:05 - root - INFO - Try to stop Node id 2, its process id is 12282
+2025-07-10 07:00:05 - root - INFO - Node 2 is still running after 0, try to kill the process 12282
+2025-07-10 07:00:06 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-10 07:00:06 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 07:00:06 - root - INFO - Try to stop Node id 3, its process id is 12359
+2025-07-10 07:00:06 - root - INFO - Node 3 is still running after 0, try to kill the process 12359
+2025-07-10 07:00:07 - root - INFO - Used about 1s to find Node id 3 crashes
+2025-07-10 07:00:07 - root - INFO - stop external eloq-dss-server
+2025-07-10 07:00:07 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-07-10 07:00:07 - root - INFO - Cleaning up resources
+2025-07-10 07:00:07 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:07 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:07 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 07:00:08 - root - INFO - stopping external eloq-dss-server
+2025-07-10 07:00:08 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-07-10 07:00:08 - root - INFO - rocksdbcloud bucket#eloq-test-1752128698638 has been cleaned up.
+2025-07-10 07:00:09 - root - INFO - Found the process of EloqDssServer(PID: 12443). (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/eloqdss_server/eloqdss_server.log) to determine success if you are debugging.)
+2025-07-10 07:00:09 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 07:00:10 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 07:00:11 - root - INFO - EloqDssServer not start, waitting
+2025-07-10 07:00:12 - root - INFO - EloqDssServer connected
+2025-07-10 07:00:12 - root - INFO - Bootstrapping
+2025-07-10 07:00:13 - root - INFO - starting nodes
+2025-07-10 07:00:13 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:14 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-07-10 07:00:14 - root - INFO - starting nodes
+2025-07-10 07:00:14 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:15 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-07-10 07:00:15 - root - INFO - starting nodes
+2025-07-10 07:00:15 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 07:00:16 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node3_log) to determine success if you are debugging.)
+2025-07-10 07:00:16 - root - INFO - wait for connectting to node 1
+2025-07-10 07:00:19 - root - INFO - connectted to node 1
+2025-07-10 07:00:19 - root - INFO - connectted to node 2
+2025-07-10 07:00:19 - root - INFO - wait for connectting to node 3
+2025-07-10 07:00:22 - root - INFO - wait for connectting to node 3
+2025-07-10 07:00:26 - root - INFO - wait for connectting to node 3
+2025-07-10 07:00:31 - root - INFO - wait for connectting to node 3
+2025-07-10 07:00:36 - root - INFO - wait for connectting to node 3
+2025-07-10 07:00:38 - root - INFO - connectted to node 3
+2025-07-10 07:00:38 - root - INFO - leader connections [1]
+2025-07-10 07:00:47 - root - INFO - wait for connectting to node 1
+2025-07-10 07:00:50 - root - INFO - wait for connectting to node 1
+2025-07-10 07:00:52 - root - INFO - wait for connectting to node 1
+2025-07-10 07:00:54 - root - INFO - wait for connectting to node 1
+2025-07-10 07:00:56 - root - INFO - connectted to node 1
+2025-07-10 07:00:56 - root - INFO - connectted to node 2
+2025-07-10 07:00:56 - root - INFO - connectted to node 3
+2025-07-10 07:00:56 - root - INFO - leader connections [2]
+2025-07-10 07:00:56 - root - INFO - connectted to node 1
+2025-07-10 07:00:56 - root - INFO - connectted to node 2
+2025-07-10 07:00:56 - root - INFO - connectted to node 3
+2025-07-10 07:00:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:57 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:00:57 - root - INFO - Try to stop Node id 1, its process id is 12639
+2025-07-10 07:00:57 - root - INFO - Node 1 is still running after 0, try to kill the process 12639
+2025-07-10 07:00:58 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-07-10 07:00:58 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:58 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:58 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:58 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:58 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:00:58 - root - INFO - Try to stop Node id 2, its process id is 12715
+2025-07-10 07:00:58 - root - INFO - Node 2 is still running after 0, try to kill the process 12715
+2025-07-10 07:00:59 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-07-10 07:00:59 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 07:00:59 - root - INFO - Try to stop Node id 3, its process id is 12791
+2025-07-10 07:00:59 - root - INFO - Node 3 is still running after 0, try to kill the process 12791
+2025-07-10 07:01:00 - root - INFO - Used about 1s to find Node id 3 crashes
+2025-07-10 07:01:00 - root - INFO - stop external eloq-dss-server
+2025-07-10 07:01:00 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-07-10 07:01:00 - root - INFO - Cleaning up resources
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 1
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 2
+2025-07-10 07:01:01 - root - INFO - Closed connection to Redis server id: 3
+2025-07-10 07:01:02 - root - INFO - stopping external eloq-dss-server
+2025-07-10 07:01:02 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-07-10 07:01:02 - root - INFO - rocksdbcloud bucket#eloq-test-1752128698638 has been cleaned up.

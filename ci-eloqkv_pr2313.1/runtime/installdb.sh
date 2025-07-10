@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/home/mono/workspace/eloqkv/cmake/install/lib/
+/home/mono/workspace/eloqkv/cmake/install/bin/eloqkv --config=/tmp/build/dce06a3d/eloq_test_src/bootstrap_cnf/multi_redis_eloqdss_rocksdb_cloud_s3.cnf  --ip_port_list="127.0.0.1:7479" --standby_ip_port_list="127.0.0.1:7579|127.0.0.1:7679" --eloq_data_path=/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm0 --eloq_dss_peer_node=127.0.0.1:9100 --logtostderr=true --bootstrap=true &>> /tmp/build/dce06a3d/eloq_test_src/runtime/install_log.log

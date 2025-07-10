@@ -1,0 +1,623 @@
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-10T06:59:39.754485 I 11798] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-10T06:59:39.806532 I 11798] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-10T06:59:39.808754 I 11798] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-10T06:59:39.938445 I 11798] [redis_service.cpp:849] ng_id: 0
+[2025-07-10T06:59:39.938493 I 11798] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-10T06:59:39.938508 I 11798] [redis_service.cpp:852] node_id: 1, host_name: 127.0.0.1, port: 17579
+[2025-07-10T06:59:39.938517 I 11798] [redis_service.cpp:852] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-07-10T06:59:39.944118 I 11798] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0,127.0.0.1:17581:0,127.0.0.1:17681:0
+[2025-07-10T06:59:39.944217 I 11798] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service
+[2025-07-10T06:59:39.947100 I 11798] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-10T06:59:39.947139 I 11798] [log_instance.h:221] starting log_state
+[2025-07-10T06:59:39.947422 I 11798] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-10T06:59:39.990836 I 11798] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-10T06:59:39.990940 I 11798] [log_instance.h:247] initializing raft node
+[2025-07-10T06:59:39.991003 I 11798] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T06:59:39.991696 I 11798] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-10T06:59:39.991763 W 11798] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-10T06:59:39.991781 W 11798] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log is empty
+[2025-07-10T06:59:39.993436 I 11830] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-10T06:59:39.995904 I 11798] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_meta first_log_index: 1 time: 4085
+[2025-07-10T06:59:39.996217 W 11798] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-10T06:59:39.996279 I 11798] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 35
+[2025-07-10T06:59:39.996316 I 11798] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 old_conf: 
+[2025-07-10T06:59:40.002904 I 11798] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-10T06:59:40.004273 I 11798] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17481 in web browser.
+[2025-07-10T06:59:40.004576 I 11798] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-10T06:59:40.008808 I 11798] [data_store_service.cpp:1686] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:40.054612 I 11798] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-10T06:59:40.054670 I 11798] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17486 in web browser.
+[2025-07-10T06:59:40.054685 I 11798] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-10T06:59:40.054936 I 11798] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-10T06:59:40.055136 I 11798] [data_store_service_config.cpp:598] DataStoreService channel updated to  shard_id: 0 node: 127.0.0.1:9100
+[2025-07-10T06:59:40.068962 I 11798] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-10T06:59:40.088454 I 11798] [local_cc_shards.cpp:236] Data sync work memory usage quota: 157286400
+[2025-07-10T06:59:40.088629 I 11798] [checkpointer.cpp:80] checkpointer init, checkpoint_interval_: 10 ,ckpt_delay_seconds: 0
+[2025-07-10T06:59:40.088986 I 11798] [sharder.cpp:210] txlog_port = 17481
+[2025-07-10T06:59:40.089013 I 11798] [sharder.cpp:210] txlog_port = 17581
+[2025-07-10T06:59:40.089023 I 11798] [sharder.cpp:210] txlog_port = 17681
+[2025-07-10T06:59:40.089066 I 11798] [log_util.h:144] Dump LogRaftGroupConfig: 
+[2025-07-10T06:59:40.089078 I 11798] [log_util.h:153] log_group_id: 0 ,group_name:  lg0 ,group_conf: 127.0.0.1:17481:0,127.0.0.1:17581:0,127.0.0.1:17681:0 ,group_nodes: 0:1:2:
+[2025-07-10T06:59:40.093303 I 11798] [server.cpp:1129] Server[txservice::remote::CcNodeService] is serving on port=17480.
+[2025-07-10T06:59:40.093338 I 11798] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17480 in web browser.
+[2025-07-10T06:59:40.094870 I 11798] [server.cpp:1129] Server[txservice::fault::RecoveryService] is serving on port=17482.
+[2025-07-10T06:59:40.094902 I 11798] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17482 in web browser.
+[2025-07-10T06:59:40.094918 I 11798] [sharder.cpp:329] Forking host manager process with /tmp/build/dce06a3d/redis_src/cmake/install/bin/host_manager, the hm will be listening on 0.0.0.0:17483
+[2025-07-10T06:59:40.107430 I 11798] [sharder.cpp:371] Spawned host manager process with PID: 11844
+[2025-07-10T06:59:40.238427 I 11798] [tx_start_ts_collector.cpp:46] TxStartTsCollector init, interval seconds: 0
+[2025-07-10T06:59:40.238924 I 11798] [tx_service.h:1259] Tx service module is registered.
+[2025-07-10T06:59:40.245483 I 11798] [server.cpp:1129] Server[txservice::remote::CcStreamReceiver] is serving on port=17479.
+[2025-07-10T06:59:40.245522 I 11798] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17479 in web browser.
+[2025-07-10T06:59:40.252146 I 11842] [cc_stream_sender.cpp:819] Establish the cc stream to node 0
+[2025-07-10T06:59:40.252497 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=88 addr=127.0.0.1:17579} (0x0x2eb42050900): Connection refused
+[2025-07-10T06:59:40.252535 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 1
+[2025-07-10T06:59:40.259810 I 11842] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 0
+[2025-07-10T06:59:40.260996 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=95 addr=127.0.0.1:17579} (0x0x2eb42051e00): Connection refused
+[2025-07-10T06:59:40.261031 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T06:59:41.254464 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=18124761989215 addr=127.0.0.1:17579} (0x0x2eb42051e00): Connection refused
+[2025-07-10T06:59:41.254531 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 1
+[2025-07-10T06:59:41.261186 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=18245021073503 addr=127.0.0.1:17579} (0x0x2eb42051e00): Connection refused
+[2025-07-10T06:59:41.261240 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T06:59:41.673519 I 11810] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 1 start pre_vote
+[2025-07-10T06:59:41.674469 W 11810] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E111]Fail to connect Socket{id=7 addr=127.0.0.1:17681} (0x0x2eb18f31500): Connection refused
+[2025-07-10T06:59:41.674518 W 11811] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17581:0:0 error: [E111]Fail to connect Socket{id=6 addr=127.0.0.1:17581} (0x0x2eb18f31200): Connection refused
+[2025-07-10T06:59:41.774550 I 11810] [socket.cpp:2848] Checking Socket{id=7 remote addr=127.0.0.1:17681 local addr=0.0.0.0:0} (0x2eb18f31500)
+[2025-07-10T06:59:41.774701 I 11810] [socket.cpp:2848] Checking Socket{id=6 remote addr=127.0.0.1:17581 local addr=0.0.0.0:0} (0x2eb18f31200)
+[2025-07-10T06:59:42.254755 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=25958782337338 addr=127.0.0.1:17579} (0x0x2eb4206b100): Connection refused
+[2025-07-10T06:59:42.254814 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 1
+[2025-07-10T06:59:42.261833 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=26285199851834 addr=127.0.0.1:17579} (0x0x2eb4206b100): Connection refused
+[2025-07-10T06:59:42.261884 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T06:59:43.256755 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=49022756716858 addr=127.0.0.1:17679} (0x0x2eb4206b100): Connection refused
+[2025-07-10T06:59:43.259862 I 11810] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 1 start pre_vote
+[2025-07-10T06:59:43.263559 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T06:59:43.263630 W 11810] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:43.263659 W 11811] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17581:0:0 error: [E112]Not connected to 127.0.0.1:17581 yet, server_id=6
+[2025-07-10T06:59:43.263892 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=49031346651450 addr=127.0.0.1:17579} (0x0x2eb4206b100): Connection refused
+[2025-07-10T06:59:43.263922 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T06:59:43.429497 I 11842] [cc_stream_sender.cpp:819] Establish the cc stream to node 1
+[2025-07-10T06:59:43.436889 I 11811] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T06:59:43.437115 I 11842] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 1
+[2025-07-10T06:59:44.260496 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=11227044512078 addr=127.0.0.1:17679} (0x0x2eb4206ed00): Connection refused
+[2025-07-10T06:59:44.265440 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=11321533792590 addr=127.0.0.1:17679} (0x0x2eb4206ed00): Connection refused
+[2025-07-10T06:59:44.265496 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 2
+[2025-07-10T06:59:44.266436 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T06:59:44.424657 I 11810] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T06:59:44.777786 I 11810] [socket.cpp:2908] Revived Socket{id=6 remote addr=127.0.0.1:17581 local addr=0.0.0.0:0} (0x2eb18f31200) (Connectable)
+[2025-07-10T06:59:44.836758 I 11811] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 1 start pre_vote
+[2025-07-10T06:59:44.836992 W 11811] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:44.837329 I 11811] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 1 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T06:59:44.837366 I 11811] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 1 start vote and grant vote self
+[2025-07-10T06:59:44.837630 W 11810] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:44.849824 I 11811] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 2 votedfor 127.0.0.1:17481:0:0 time: 12328
+[2025-07-10T06:59:44.853700 I 11810] [node.cpp:1433] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 term 2 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T06:59:44.853763 I 11810] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 2 become leader of group 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 
+[2025-07-10T06:59:44.853812 I 11810] [replicator.cpp:155] Replicator=2405181686089@127.0.0.1:17581:0:0 is started, group lg0
+[2025-07-10T06:59:44.854080 I 11810] [replicator.cpp:155] Replicator=2787433775413@127.0.0.1:17681:0:0 is started, group lg0
+[2025-07-10T06:59:44.854526 W 11811] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=1, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:44.855472 I 11810] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_inprogress_00000000000000000001' with fd=47
+[2025-07-10T06:59:44.859935 I 11810] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0, old_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T06:59:44.860023 I 11810] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-10T06:59:44.860152 I 11810] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-10T06:59:44.860167 I 11810] [log_instance.h:486] notify_checkpointer_threshold_size: 1024 MB
+[2025-07-10T06:59:44.860257 I 11949] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-10T06:59:44.860332 I 11949] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-10T06:59:44.860343 I 11949] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-10T06:59:45.261667 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=154618823027 addr=127.0.0.1:17679} (0x0x2eb42075d00): Connection refused
+[2025-07-10T06:59:45.261818 I 11810] [cc_node.cpp:347] CC node 0 becomes the leader of ng#0. Term: 2
+[2025-07-10T06:59:45.265185 I 11810] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:0
+[2025-07-10T06:59:45.266427 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=180388626803 addr=127.0.0.1:17679} (0x0x2eb42075d00): Connection refused
+[2025-07-10T06:59:45.266463 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 2
+[2025-07-10T06:59:45.271450 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T06:59:45.311700 I 11810] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-10T06:59:45.311764 I 11810] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-10T06:59:45.311790 I 11810] [log_state.h:875] Create a new leader info
+[2025-07-10T06:59:45.311802 I 11810] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-10T06:59:45.311812 I 11810] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-10T06:59:45.311825 I 11810] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-10T06:59:45.311836 I 11810] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-10T06:59:45.311846 I 11810] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-10T06:59:45.311856 I 11810] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-10T06:59:45.312105 I 11810] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-10T06:59:45.314545 I 11950] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-10T06:59:45.318846 I 11810] [log_replay_service.cpp:274] replay service accepting new stream: 8589935104 from log group: 0 to cc_ng: 0 at term: 2
+[2025-07-10T06:59:45.319094 I 11950] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-10T06:59:45.319154 I 11950] [log_shipping_agent.h:362] thread: 130882847655488 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-10T06:59:45.319228 I 11950] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 75 microseconds, 0 eagains
+[2025-07-10T06:59:45.321548 I 11810] [cc_node.cpp:126] The leader of cc node group ng#0 with the term 2 has been recovered.
+[2025-07-10T06:59:45.321595 I 11810] [log_replay_service.cpp:616] replay connection: cc node group: 0, term: 2, log group: 0, set recovering status to finished
+[2025-07-10T06:59:45.321653 I 11810] [log_replay_service.cpp:717] replay service stream: 8589935104, is closed, active stream cnt: 0
+[2025-07-10T06:59:45.326517 I 11798] [server.cpp:1129] Server[EloqKV::RedisServiceImpl] is serving on port=7479.
+[2025-07-10T06:59:45.326557 W 11798] [server.cpp:1135] Builtin services are disabled according to ServerOptions.has_builtin_services
+EloqKV Server Started, listening on 127.0.0.1:7479
+[2025-07-10T06:59:45.326608 I 11798] [redis_server.cpp:110] ==== EloqKV Server Started, listening on 127.0.0.1:7479====
+[2025-07-10T06:59:45.362859 W 11811] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=11, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:45.388839 I 11810] [cc_shard.h:880] start forwarding to node 1 from seq 1, seq grp 0
+[2025-07-10T06:59:45.389961 I 11867] [cc_shard.h:880] start forwarding to node 1 from seq 1, seq grp 1
+[2025-07-10T06:59:45.864995 W 11810] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=21, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:46.263691 E 11842] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=11871289606515 addr=127.0.0.1:17679} (0x0x2eb42075d00): Connection refused
+[2025-07-10T06:59:46.268056 E 11842] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=11879879541107 addr=127.0.0.1:17679} (0x0x2eb42075d00): Connection refused
+[2025-07-10T06:59:46.270040 E 11842] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 2
+[2025-07-10T06:59:46.272331 E 11842] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T06:59:46.366559 W 11810] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=31, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:46.369226 I 11842] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 2
+[2025-07-10T06:59:46.384347 I 11842] [cc_stream_sender.cpp:819] Establish the cc stream to node 2
+[2025-07-10T06:59:46.625948 I 11811] [cc_shard.h:880] start forwarding to node 2 from seq 1, seq grp 1
+[2025-07-10T06:59:46.627059 I 11866] [cc_shard.h:880] start forwarding to node 2 from seq 1, seq grp 0
+[2025-07-10T06:59:46.873835 W 11810] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=41, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:47.382597 W 11810] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=51, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:47.778178 I 11810] [socket.cpp:2908] Revived Socket{id=7 remote addr=127.0.0.1:17681 local addr=0.0.0.0:0} (0x2eb18f31500) (Connectable)
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-10T06:59:57.379707 I 12206] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-10T06:59:57.381081 I 12206] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-10T06:59:57.381441 I 12206] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-10T06:59:57.517486 I 12206] [redis_service.cpp:849] ng_id: 0
+[2025-07-10T06:59:57.517529 I 12206] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-10T06:59:57.517540 I 12206] [redis_service.cpp:852] node_id: 1, host_name: 127.0.0.1, port: 17579
+[2025-07-10T06:59:57.517551 I 12206] [redis_service.cpp:852] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-07-10T06:59:57.525244 I 12206] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0,127.0.0.1:17581:0,127.0.0.1:17681:0
+[2025-07-10T06:59:57.525341 I 12206] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service
+[2025-07-10T06:59:57.532061 I 12206] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-10T06:59:57.532111 I 12206] [log_instance.h:221] starting log_state
+[2025-07-10T06:59:57.532403 I 12206] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-10T06:59:57.581035 I 12206] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-10T06:59:57.581146 I 12206] [log_instance.h:247] initializing raft node
+[2025-07-10T06:59:57.581213 I 12206] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T06:59:57.581887 I 12206] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-10T06:59:57.581961 W 12206] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-10T06:59:57.581977 W 12206] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log is empty
+[2025-07-10T06:59:57.583199 I 12238] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-10T06:59:57.586463 I 12206] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_meta first_log_index: 1 time: 4448
+[2025-07-10T06:59:57.586745 W 12206] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-10T06:59:57.586794 I 12206] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 27
+[2025-07-10T06:59:57.586828 I 12206] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 old_conf: 
+[2025-07-10T06:59:57.596424 I 12206] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-10T06:59:57.596493 I 12206] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17481 in web browser.
+[2025-07-10T06:59:57.596832 I 12206] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-10T06:59:57.603727 I 12206] [data_store_service.cpp:1686] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:57.623661 I 12206] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-10T06:59:57.623733 I 12206] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17486 in web browser.
+[2025-07-10T06:59:57.623752 I 12206] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-10T06:59:57.623963 I 12206] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-10T06:59:57.624228 I 12206] [data_store_service_config.cpp:598] DataStoreService channel updated to  shard_id: 0 node: 127.0.0.1:9100
+[2025-07-10T06:59:57.631728 I 12206] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-10T06:59:57.650465 I 12206] [local_cc_shards.cpp:236] Data sync work memory usage quota: 157286400
+[2025-07-10T06:59:57.650626 I 12206] [checkpointer.cpp:80] checkpointer init, checkpoint_interval_: 10 ,ckpt_delay_seconds: 0
+[2025-07-10T06:59:57.650967 I 12206] [sharder.cpp:210] txlog_port = 17481
+[2025-07-10T06:59:57.650992 I 12206] [sharder.cpp:210] txlog_port = 17581
+[2025-07-10T06:59:57.651002 I 12206] [sharder.cpp:210] txlog_port = 17681
+[2025-07-10T06:59:57.651042 I 12206] [log_util.h:144] Dump LogRaftGroupConfig: 
+[2025-07-10T06:59:57.651057 I 12206] [log_util.h:153] log_group_id: 0 ,group_name:  lg0 ,group_conf: 127.0.0.1:17481:0,127.0.0.1:17581:0,127.0.0.1:17681:0 ,group_nodes: 0:1:2:
+[2025-07-10T06:59:57.662955 I 12206] [server.cpp:1129] Server[txservice::remote::CcNodeService] is serving on port=17480.
+[2025-07-10T06:59:57.663025 I 12206] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17480 in web browser.
+[2025-07-10T06:59:57.664906 I 12206] [server.cpp:1129] Server[txservice::fault::RecoveryService] is serving on port=17482.
+[2025-07-10T06:59:57.664943 I 12206] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17482 in web browser.
+[2025-07-10T06:59:57.664959 I 12206] [sharder.cpp:329] Forking host manager process with /tmp/build/dce06a3d/redis_src/cmake/install/bin/host_manager, the hm will be listening on 0.0.0.0:17483
+[2025-07-10T06:59:57.666143 I 12206] [sharder.cpp:371] Spawned host manager process with PID: 12252
+[2025-07-10T06:59:57.787469 I 12206] [tx_start_ts_collector.cpp:46] TxStartTsCollector init, interval seconds: 0
+[2025-07-10T06:59:57.788218 I 12206] [tx_service.h:1259] Tx service module is registered.
+[2025-07-10T06:59:57.790156 I 12206] [server.cpp:1129] Server[txservice::remote::CcStreamReceiver] is serving on port=17479.
+[2025-07-10T06:59:57.790187 I 12206] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17479 in web browser.
+[2025-07-10T06:59:57.799932 I 12250] [cc_stream_sender.cpp:819] Establish the cc stream to node 0
+[2025-07-10T06:59:57.801529 E 12250] [cc_stream_sender.cpp:997] Failed to connect to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=88 addr=127.0.0.1:17579} (0x0x4ccac050900): Connection refused
+[2025-07-10T06:59:57.801573 E 12250] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 1
+[2025-07-10T06:59:57.802047 I 12250] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 0
+[2025-07-10T06:59:57.805405 E 12250] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=95 addr=127.0.0.1:17579} (0x0x4ccac051e00): Connection refused
+[2025-07-10T06:59:57.805449 E 12250] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T06:59:58.803115 E 12250] [cc_stream_sender.cpp:997] Failed to connect to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=15650860826810 addr=127.0.0.1:17579} (0x0x4ccac063000): Connection refused
+[2025-07-10T06:59:58.803184 E 12250] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 1
+[2025-07-10T06:59:58.814939 E 12250] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=15702400434362 addr=127.0.0.1:17579} (0x0x4ccac063000): Connection refused
+[2025-07-10T06:59:58.814992 E 12250] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T06:59:58.944689 I 12250] [cc_stream_sender.cpp:819] Establish the cc stream to node 1
+[2025-07-10T06:59:58.954491 I 12219] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T06:59:58.955440 I 12250] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 1
+[2025-07-10T06:59:59.083493 I 12218] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 1 start pre_vote
+[2025-07-10T06:59:59.087599 W 12219] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E111]Fail to connect Socket{id=7 addr=127.0.0.1:17681} (0x0x4cc82f31500): Connection refused
+[2025-07-10T06:59:59.092456 I 12219] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 1 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T06:59:59.094322 I 12219] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 1 start vote and grant vote self
+[2025-07-10T06:59:59.100661 W 12218] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:59.104993 I 12219] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 2 votedfor 127.0.0.1:17481:0:0 time: 4539
+[2025-07-10T06:59:59.105720 I 12219] [node.cpp:1433] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 term 2 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T06:59:59.105749 I 12219] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 2 become leader of group 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 
+[2025-07-10T06:59:59.105795 I 12219] [replicator.cpp:155] Replicator=1361504632970@127.0.0.1:17581:0:0 is started, group lg0
+[2025-07-10T06:59:59.105867 I 12219] [replicator.cpp:155] Replicator=3032246911073@127.0.0.1:17681:0:0 is started, group lg0
+[2025-07-10T06:59:59.106035 I 12219] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_inprogress_00000000000000000001' with fd=47
+[2025-07-10T06:59:59.106184 W 12218] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=1, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:59.116120 I 12219] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0, old_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T06:59:59.116197 I 12219] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-10T06:59:59.116308 I 12219] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-10T06:59:59.116320 I 12219] [log_instance.h:486] notify_checkpointer_threshold_size: 1024 MB
+[2025-07-10T06:59:59.121428 I 12356] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-10T06:59:59.121474 I 12356] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-10T06:59:59.121486 I 12356] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-10T06:59:59.190448 I 12219] [socket.cpp:2848] Checking Socket{id=7 remote addr=127.0.0.1:17681 local addr=0.0.0.0:0} (0x4cc82f31500)
+[2025-07-10T06:59:59.608592 W 12219] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=11, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T06:59:59.803253 E 12250] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=5007931867351 addr=127.0.0.1:17679} (0x0x4ccac068700): Connection refused
+[2025-07-10T06:59:59.803342 E 12250] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T06:59:59.821425 E 12250] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=5102421147863 addr=127.0.0.1:17679} (0x0x4ccac068700): Connection refused
+[2025-07-10T06:59:59.827402 E 12250] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 2
+[2025-07-10T06:59:59.946131 I 12218] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T07:00:00.113062 W 12219] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=21, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:00.511427 I 12250] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 2
+[2025-07-10T07:00:00.513819 I 12250] [cc_stream_sender.cpp:819] Establish the cc stream to node 2
+[2025-07-10T07:00:00.524489 I 12219] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T07:00:00.604857 I 12218] [cc_node.cpp:347] CC node 0 becomes the leader of ng#0. Term: 2
+[2025-07-10T07:00:00.608556 I 12218] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:0
+[2025-07-10T07:00:00.633312 W 12218] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=31, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:00.644579 I 12218] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-10T07:00:00.644629 I 12218] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-10T07:00:00.644656 I 12218] [log_state.h:875] Create a new leader info
+[2025-07-10T07:00:00.644666 I 12218] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-10T07:00:00.644677 I 12218] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-10T07:00:00.644688 I 12218] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-10T07:00:00.644699 I 12218] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-10T07:00:00.644711 I 12218] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-10T07:00:00.644721 I 12218] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-10T07:00:00.644933 I 12218] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-10T07:00:00.645074 I 12434] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-10T07:00:00.645445 I 12218] [log_replay_service.cpp:274] replay service accepting new stream: 472446402752 from log group: 0 to cc_ng: 0 at term: 2
+[2025-07-10T07:00:00.647637 I 12434] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-10T07:00:00.647681 I 12434] [log_shipping_agent.h:362] thread: 129034297820736 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-10T07:00:00.647747 I 12434] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 64 microseconds, 0 eagains
+[2025-07-10T07:00:00.654594 I 12218] [cc_node.cpp:126] The leader of cc node group ng#0 with the term 2 has been recovered.
+[2025-07-10T07:00:00.654640 I 12218] [log_replay_service.cpp:616] replay connection: cc node group: 0, term: 2, log group: 0, set recovering status to finished
+[2025-07-10T07:00:00.654721 I 12218] [log_replay_service.cpp:717] replay service stream: 472446402752, is closed, active stream cnt: 0
+[2025-07-10T07:00:00.658294 I 12206] [server.cpp:1129] Server[EloqKV::RedisServiceImpl] is serving on port=7479.
+[2025-07-10T07:00:00.658331 W 12206] [server.cpp:1135] Builtin services are disabled according to ServerOptions.has_builtin_services
+EloqKV Server Started, listening on 127.0.0.1:7479
+[2025-07-10T07:00:00.658347 I 12206] [redis_server.cpp:110] ==== EloqKV Server Started, listening on 127.0.0.1:7479====
+[2025-07-10T07:00:00.691732 I 12218] [cc_shard.h:880] start forwarding to node 1 from seq 1, seq grp 0
+[2025-07-10T07:00:00.692819 I 12219] [cc_shard.h:880] start forwarding to node 1 from seq 1, seq grp 1
+[2025-07-10T07:00:00.802567 I 12218] [cc_shard.h:880] start forwarding to node 2 from seq 1, seq grp 0
+[2025-07-10T07:00:00.803705 I 12219] [cc_shard.h:880] start forwarding to node 2 from seq 1, seq grp 1
+[2025-07-10T07:00:01.144553 W 12219] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=41, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:01.652791 W 12219] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=51, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:02.157217 W 12219] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=61, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:02.191886 I 12219] [socket.cpp:2908] Revived Socket{id=7 remote addr=127.0.0.1:17681 local addr=0.0.0.0:0} (0x4cc82f31500) (Connectable)
+[2025-07-10T07:00:02.377270 I 12218] [data_store_service_client_closure.cpp:238] FetchTableCatalogCallback, key:data_table_0, catalog_image: data_table_0
+[2025-07-10T07:00:02.377584 I 12218] [object_cc_map.h:83] creating ObjectCcmap on shard: 0, table name: data_table_0, table_schema: 0x4cca8d57380, schema_ts: 100
+[2025-07-10T07:00:02.488561 I 12218] [cc_node.cpp:579] All shards are fully in sync.
+[2025-07-10T07:00:02.491107 I 12219] [cc_node.cpp:467] CC node 0 steps down as the leader of ng#0.
+[2025-07-10T07:00:02.514902 I 12218] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:1
+[2025-07-10T07:00:02.515551 I 12219] [cc_req_misc.cpp:430] ccshard: 1; clear ccmaps and catalogs of node group: 0
+[2025-07-10T07:00:02.515822 I 12219] [cc_node.cpp:765] Subscribing to primary node 1 at term 3
+[2025-07-10T07:00:02.530082 I 12218] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-10T07:00:02.530128 I 12218] [log_state.h:834] Updating node group term, ng:0,term:3
+[2025-07-10T07:00:02.530143 I 12218] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-10T07:00:02.530151 I 12218] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-10T07:00:02.530160 I 12218] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-10T07:00:02.530169 I 12218] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-10T07:00:02.530179 I 12218] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-10T07:00:02.530189 I 12218] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-10T07:00:02.530198 I 12218] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-10T07:00:02.530208 I 12218] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-10T07:00:02.530217 I 12218] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-10T07:00:02.530535 I 12437] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-10T07:00:02.532434 I 12437] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-10T07:00:02.532476 I 12437] [log_shipping_agent.h:362] thread: 129034288375360 send log item list to replay service of cc node group: 0, term: 3
+[2025-07-10T07:00:02.532529 I 12437] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 3 finished, sent 0 messages, took 52 microseconds, 0 eagains
+[2025-07-10T07:00:02.534511 I 12218] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-10T07:00:02.543053 I 12218] [cc_shard.cpp:2675] subscribed to seq grp 0, next seq id 1
+[2025-07-10T07:00:02.545691 I 12219] [cc_shard.cpp:2675] subscribed to seq grp 1, next seq id 1
+[2025-07-10T07:00:02.581401 I 12219] [cc_node.cpp:1015] subscribed to primary node at term 3
+[2025-07-10T07:00:02.655515 I 12218] [cc_node.cpp:705] node #0 is caught up with primary node in ng#0
+[2025-07-10T07:00:04.500830 I 12218] [object_cc_map.h:83] creating ObjectCcmap on shard: 0, table name: data_table_0, table_schema: 0x4cca8d57620, schema_ts: 100
+[2025-07-10T07:00:04.522090 W 12219] [local_cc_handler.cpp:1852] !!! DATA_NOT_ON_LOCAL_NODE !!
+[2025-07-10T07:00:04.579648 I 12219] [object_cc_map.h:83] creating ObjectCcmap on shard: 1, table name: data_table_0, table_schema: 0x4cca8d57620, schema_ts: 100
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.18).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-07-10T07:00:13.254256 I 12639] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-07-10T07:00:13.255648 I 12639] [redis_service.cpp:436] Set maxclients: 10000
+[2025-07-10T07:00:13.255991 I 12639] [redis_service.cpp:733] Local server ip port: 127.0.0.1:7479
+[2025-07-10T07:00:13.387558 I 12639] [redis_service.cpp:849] ng_id: 0
+[2025-07-10T07:00:13.387606 I 12639] [redis_service.cpp:852] node_id: 0, host_name: 127.0.0.1, port: 17479
+[2025-07-10T07:00:13.387620 I 12639] [redis_service.cpp:852] node_id: 1, host_name: 127.0.0.1, port: 17579
+[2025-07-10T07:00:13.387630 I 12639] [redis_service.cpp:852] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-07-10T07:00:13.391587 I 12639] [log_instance.h:141] This raft node conf_ is 127.0.0.1:17481:0,127.0.0.1:17581:0,127.0.0.1:17681:0
+[2025-07-10T07:00:13.391678 I 12639] [redis_service.cpp:2047] Log server started, node_id: 0, log_server_port: 17481, txlog_group_replica_num: 3, log_path: local:///tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service
+[2025-07-10T07:00:13.399943 I 12639] [log_instance.h:218] starting log instance at 127.0.0.1:17481
+[2025-07-10T07:00:13.399993 I 12639] [log_instance.h:221] starting log_state
+[2025-07-10T07:00:13.400266 I 12639] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-07-10T07:00:13.473148 I 12639] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-07-10T07:00:13.473266 I 12639] [log_instance.h:247] initializing raft node
+[2025-07-10T07:00:13.473326 I 12639] [log_instance.h:268] This raft node initial conf is 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T07:00:13.473399 I 12671] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-07-10T07:00:13.474041 I 12639] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-07-10T07:00:13.474116 W 12639] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-07-10T07:00:13.474136 W 12639] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log is empty
+[2025-07-10T07:00:13.484244 I 12639] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_meta first_log_index: 1 time: 10064
+[2025-07-10T07:00:13.484632 W 12639] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-07-10T07:00:13.484705 I 12639] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 40
+[2025-07-10T07:00:13.484743 I 12639] [node.cpp:628] node lg0:127.0.0.1:17481:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 old_conf: 
+[2025-07-10T07:00:13.515353 I 12639] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17481.
+[2025-07-10T07:00:13.516503 I 12639] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17481 in web browser.
+[2025-07-10T07:00:13.516762 I 12639] [log_server.cpp:165] Raft Service is running on 0.0.0.0:17481
+[2025-07-10T07:00:13.528429 I 12639] [data_store_service.cpp:1686] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T07:00:13.567392 I 12639] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17486.
+[2025-07-10T07:00:13.567442 I 12639] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17486 in web browser.
+[2025-07-10T07:00:13.567457 I 12639] [data_store_service.cpp:266] DataStoreService started on port 17486
+[2025-07-10T07:00:13.567632 I 12639] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-07-10T07:00:13.567808 I 12639] [data_store_service_config.cpp:598] DataStoreService channel updated to  shard_id: 0 node: 127.0.0.1:9100
+[2025-07-10T07:00:13.608369 I 12639] [redis_service.cpp:1290] enable_metrics: OFF
+[2025-07-10T07:00:13.632752 I 12639] [local_cc_shards.cpp:236] Data sync work memory usage quota: 157286400
+[2025-07-10T07:00:13.659264 I 12639] [checkpointer.cpp:80] checkpointer init, checkpoint_interval_: 10 ,ckpt_delay_seconds: 0
+[2025-07-10T07:00:13.659644 I 12639] [sharder.cpp:210] txlog_port = 17481
+[2025-07-10T07:00:13.659677 I 12639] [sharder.cpp:210] txlog_port = 17581
+[2025-07-10T07:00:13.659685 I 12639] [sharder.cpp:210] txlog_port = 17681
+[2025-07-10T07:00:13.659726 I 12639] [log_util.h:144] Dump LogRaftGroupConfig: 
+[2025-07-10T07:00:13.659737 I 12639] [log_util.h:153] log_group_id: 0 ,group_name:  lg0 ,group_conf: 127.0.0.1:17481:0,127.0.0.1:17581:0,127.0.0.1:17681:0 ,group_nodes: 0:1:2:
+[2025-07-10T07:00:13.663729 I 12639] [server.cpp:1129] Server[txservice::remote::CcNodeService] is serving on port=17480.
+[2025-07-10T07:00:13.663769 I 12639] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17480 in web browser.
+[2025-07-10T07:00:13.665210 I 12639] [server.cpp:1129] Server[txservice::fault::RecoveryService] is serving on port=17482.
+[2025-07-10T07:00:13.665243 I 12639] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17482 in web browser.
+[2025-07-10T07:00:13.665259 I 12639] [sharder.cpp:329] Forking host manager process with /tmp/build/dce06a3d/redis_src/cmake/install/bin/host_manager, the hm will be listening on 0.0.0.0:17483
+[2025-07-10T07:00:13.667629 I 12639] [sharder.cpp:371] Spawned host manager process with PID: 12685
+[2025-07-10T07:00:13.847692 I 12639] [tx_start_ts_collector.cpp:46] TxStartTsCollector init, interval seconds: 0
+[2025-07-10T07:00:13.848174 I 12639] [tx_service.h:1259] Tx service module is registered.
+[2025-07-10T07:00:13.861413 I 12639] [server.cpp:1129] Server[txservice::remote::CcStreamReceiver] is serving on port=17479.
+[2025-07-10T07:00:13.861472 I 12639] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:17479 in web browser.
+[2025-07-10T07:00:13.868628 I 12683] [cc_stream_sender.cpp:819] Establish the cc stream to node 0
+[2025-07-10T07:00:13.871330 E 12683] [cc_stream_sender.cpp:997] Failed to connect to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=88 addr=127.0.0.1:17579} (0x0x4b516050900): Connection refused
+[2025-07-10T07:00:13.871402 E 12683] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 1
+[2025-07-10T07:00:13.880112 I 12683] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 0
+[2025-07-10T07:00:13.880908 E 12683] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=93 addr=127.0.0.1:17579} (0x0x4b516051800): Connection refused
+[2025-07-10T07:00:13.880956 E 12683] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T07:00:14.871549 E 12683] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=6073083756637 addr=127.0.0.1:17679} (0x0x4b516051800): Connection refused
+[2025-07-10T07:00:14.871619 E 12683] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T07:00:14.881289 E 12683] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 1, ip: 127.0.0.1:17579, connect error: 111, [E111]Fail to connect Socket{id=6116033429597 addr=127.0.0.1:17579} (0x0x4b516051800): Connection refused
+[2025-07-10T07:00:14.881345 E 12683] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 1
+[2025-07-10T07:00:15.000800 I 12683] [cc_stream_sender.cpp:819] Establish the cc stream to node 1
+[2025-07-10T07:00:15.008468 I 12683] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 1
+[2025-07-10T07:00:15.018563 I 12651] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T07:00:15.464953 I 12652] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 1 start pre_vote
+[2025-07-10T07:00:15.470945 W 12651] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E111]Fail to connect Socket{id=7 addr=127.0.0.1:17681} (0x0x4b4ecf31500): Connection refused
+[2025-07-10T07:00:15.471392 I 12652] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 1 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T07:00:15.471434 I 12652] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 1 start vote and grant vote self
+[2025-07-10T07:00:15.472664 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:15.476491 I 12652] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 2 votedfor 127.0.0.1:17481:0:0 time: 4304
+[2025-07-10T07:00:15.495292 I 12652] [node.cpp:1433] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 term 2 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T07:00:15.495340 I 12652] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 2 become leader of group 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 
+[2025-07-10T07:00:15.495414 I 12652] [replicator.cpp:155] Replicator=1949915152441@127.0.0.1:17581:0:0 is started, group lg0
+[2025-07-10T07:00:15.495522 I 12652] [replicator.cpp:155] Replicator=2714419331141@127.0.0.1:17681:0:0 is started, group lg0
+[2025-07-10T07:00:15.495735 I 12652] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/log/log_inprogress_00000000000000000001' with fd=46
+[2025-07-10T07:00:15.497743 W 12651] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=1, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:15.513157 I 12651] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0, old_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T07:00:15.514838 I 12651] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-07-10T07:00:15.514984 I 12651] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-10T07:00:15.514998 I 12651] [log_instance.h:486] notify_checkpointer_threshold_size: 1024 MB
+[2025-07-10T07:00:15.515072 I 12807] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-10T07:00:15.515115 I 12807] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-10T07:00:15.515125 I 12807] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-10T07:00:15.571015 I 12652] [socket.cpp:2848] Checking Socket{id=7 remote addr=127.0.0.1:17681 local addr=0.0.0.0:0} (0x4b4ecf31500)
+[2025-07-10T07:00:15.871834 E 12683] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=4355096838419 addr=127.0.0.1:17679} (0x0x4b516063c00): Connection refused
+[2025-07-10T07:00:15.871883 E 12683] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-07-10T07:00:15.882803 E 12683] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 2, ip: 127.0.0.1:17679, connect error: 111, [E111]Fail to connect Socket{id=4415226380563 addr=127.0.0.1:17679} (0x0x4b516063c00): Connection refused
+[2025-07-10T07:00:15.882861 E 12683] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 2
+[2025-07-10T07:00:16.002561 W 12651] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=11, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:16.007452 I 12652] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T07:00:16.112438 I 12683] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 2
+[2025-07-10T07:00:16.119818 I 12683] [cc_stream_sender.cpp:819] Establish the cc stream to node 2
+[2025-07-10T07:00:16.120275 I 12652] [cc_stream_receiver.cpp:1532] RecoverStateCheckRequest, node 0 is not leader of node group 0
+[2025-07-10T07:00:16.506157 W 12651] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=21, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:16.811532 I 12652] [cc_node.cpp:347] CC node 0 becomes the leader of ng#0. Term: 2
+[2025-07-10T07:00:16.814208 I 12652] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:0
+[2025-07-10T07:00:16.871779 I 12651] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-10T07:00:16.888538 I 12651] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-07-10T07:00:16.888592 I 12651] [log_state.h:875] Create a new leader info
+[2025-07-10T07:00:16.888604 I 12651] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-07-10T07:00:16.888615 I 12651] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-07-10T07:00:16.888626 I 12651] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-10T07:00:16.888638 I 12651] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-10T07:00:16.888648 I 12651] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-10T07:00:16.888659 I 12651] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-10T07:00:16.888898 I 12651] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-10T07:00:16.889020 I 12867] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-07-10T07:00:16.890254 I 12651] [log_replay_service.cpp:274] replay service accepting new stream: 8589935019 from log group: 0 to cc_ng: 0 at term: 2
+[2025-07-10T07:00:16.890414 I 12867] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-10T07:00:16.890455 I 12867] [log_shipping_agent.h:362] thread: 132150799435328 send log item list to replay service of cc node group: 0, term: 2
+[2025-07-10T07:00:16.890588 I 12867] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 132 microseconds, 0 eagains
+[2025-07-10T07:00:16.891072 I 12651] [cc_node.cpp:126] The leader of cc node group ng#0 with the term 2 has been recovered.
+[2025-07-10T07:00:16.891112 I 12651] [log_replay_service.cpp:616] replay connection: cc node group: 0, term: 2, log group: 0, set recovering status to finished
+[2025-07-10T07:00:16.892868 I 12639] [server.cpp:1129] Server[EloqKV::RedisServiceImpl] is serving on port=7479.
+[2025-07-10T07:00:16.892902 W 12639] [server.cpp:1135] Builtin services are disabled according to ServerOptions.has_builtin_services
+EloqKV Server Started, listening on 127.0.0.1:7479
+[2025-07-10T07:00:16.892920 I 12639] [redis_server.cpp:110] ==== EloqKV Server Started, listening on 127.0.0.1:7479====
+[2025-07-10T07:00:16.893414 I 12651] [log_replay_service.cpp:717] replay service stream: 8589935019, is closed, active stream cnt: 0
+[2025-07-10T07:00:16.924546 I 12652] [cc_shard.h:880] start forwarding to node 2 from seq 1, seq grp 0
+[2025-07-10T07:00:16.927964 I 12652] [cc_shard.h:880] start forwarding to node 1 from seq 1, seq grp 0
+[2025-07-10T07:00:16.928434 I 12708] [cc_shard.h:880] start forwarding to node 2 from seq 1, seq grp 1
+[2025-07-10T07:00:16.928488 I 12708] [cc_shard.h:880] start forwarding to node 1 from seq 1, seq grp 1
+[2025-07-10T07:00:16.940475 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:16.940539 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:16.940563 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:17.014719 W 12651] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=31, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:17.041688 I 12651] [socket.cpp:2848] Checking Socket{id=510 remote addr=127.0.0.1:17680 local addr=0.0.0.0:0} (0x4b51c0c0000)
+[2025-07-10T07:00:17.043010 I 12651] [socket.cpp:2908] Revived Socket{id=510 remote addr=127.0.0.1:17680 local addr=0.0.0.0:0} (0x4b51c0c0000) (Connectable)
+[2025-07-10T07:00:17.522541 W 12651] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=41, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:18.028033 W 12651] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=51, [E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R1][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R2][E112]Not connected to 127.0.0.1:17681 yet, server_id=7 [R3][E112]Not connected to 127.0.0.1:17681 yet, server_id=7
+[2025-07-10T07:00:18.286778 I 12652] [data_store_service_client_closure.cpp:238] FetchTableCatalogCallback, key:data_table_0, catalog_image: data_table_0
+[2025-07-10T07:00:18.808941 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:19.778775 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:19.778813 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:19.778985 W 12652] [node.cpp:816] node lg0:127.0.0.1:17481:0:0 term 2 steps down when alive nodes don't satisfy quorum dead_nodes: 127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 conf: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T07:00:19.779058 I 12652] [replicator.cpp:1013] Group lg0 Replicator=1949915152441 is going to quit
+[2025-07-10T07:00:19.779075 I 12652] [replicator.cpp:1277] Replicator=1949915152441 is going to quit
+[2025-07-10T07:00:19.779096 I 12652] [replicator.cpp:1013] Group lg0 Replicator=2714419331141 is going to quit
+[2025-07-10T07:00:19.779107 I 12652] [replicator.cpp:1277] Replicator=2714419331141 is going to quit
+[2025-07-10T07:00:19.779167 I 12652] [log_instance.cpp:1265] Log node 127.0.0.1:17481 stops being the leader of the log group #0, status: Majority of the group dies
+[2025-07-10T07:00:19.779227 I 12651] [socket.cpp:2848] Checking Socket{id=5 remote addr=127.0.0.1:17481 local addr=0.0.0.0:0} (0x4b4ecf30f00)
+[2025-07-10T07:00:19.780822 W 12675] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:19.780872 W 12675] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:19.780886 W 12675] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:19.780907 E 12675] [log_agent.cpp:276] Failed to GetLogGroupConfig, error text:[E112]Not connected to 127.0.0.1:17481 yet, server_id=5 [R1][E112]Not connected to 127.0.0.1:17481 yet, server_id=5 [R2][E112]Not connected to 127.0.0.1:17481 yet, server_id=5 [R3][E112]Not connected to 127.0.0.1:17481 yet, server_id=5
+[2025-07-10T07:00:19.781002 I 12652] [socket.cpp:2908] Revived Socket{id=5 remote addr=127.0.0.1:17481 local addr=0.0.0.0:0} (0x4b4ecf30f00) (Connectable)
+[2025-07-10T07:00:19.781787 I 12652] [object_cc_map.h:83] creating ObjectCcmap on shard: 0, table name: data_table_0, table_schema: 0x4b512d573f0, schema_ts: 100
+[2025-07-10T07:00:19.784535 I 12651] [socket.cpp:2908] Revived Socket{id=7 remote addr=127.0.0.1:17681 local addr=0.0.0.0:0} (0x4b4ecf31500) (Connectable)
+[2025-07-10T07:00:21.745254 I 12651] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 2 start pre_vote
+[2025-07-10T07:00:22.952915 I 12652] [node.cpp:2177] node lg0:127.0.0.1:17481:0:0 received PreVote from 127.0.0.1:17681:0:0 in term 2 current_term 2 granted 0 rejected_by_lease 0
+[2025-07-10T07:00:22.959820 I 12651] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 2 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T07:00:22.959877 I 12651] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 2 start vote and grant vote self
+[2025-07-10T07:00:23.247926 I 12651] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 3 votedfor 127.0.0.1:17481:0:0 time: 287920
+[2025-07-10T07:00:23.248039 I 12651] [node.cpp:2177] node lg0:127.0.0.1:17481:0:0 received PreVote from 127.0.0.1:17581:0:0 in term 3 current_term 3 granted 1 rejected_by_lease 0
+[2025-07-10T07:00:23.265918 W 12652] [node.cpp:1509] node lg0:127.0.0.1:17481:0:0 received invalid PreVoteResponse from 127.0.0.1:17681:0:0 ctx_version 4 current_ctx_version 5
+[2025-07-10T07:00:23.660151 I 12677] [cc_request.h:2722] ccs 0 memory usage report, committed 12428096, allocated 11947984, frag ratio 3.9 , heap full: 0
+[2025-07-10T07:00:26.052366 I 12677] [cc_request.h:2722] ccs 1 memory usage report, committed 12559584, allocated 11882704, frag ratio 5.4 , heap full: 0
+[2025-07-10T07:00:26.052443 I 12677] [local_cc_shards.h:474] Table range memory report: allocated 0, committed 0, full: 0
+[2025-07-10T07:00:23.960083 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17581
+[2025-07-10T07:00:24.779345 W 12652] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17681
+[2025-07-10T07:00:24.981135 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:26.054646 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:26.054675 W 12650] [controller.cpp:675] `CanRetryBackoffInPthread()' returns false, skip retry backoff in pthread.
+[2025-07-10T07:00:26.055177 I 12651] [socket.cpp:2848] Checking Socket{id=5 remote addr=127.0.0.1:17481 local addr=0.0.0.0:0} (0x4b4ecf30f00)
+[2025-07-10T07:00:26.055325 I 12652] [node.cpp:2177] node lg0:127.0.0.1:17481:0:0 received PreVote from 127.0.0.1:17581:0:0 in term 4 current_term 3 granted 1 rejected_by_lease 0
+[2025-07-10T07:00:26.055366 W 12651] [node.cpp:1378] node lg0:127.0.0.1:17481:0:0 term 3 steps down when reaching vote timeout: fail to get quorum vote-granted
+[2025-07-10T07:00:26.055430 I 12651] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 3 start pre_vote
+[2025-07-10T07:00:26.055547 I 12652] [socket.cpp:2908] Revived Socket{id=5 remote addr=127.0.0.1:17481 local addr=0.0.0.0:0} (0x4b4ecf30f00) (Connectable)
+[2025-07-10T07:00:26.056779 I 12652] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 3 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T07:00:26.056813 I 12652] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 3 start vote and grant vote self
+[2025-07-10T07:00:26.558459 I 12677] [checkpointer.cpp:228] Begin checkpoint with timestamp: 1752130823659891. The memory usage of node is: 23272 KB.
+[2025-07-10T07:00:27.055649 W 12651] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17681
+[2025-07-10T07:00:31.282977 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17681
+[2025-07-10T07:00:31.283042 W 12675] [log_agent.cpp:171] Fail to refresh_leader : [127.0.0.1:17481:0:0] [E110]Fail to connect Socket{id=5 addr=127.0.0.1:17481} (0x0x4b4ecf30f00): Connection timed out [R1][E112]Not connected to 127.0.0.1:17481 yet, server_id=5 [R2][E112]Not connected to 127.0.0.1:17481 yet, server_id=5 [R3][E112]Not connected to 127.0.0.1:17481 yet, server_id=5, [127.0.0.1:17581:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17581, [127.0.0.1:17681:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17681
+[2025-07-10T07:00:31.283314 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17581
+[2025-07-10T07:00:31.291908 I 12652] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 4 votedfor 127.0.0.1:17481:0:0 time: 5234981
+[2025-07-10T07:00:31.291972 W 12652] [node.cpp:1378] node lg0:127.0.0.1:17481:0:0 term 4 steps down when reaching vote timeout: fail to get quorum vote-granted
+[2025-07-10T07:00:31.292001 I 12652] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 4 start pre_vote
+[2025-07-10T07:00:31.292135 I 12652] [node.cpp:2259] node lg0:127.0.0.1:17481:0:0 received RequestVote from 127.0.0.1:17581:0:0 in term 4 current_term 4 log_is_ok 1 votable_time 0
+[2025-07-10T07:00:31.295367 I 12710] [local_cc_shards.cpp:4585] scan_cc: 132150841386464  scan data cnt is 0
+[2025-07-10T07:00:31.299451 I 12651] [object_cc_map.h:83] creating ObjectCcmap on shard: 1, table name: data_table_0, table_schema: 0x4b512d573f0, schema_ts: 100
+[2025-07-10T07:00:31.302279 I 12711] [local_cc_shards.cpp:4585] scan_cc: 132150832993760  scan data cnt is 0
+[2025-07-10T07:00:31.302436 I 12652] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 4 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T07:00:31.302469 I 12652] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 4 start vote and grant vote self
+[2025-07-10T07:00:31.302991 I 12711] [data_sync_task.cpp:111] Checkpoint of node group #0 succeeded with timestamp: 1752130823659891
+[2025-07-10T07:00:32.292193 W 12651] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17681:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17681
+[2025-07-10T07:00:36.006034 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17581
+[2025-07-10T07:00:36.006108 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17681
+[2025-07-10T07:00:36.123435 I 12652] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 5 votedfor 127.0.0.1:17481:0:0 time: 4820832
+[2025-07-10T07:00:36.123514 I 12652] [node.cpp:2156] node lg0:127.0.0.1:17481:0:0 ignore PreVote from 127.0.0.1:17681:0:0 in term 4 current_term 5
+[2025-07-10T07:00:36.123535 W 12652] [node.cpp:1378] node lg0:127.0.0.1:17481:0:0 term 5 steps down when reaching vote timeout: fail to get quorum vote-granted
+[2025-07-10T07:00:36.123564 I 12652] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 5 start pre_vote
+[2025-07-10T07:00:36.132316 I 12710] [local_cc_shards.cpp:4585] scan_cc: 132150841386464  scan data cnt is 0
+[2025-07-10T07:00:36.139149 I 12711] [local_cc_shards.cpp:4585] scan_cc: 132150832993760  scan data cnt is 0
+[2025-07-10T07:00:36.246172 I 12652] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17681:0:0 term 4 granted 1 rejected_by_lease 0 disrupted 0
+[2025-07-10T07:00:36.246218 I 12652] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 5 start vote and grant vote self
+[2025-07-10T07:00:37.123875 W 12651] [node.cpp:1597] node lg0:127.0.0.1:17481:0:0 request PreVote from 127.0.0.1:17581:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17581
+[2025-07-10T07:00:37.445283 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17581
+[2025-07-10T07:00:37.445346 W 12651] [node.cpp:1484] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 error: [E1008]Reached timeout=1000ms @127.0.0.1:17681
+[2025-07-10T07:00:37.482731 I 12652] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 6 votedfor 127.0.0.1:17481:0:0 time: 1235242
+[2025-07-10T07:00:37.945600 W 12675] [log_agent.cpp:171] Fail to refresh_leader : [127.0.0.1:17481:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17481, [127.0.0.1:17581:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17581, [127.0.0.1:17681:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17681
+[2025-07-10T07:00:38.274611 I 12652] [node.cpp:2177] node lg0:127.0.0.1:17481:0:0 received PreVote from 127.0.0.1:17581:0:0 in term 7 current_term 6 granted 1 rejected_by_lease 0
+[2025-07-10T07:00:38.275101 I 12652] [node.cpp:2177] node lg0:127.0.0.1:17481:0:0 received PreVote from 127.0.0.1:17681:0:0 in term 6 current_term 6 granted 0 rejected_by_lease 0
+[2025-07-10T07:00:38.284976 I 12652] [node.cpp:2259] node lg0:127.0.0.1:17481:0:0 received RequestVote from 127.0.0.1:17581:0:0 in term 7 current_term 6 log_is_ok 1 votable_time 0
+[2025-07-10T07:00:38.434774 I 12652] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 7 votedfor 0.0.0.0:0:0:0 time: 149739
+[2025-07-10T07:00:38.689508 I 12652] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 7 votedfor 127.0.0.1:17581:0:0 time: 254670
+[2025-07-10T07:00:38.690233 I 12651] [log_instance.cpp:1294] Log node 127.0.0.1:17481 becomes the follower of the group #0, term: 7
+[2025-07-10T07:00:41.195048 I 12651] [node.cpp:1617] node lg0:127.0.0.1:17481:0:0 term 7 start pre_vote
+[2025-07-10T07:00:42.799621 I 12651] [log_instance.cpp:1294] Log node 127.0.0.1:17481 becomes the follower of the group #0, term: 7
+[2025-07-10T07:00:42.871948 I 12677] [cc_request.h:2722] ccs 0 memory usage report, committed 12431680, allocated 11951152, frag ratio 3.9 , heap full: 0
+[2025-07-10T07:00:42.871999 I 12677] [cc_request.h:2722] ccs 1 memory usage report, committed 12411488, allocated 11902688, frag ratio 4.1 , heap full: 0
+[2025-07-10T07:00:42.872015 I 12677] [local_cc_shards.h:474] Table range memory report: allocated 16, committed 4096, full: 0
+[2025-07-10T07:00:42.872144 I 12652] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17681:0:0 term 7 granted 0 rejected_by_lease 1 disrupted 0
+[2025-07-10T07:00:42.894572 I 12651] [node.cpp:1542] node lg0:127.0.0.1:17481:0:0 received PreVoteResponse from 127.0.0.1:17581:0:0 term 7 granted 1 rejected_by_lease 0 disrupted 1
+[2025-07-10T07:00:42.894622 I 12651] [node.cpp:1692] node lg0:127.0.0.1:17481:0:0 term 7 start vote and grant vote self
+[2025-07-10T07:00:42.897337 I 12652] [log_replay_service.cpp:292] Update log group:0 leader to node_id:1
+[2025-07-10T07:00:43.362342 I 12651] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/test_data/datafarm1/log_service/0/raft_meta term 8 votedfor 127.0.0.1:17481:0:0 time: 467270
+[2025-07-10T07:00:43.362468 W 12652] [node.cpp:2447] node lg0:127.0.0.1:17481:0:0 ignore stale AppendEntries from 127.0.0.1:17581:0:0 in term 7 current_term 8
+[2025-07-10T07:00:43.397256 I 12677] [checkpointer.cpp:228] Begin checkpoint with timestamp: 1752130842793529. The memory usage of node is: 23294 KB.
+[2025-07-10T07:00:43.517964 I 12652] [cc_node.cpp:579] All shards are fully in sync.
+[2025-07-10T07:00:43.692436 I 12871] [log_instance.cpp:1406] Request transfer leader from 127.0.0.1:17581:0:0 to the prefer leader 127.0.0.1:17481 of log group 0
+[2025-07-10T07:00:43.769543 I 12652] [node.cpp:1433] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17681:0:0 term 7 granted 0 rejected_by_lease 1 disrupted 0
+[2025-07-10T07:00:43.778985 I 12651] [cc_node.cpp:467] CC node 0 steps down as the leader of ng#0.
+[2025-07-10T07:00:43.842468 I 12652] [node.cpp:1433] node lg0:127.0.0.1:17481:0:0 received RequestVoteResponse from 127.0.0.1:17581:0:0 term 8 granted 1 rejected_by_lease 0 disrupted 1
+[2025-07-10T07:00:43.842521 I 12652] [node.cpp:1956] node lg0:127.0.0.1:17481:0:0 term 8 become leader of group 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0 
+[2025-07-10T07:00:43.842563 I 12652] [replicator.cpp:155] Replicator=1254130450507@127.0.0.1:17581:0:0 is started, group lg0
+[2025-07-10T07:00:43.842628 I 12652] [replicator.cpp:155] Replicator=6597069766674@127.0.0.1:17681:0:0 is started, group lg0
+[2025-07-10T07:00:43.882615 I 12651] [cc_req_misc.cpp:430] ccshard: 1; clear ccmaps and catalogs of node group: 0
+[2025-07-10T07:00:43.890605 E 12871] [log_instance.cpp:1523] Failed to transfer the leader of log group 0
+[2025-07-10T07:00:44.390655 W 12675] [log_agent.cpp:171] Fail to refresh_leader : [127.0.0.1:17481:0:0] [E11][10.80.205.179:17481][E11]Unknown leader, [127.0.0.1:17581:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17581, [127.0.0.1:17681:0:0] [E1008]Reached timeout=500ms @127.0.0.1:17681
+[2025-07-10T07:00:44.442926 W 12651] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17681:0:0 _consecutive_error_times=1, [E1008]Reached timeout=500ms @127.0.0.1:17681
+[2025-07-10T07:00:44.777506 W 12651] [replicator.cpp:316] Group lg0 fail to issue RPC to 127.0.0.1:17581:0:0 _consecutive_error_times=1, [E1008]Reached timeout=500ms @127.0.0.1:17581
+[2025-07-10T07:00:44.811870 I 12652] [cc_node.cpp:765] Subscribing to primary node 1 at term 3
+[2025-07-10T07:00:44.811904 I 12652] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:1
+[2025-07-10T07:00:45.768692 E 12652] [tx_execution.cpp:1706] InitTxnOperation failed for cc error:REQUESTED_NODE_NOT_LEADER, tx owner 0
+[2025-07-10T07:00:47.871563 W 12652] [redis_service.cpp:2597] txn: 18446744073709551615 N9txservice22ObjectCommandTxRequestE error: Failed to initialize the transaction.
+[2025-07-10T07:00:47.881307 I 12651] [node.cpp:3354] node lg0:127.0.0.1:17481:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0, old_peers: 127.0.0.1:17481:0:0,127.0.0.1:17581:0:0,127.0.0.1:17681:0:0
+[2025-07-10T07:00:47.881422 I 12651] [log_instance.h:465] Log node 127.0.0.1:17481 becomes the leader of the log group #0, term: 8, leader lease valid? yes
+[2025-07-10T07:00:47.896502 I 12652] [log_replay_service.cpp:292] Update log group:0 leader to node_id:0
+[2025-07-10T07:00:47.896695 I 12652] [log_instance.h:484] Start checking replay log size every 10 seconds.
+[2025-07-10T07:00:47.896719 I 12652] [log_instance.h:486] notify_checkpointer_threshold_size: 1024 MB
+[2025-07-10T07:00:47.899609 I 12877] [log_state_rocksdb_impl.cpp:704] Total memtables size: 0 MB
+[2025-07-10T07:00:47.899662 I 12877] [log_state_rocksdb_impl.cpp:705] Total SSTables size used in replay: 0 MB
+[2025-07-10T07:00:47.899672 I 12877] [log_state_rocksdb_impl.cpp:709] Total replay log size: 0 MB
+[2025-07-10T07:00:49.884678 E 12652] [tx_execution.cpp:1706] InitTxnOperation failed for cc error:REQUESTED_NODE_NOT_LEADER, tx owner 0
+[2025-07-10T07:00:50.136615 W 12652] [redis_service.cpp:2597] txn: 18446744073709551615 N9txservice22ObjectCommandTxRequestE error: Failed to initialize the transaction.
+[2025-07-10T07:00:52.010677 I 12651] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:1
+[2025-07-10T07:00:52.144690 E 12652] [tx_execution.cpp:1706] InitTxnOperation failed for cc error:REQUESTED_NODE_NOT_LEADER, tx owner 0
+[2025-07-10T07:00:52.195587 W 12652] [redis_service.cpp:2597] txn: 18446744073709551615 N9txservice22ObjectCommandTxRequestE error: Failed to initialize the transaction.
+[2025-07-10T07:00:52.924006 I 12651] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-07-10T07:00:52.924059 I 12651] [log_state.h:834] Updating node group term, ng:0,term:3
+[2025-07-10T07:00:52.924075 I 12651] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-07-10T07:00:52.924085 I 12651] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-07-10T07:00:52.924095 I 12651] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-07-10T07:00:52.924105 I 12651] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-07-10T07:00:52.924115 I 12651] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-07-10T07:00:52.924125 I 12651] [log_instance.cpp:851] start replaying from ts 0
+[2025-07-10T07:00:52.938016 I 12651] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-07-10T07:00:52.938069 I 12651] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-07-10T07:00:52.938081 I 12651] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-07-10T07:00:53.117771 I 12651] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-07-10T07:00:53.121178 I 12878] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-07-10T07:00:53.173426 I 12878] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-07-10T07:00:53.181594 I 12878] [log_shipping_agent.h:362] thread: 132150779463232 send log item list to replay service of cc node group: 0, term: 3
+[2025-07-10T07:00:53.208842 I 12878] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 3 finished, sent 0 messages, took 9226 microseconds, 0 eagains
+[2025-07-10T07:00:53.219527 I 12651] [cc_shard.cpp:2675] subscribed to seq grp 1, next seq id 1
+[2025-07-10T07:00:53.220438 I 12707] [cc_shard.cpp:2675] subscribed to seq grp 0, next seq id 1
+[2025-07-10T07:00:53.287813 I 12651] [cc_node.cpp:1015] subscribed to primary node at term 3
+[2025-07-10T07:00:54.200237 E 12652] [tx_execution.cpp:1706] InitTxnOperation failed for cc error:REQUESTED_NODE_NOT_LEADER, tx owner 0
+[2025-07-10T07:00:54.200340 W 12652] [redis_service.cpp:2597] txn: 18446744073709551615 N9txservice22ObjectCommandTxRequestE error: Failed to initialize the transaction.
+[2025-07-10T07:00:55.373860 I 12652] [cc_node.cpp:705] node #0 is caught up with primary node in ng#0
+[2025-07-10T07:00:56.207993 I 12652] [object_cc_map.h:83] creating ObjectCcmap on shard: 0, table name: data_table_0, table_schema: 0x4b512d57af0, schema_ts: 100
+[2025-07-10T07:00:56.274214 W 12651] [local_cc_handler.cpp:1852] !!! DATA_NOT_ON_LOCAL_NODE !!
+[2025-07-10T07:00:56.377786 I 12651] [object_cc_map.h:83] creating ObjectCcmap on shard: 1, table name: data_table_0, table_schema: 0x4b512d57af0, schema_ts: 100
+[2025-07-10T07:00:56.891891 W 12652] [local_cc_handler.cpp:1852] !!! DATA_NOT_ON_LOCAL_NODE !!

@@ -1,0 +1,72 @@
+* Welcome to use DataStoreService Server.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting DataStoreService Server...
+[2025-07-10T06:59:36.267302 I 11622] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-10T06:59:38.283403 I 11622] [rocksdb_cloud_data_store.cpp:991] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-10T06:59:38.283456 I 11622] [rocksdb_cloud_data_store.cpp:996] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-10T06:59:38.283473 I 11622] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-10T06:59:38.502683 I 11622] [rocksdb_cloud_data_store.cpp:804] DBCloud Open took 219 ms
+[2025-07-10T06:59:38.569929 I 11622] [rocksdb_cloud_data_store.cpp:826] RocksDB Cloud started
+[2025-07-10T06:59:38.589424 I 11622] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=9100.
+[2025-07-10T06:59:38.589478 I 11622] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:9100 in web browser.
+[2025-07-10T06:59:38.589743 I 11622] [data_store_service.cpp:266] DataStoreService started on port 9100
+DataStoreService Server Started, listening on 9100
+[2025-07-10T06:59:38.589923 I 11622] [main.cpp:413] ====DataStoreService Server Started, listening on 9100====
+[2025-07-10T06:59:39.183539 I 11711] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:39.491339 I 11709] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:39.618784 I 11707] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:40.007390 I 11709] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:43.044030 I 11707] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:46.103513 I 11707] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+* Welcome to use DataStoreService Server.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting DataStoreService Server...
+[2025-07-10T06:59:52.820586 I 12030] [data_store_service_config.cpp:71] Shard count: 1
+[2025-07-10T06:59:52.820657 I 12030] [data_store_service_config.cpp:119] Shard 0 node 127.0.0.1:9100
+[2025-07-10T06:59:52.977116 I 12030] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-10T06:59:56.006729 I 12030] [rocksdb_cloud_data_store.cpp:991] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-10T06:59:56.006788 I 12030] [rocksdb_cloud_data_store.cpp:996] FindMaxTermFromCloudManifestFiles tooks 3 ms
+[2025-07-10T06:59:56.006805 I 12030] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-10T06:59:56.285576 I 12030] [rocksdb_cloud_data_store.cpp:804] DBCloud Open took 278 ms
+[2025-07-10T06:59:56.299052 I 12030] [rocksdb_cloud_data_store.cpp:826] RocksDB Cloud started
+[2025-07-10T06:59:56.304832 I 12030] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=9100.
+[2025-07-10T06:59:56.304883 I 12030] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:9100 in web browser.
+[2025-07-10T06:59:56.305126 I 12030] [data_store_service.cpp:266] DataStoreService started on port 9100
+DataStoreService Server Started, listening on 9100
+[2025-07-10T06:59:56.305299 I 12030] [main.cpp:413] ====DataStoreService Server Started, listening on 9100====
+[2025-07-10T06:59:56.787050 I 12157] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:57.601938 I 12161] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:58.669756 I 12156] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T06:59:59.978814 I 12160] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T07:00:02.648078 I 12054] [rocksdb_cloud_data_store.cpp:1162] FlushData successfully.
+* Welcome to use DataStoreService Server.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting DataStoreService Server...
+[2025-07-10T07:00:08.855895 I 12443] [rocksdb_cloud_data_store.cpp:555] DBCloud Open
+[2025-07-10T07:00:11.881294 I 12443] [rocksdb_cloud_data_store.cpp:991] FindMaxTermFromCloudManifestFiles, cc_ng_id: 0 max_term: -1
+[2025-07-10T07:00:11.881350 I 12443] [rocksdb_cloud_data_store.cpp:996] FindMaxTermFromCloudManifestFiles tooks 1 ms
+[2025-07-10T07:00:11.881371 I 12443] [rocksdb_cloud_data_store.cpp:607] StartDB cookie_on_open:  new_cookie_on_open: 0-0
+[2025-07-10T07:00:11.995299 I 12443] [rocksdb_cloud_data_store.cpp:804] DBCloud Open took 113 ms
+[2025-07-10T07:00:12.018158 I 12443] [rocksdb_cloud_data_store.cpp:826] RocksDB Cloud started
+[2025-07-10T07:00:12.038358 I 12443] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=9100.
+[2025-07-10T07:00:12.038470 I 12443] [server.cpp:1132] Check out http://55e4f760-77c0-47a0-9bf4-93d6969d1601:9100 in web browser.
+[2025-07-10T07:00:12.038813 I 12443] [data_store_service.cpp:266] DataStoreService started on port 9100
+DataStoreService Server Started, listening on 9100
+[2025-07-10T07:00:12.039084 I 12443] [main.cpp:413] ====DataStoreService Server Started, listening on 9100====
+[2025-07-10T07:00:12.677349 I 12566] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T07:00:13.527691 I 12569] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T07:00:14.687129 I 12569] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T07:00:15.608690 I 12566] [data_store_service.cpp:1166] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-07-10T07:00:55.354190 I 12469] [rocksdb_cloud_data_store.cpp:1162] FlushData successfully.
