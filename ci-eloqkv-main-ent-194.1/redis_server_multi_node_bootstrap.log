@@ -1,0 +1,61 @@
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.24).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-11-21T09:10:25.858179 I 21062] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-11-21T09:10:25.858861 I 21062] [redis_service.cpp:442] Set maxclients: 1000000
+[2025-11-21T09:10:25.858880 W 21062] [redis_service.cpp:484] When set enable_cache_replacement, should also set enable_data_store, reset to false
+[2025-11-21T09:10:25.859048 I 21062] [redis_service.cpp:747] Local server ip port: 127.0.0.1:6379
+[2025-11-21T09:10:25.859082 I 21062] [redis_service.cpp:873] ng_id: 0
+[2025-11-21T09:10:25.859087 I 21062] [redis_service.cpp:876] node_id: 0, host_name: 127.0.0.1, port: 16379
+[2025-11-21T09:10:25.860585 I 21062] [log_instance.h:152] This raft node conf_ is 127.0.0.1:16381:0
+[2025-11-21T09:10:25.860620 I 21062] [redis_service.cpp:2055] Log server started, node_id: 0, log_server_port: 16381, txlog_group_replica_num: 3, log_path: local:///tmp/redis_server_data_0/log_service
+[2025-11-21T09:10:25.863610 E 21067] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 512
+[2025-11-21T09:10:25.863613 E 21066] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 512
+[2025-11-21T09:10:25.863786 I 21067] [ring_write_buf_pool.h:87] IO uring fixed buffers registered, buffer count: 512
+[2025-11-21T09:10:25.863822 I 21066] [ring_write_buf_pool.h:87] IO uring fixed buffers registered, buffer count: 512
+[2025-11-21T09:10:25.864288 I 21062] [log_instance.h:227] starting log instance at 127.0.0.1:16381
+[2025-11-21T09:10:25.864307 I 21062] [log_instance.h:230] starting log_state
+[2025-11-21T09:10:25.864445 I 21062] [log_state_rocksdb_impl.cpp:336] Starting log state local rocksdb
+[2025-11-21T09:10:25.882349 I 21062] [log_state_rocksdb_impl.cpp:379] local rocksdb started
+[2025-11-21T09:10:25.882405 I 21062] [log_instance.h:256] initializing raft node
+[2025-11-21T09:10:25.882422 I 21088] [log_state_rocksdb_impl.cpp:504] Sst files size on disk: 0.0MB
+[2025-11-21T09:10:25.882431 I 21062] [log_instance.h:277] This raft node initial conf is 127.0.0.1:16381:0:0
+[2025-11-21T09:10:25.882841 I 21062] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-11-21T09:10:25.882876 W 21062] [protobuf_file.cpp:91] open file failed, path: /tmp/redis_server_data_0/log_service/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-11-21T09:10:25.882884 W 21062] [log.cpp:801] /tmp/redis_server_data_0/log_service/0/log is empty
+[2025-11-21T09:10:25.884984 I 21062] [log.cpp:1316] log save_meta /tmp/redis_server_data_0/log_service/0/log/log_meta first_log_index: 1 time: 2081
+[2025-11-21T09:10:25.885087 W 21062] [protobuf_file.cpp:91] open file failed, path: /tmp/redis_server_data_0/log_service/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-11-21T09:10:25.885110 I 21062] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/redis_server_data_0/log_service/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 11
+[2025-11-21T09:10:25.885130 I 21062] [node.cpp:628] node lg0:127.0.0.1:16381:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:16381:0:0 old_conf: 
+[2025-11-21T09:10:25.885172 I 21062] [node.cpp:1692] node lg0:127.0.0.1:16381:0:0 term 1 start vote and grant vote self
+[2025-11-21T09:10:25.887115 I 21062] [raft_meta.cpp:551] Saved single stable meta, path /tmp/redis_server_data_0/log_service/0/raft_meta term 2 votedfor 127.0.0.1:16381:0:0 time: 1918
+[2025-11-21T09:10:25.887128 I 21062] [node.cpp:1956] node lg0:127.0.0.1:16381:0:0 term 2 become leader of group 127.0.0.1:16381:0:0 
+[2025-11-21T09:10:25.887494 I 21067] [log.cpp:116] Created new segment `/tmp/redis_server_data_0/log_service/0/log/log_inprogress_00000000000000000001' with fd=12
+[2025-11-21T09:10:25.888918 I 21066] [node.cpp:3354] node lg0:127.0.0.1:16381:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:16381:0:0, old_peers: 127.0.0.1:16381:0:0
+[2025-11-21T09:10:25.888957 I 21066] [log_instance.h:476] Log node 127.0.0.1:16381 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-11-21T09:10:25.889503 I 21062] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=16381.
+[2025-11-21T09:10:25.889523 I 21062] [server.cpp:1132] Check out http://8a361b62-c889-4b5b-aa0f-d90aaa5c9dd6:16381 in web browser.
+[2025-11-21T09:10:25.889761 I 21062] [log_server.cpp:164] Raft Service is running on 0.0.0.0:16381
+[2025-11-21T09:10:25.889779 I 21062] [redis_service.cpp:1248] enable_metrics: OFF
+[2025-11-21T09:10:25.889786 I 21062] [redis_service.cpp:2106] Shutting down the internal logservice.
+[2025-11-21T09:10:25.889791 I 21062] [server.cpp:1189] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is going to quit
+[2025-11-21T09:10:25.890312 I 21062] [node.cpp:994] node lg0:127.0.0.1:16381:0:0 shutdown, current_term 2 state LEADER
+[2025-11-21T09:10:25.890347 I 21067] [log_instance.cpp:1299] Log node 127.0.0.1:16381 stops being the leader of the log group #0, status: Raft node is going to quit.
+[2025-11-21T09:10:25.890347 I 21062] [replicator.cpp:1525] Group lg0 Fail to find the next candidate
+[2025-11-21T09:10:25.890388 I 21062] [node.cpp:994] node lg0:127.0.0.1:16381:0:0 shutdown, current_term 2 state SHUTDOWN
+[2025-11-21T09:10:25.890394 I 21062] [node.cpp:994] node lg0:127.0.0.1:16381:0:0 shutdown, current_term 2 state SHUTDOWN
+[2025-11-21T09:10:25.891227 I 21062] [redis_service.cpp:2108] Internal logservice shut down.
+[2025-11-21T09:10:25.891239 I 21062] [redis_service.cpp:1356] bootstrap done !!!
+bootstrap done !!!

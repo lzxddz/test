@@ -1,0 +1,282 @@
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.24).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-11-21T09:10:45.859390 I 21091] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-11-21T09:10:45.860049 I 21091] [redis_service.cpp:442] Set maxclients: 1000000
+[2025-11-21T09:10:45.860066 W 21091] [redis_service.cpp:484] When set enable_cache_replacement, should also set enable_data_store, reset to false
+[2025-11-21T09:10:45.860235 I 21091] [redis_service.cpp:747] Local server ip port: 127.0.0.1:7379
+[2025-11-21T09:10:45.860302 I 21091] [redis_service.cpp:873] ng_id: 2
+[2025-11-21T09:10:45.860307 I 21091] [redis_service.cpp:876] node_id: 2, host_name: 127.0.0.1, port: 18379
+[2025-11-21T09:10:45.860311 I 21091] [redis_service.cpp:876] node_id: 0, host_name: 127.0.0.1, port: 16379
+[2025-11-21T09:10:45.860316 I 21091] [redis_service.cpp:876] node_id: 1, host_name: 127.0.0.1, port: 17379
+[2025-11-21T09:10:45.860319 I 21091] [redis_service.cpp:873] ng_id: 1
+[2025-11-21T09:10:45.860322 I 21091] [redis_service.cpp:876] node_id: 1, host_name: 127.0.0.1, port: 17379
+[2025-11-21T09:10:45.860327 I 21091] [redis_service.cpp:876] node_id: 2, host_name: 127.0.0.1, port: 18379
+[2025-11-21T09:10:45.860330 I 21091] [redis_service.cpp:876] node_id: 0, host_name: 127.0.0.1, port: 16379
+[2025-11-21T09:10:45.860333 I 21091] [redis_service.cpp:873] ng_id: 0
+[2025-11-21T09:10:45.860337 I 21091] [redis_service.cpp:876] node_id: 0, host_name: 127.0.0.1, port: 16379
+[2025-11-21T09:10:45.860340 I 21091] [redis_service.cpp:876] node_id: 1, host_name: 127.0.0.1, port: 17379
+[2025-11-21T09:10:45.860344 I 21091] [redis_service.cpp:876] node_id: 2, host_name: 127.0.0.1, port: 18379
+[2025-11-21T09:10:45.861882 I 21091] [log_instance.h:152] This raft node conf_ is 127.0.0.1:16381:0,127.0.0.1:17381:0,127.0.0.1:18381:0
+[2025-11-21T09:10:45.861912 I 21091] [redis_service.cpp:2055] Log server started, node_id: 1, log_server_port: 17381, txlog_group_replica_num: 3, log_path: local:///tmp/redis_server_data_1/log_service
+[2025-11-21T09:10:45.863979 E 21102] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 512
+[2025-11-21T09:10:45.863991 E 21105] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 512
+[2025-11-21T09:10:45.864118 E 21102] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 256
+[2025-11-21T09:10:45.864121 E 21105] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 256
+[2025-11-21T09:10:45.864197 E 21105] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 128
+[2025-11-21T09:10:45.864198 E 21102] [ring_write_buf_pool.h:50] Failed to register IO uring fixed buffers: ENOMEM, trying to decrease the pool size to: 128
+[2025-11-21T09:10:45.864243 I 21105] [ring_write_buf_pool.h:87] IO uring fixed buffers registered, buffer count: 128
+[2025-11-21T09:10:45.864250 I 21102] [ring_write_buf_pool.h:87] IO uring fixed buffers registered, buffer count: 128
+[2025-11-21T09:10:45.864639 I 21091] [log_instance.h:227] starting log instance at 127.0.0.1:17381
+[2025-11-21T09:10:45.864658 I 21091] [log_instance.h:230] starting log_state
+[2025-11-21T09:10:45.864789 I 21091] [log_state_rocksdb_impl.cpp:336] Starting log state local rocksdb
+[2025-11-21T09:10:45.889638 I 21091] [log_state_rocksdb_impl.cpp:379] local rocksdb started
+[2025-11-21T09:10:45.889690 I 21091] [log_instance.h:256] initializing raft node
+[2025-11-21T09:10:45.889714 I 21091] [log_instance.h:277] This raft node initial conf is 127.0.0.1:16381:0:0,127.0.0.1:17381:0:0,127.0.0.1:18381:0:0
+[2025-11-21T09:10:45.889843 I 21172] [log_state_rocksdb_impl.cpp:504] Sst files size on disk: 0.0MB
+[2025-11-21T09:10:45.890535 I 21091] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-11-21T09:10:45.890564 W 21091] [protobuf_file.cpp:91] open file failed, path: /tmp/redis_server_data_1/log_service/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-11-21T09:10:45.890571 W 21091] [log.cpp:801] /tmp/redis_server_data_1/log_service/0/log is empty
+[2025-11-21T09:10:45.892180 I 21091] [log.cpp:1316] log save_meta /tmp/redis_server_data_1/log_service/0/log/log_meta first_log_index: 1 time: 1594
+[2025-11-21T09:10:45.892232 I 21091] [snapshot.cpp:463] Deleting /tmp/redis_server_data_1/log_service/0/snapshot/temp
+[2025-11-21T09:10:45.892282 W 21091] [protobuf_file.cpp:91] open file failed, path: /tmp/redis_server_data_1/log_service/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-11-21T09:10:45.892303 I 21091] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/redis_server_data_1/log_service/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 9
+[2025-11-21T09:10:45.892318 I 21091] [node.cpp:628] node lg0:127.0.0.1:17381:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:16381:0:0,127.0.0.1:17381:0:0,127.0.0.1:18381:0:0 old_conf: 
+[2025-11-21T09:10:45.894371 I 21091] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=17381.
+[2025-11-21T09:10:45.894906 I 21091] [server.cpp:1132] Check out http://8a361b62-c889-4b5b-aa0f-d90aaa5c9dd6:17381 in web browser.
+[2025-11-21T09:10:45.895030 I 21091] [log_server.cpp:164] Raft Service is running on 0.0.0.0:17381
+[2025-11-21T09:10:45.895044 I 21091] [redis_service.cpp:1248] enable_metrics: OFF
+[2025-11-21T09:10:45.895056 I 21091] [redis_service.cpp:1430] config is automatically set: node_memory_limit_mb=96591(MiB), total memory=120739
+[2025-11-21T09:10:45.895865 I 21091] [checkpointer.cpp:80] checkpointer init, checkpoint_interval_: 36000 ,ckpt_delay_seconds: 0
+[2025-11-21T09:10:45.896075 I 21091] [sharder.cpp:210] txlog_port = 16381
+[2025-11-21T09:10:45.896082 I 21091] [sharder.cpp:210] txlog_port = 17381
+[2025-11-21T09:10:45.896086 I 21091] [sharder.cpp:210] txlog_port = 18381
+[2025-11-21T09:10:45.896107 I 21091] [log_util.h:142] Dump LogRaftGroupConfig: 
+[2025-11-21T09:10:45.896112 I 21091] [log_util.h:151] log_group_id: 0 ,group_name:  lg0 ,group_conf: 127.0.0.1:16381:0,127.0.0.1:17381:0,127.0.0.1:18381:0 ,group_nodes: 0:1:2:
+[2025-11-21T09:10:45.898416 I 21091] [server.cpp:1129] Server[txservice::remote::CcNodeService] is serving on port=17380.
+[2025-11-21T09:10:45.898439 I 21091] [server.cpp:1132] Check out http://8a361b62-c889-4b5b-aa0f-d90aaa5c9dd6:17380 in web browser.
+[2025-11-21T09:10:45.899354 I 21091] [server.cpp:1129] Server[txservice::fault::RecoveryService] is serving on port=17382.
+[2025-11-21T09:10:45.899365 I 21091] [server.cpp:1132] Check out http://8a361b62-c889-4b5b-aa0f-d90aaa5c9dd6:17382 in web browser.
+[2025-11-21T09:10:45.899370 I 21091] [sharder.cpp:329] Forking host manager process with /tmp/build/dce06a3d/redis_src/cmake/host_manager, the hm will be listening on 0.0.0.0:17383
+[2025-11-21T09:10:45.899494 I 21091] [sharder.cpp:369] Spawned host manager process with PID: 21202
+[2025-11-21T09:10:46.004298 I 21091] [tx_start_ts_collector.cpp:46] TxStartTsCollector init, interval seconds: 0
+[2025-11-21T09:10:46.004602 I 21091] [tx_service.h:1268] Tx service module is registered.
+[2025-11-21T09:10:46.005597 I 21091] [server.cpp:1129] Server[txservice::remote::CcStreamReceiver] is serving on port=17379.
+[2025-11-21T09:10:46.005616 I 21091] [server.cpp:1132] Check out http://8a361b62-c889-4b5b-aa0f-d90aaa5c9dd6:17379 in web browser.
+[2025-11-21T09:10:46.005707 I 21091] [local_cc_shards.cpp:268] Range Split Worker Num: 1
+[2025-11-21T09:10:46.006294 I 21191] [cc_stream_sender.cpp:819] Establish the cc stream to node 0
+[2025-11-21T09:10:46.006299 I 21102] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:46.006513 I 21102] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 0, error_code:-1
+[2025-11-21T09:10:46.006568 I 21191] [cc_stream_sender.cpp:819] Establish the cc stream to node 1
+[2025-11-21T09:10:46.006747 E 21191] [cc_stream_sender.cpp:997] Failed to connect to node 2, ip: 127.0.0.1:18379, connect error: 111, [E111]Fail to connect Socket{id=91 addr=127.0.0.1:18379} (0x0x3dcfc051200): Connection refused
+[2025-11-21T09:10:46.006769 E 21191] [cc_stream_sender.cpp:845] Failed to connect the cc stream to node 2
+[2025-11-21T09:10:46.006997 I 21191] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 0
+[2025-11-21T09:10:46.007145 I 21191] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 1
+[2025-11-21T09:10:46.007216 E 21191] [cc_stream_sender.cpp:1067] Failed the connect rpc to node 2, ip: 127.0.0.1:18379, connect error: 111, [E111]Fail to connect Socket{id=99 addr=127.0.0.1:18379} (0x0x3dcfc052a00): Connection refused
+[2025-11-21T09:10:46.007229 E 21191] [cc_stream_sender.cpp:885] Failed to connect the long msg cc stream to node 2
+[2025-11-21T09:10:46.008284 I 21191] [cc_stream_sender.cpp:819] Establish the cc stream to node 2
+[2025-11-21T09:10:46.008796 I 21191] [cc_stream_sender.cpp:861] Establish the long msg cc stream to node 2
+[2025-11-21T09:10:46.009112 I 21105] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 2, error_code:-1
+[2025-11-21T09:10:46.009153 I 21105] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:47.000429 I 21102] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:47.006232 I 21102] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 0, error_code:-1
+[2025-11-21T09:10:47.006282 I 21105] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 2, error_code:-1
+[2025-11-21T09:10:47.008484 I 21105] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:48.000576 I 21102] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:48.006261 I 21102] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 0, error_code:-1
+[2025-11-21T09:10:48.006366 I 21105] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 2, error_code:-1
+[2025-11-21T09:10:48.008584 I 21105] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:49.000833 I 21102] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:49.006350 I 21102] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 0, error_code:-1
+[2025-11-21T09:10:49.006402 I 21105] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 2, error_code:-1
+[2025-11-21T09:10:49.008668 I 21105] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:50.000995 I 21102] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:50.006453 I 21102] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 0, error_code:-1
+[2025-11-21T09:10:50.006564 I 21105] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 2, error_code:-1
+[2025-11-21T09:10:50.008742 I 21105] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:51.000888 I 21102] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:51.006562 I 21102] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 0, error_code:-1
+[2025-11-21T09:10:51.006650 I 21105] [cc_stream_receiver.cpp:1551] RecoverStateCheckResponse with error, node_group: 2, error_code:-1
+[2025-11-21T09:10:51.008810 I 21105] [cc_stream_receiver.cpp:1525] RecoverStateCheckRequest, node 1 is not leader of node group 1
+[2025-11-21T09:10:51.155916 I 21105] [sharder.cpp:708] update node group ng0 leader to node_id: 0
+[2025-11-21T09:10:51.170284 I 21102] [cc_node.cpp:382] CC node 1 becomes the leader of ng#1. Term: 3
+[2025-11-21T09:10:51.170925 I 21105] [sharder.cpp:708] update node group ng1 leader to node_id: 1
+[2025-11-21T09:10:51.172855 I 21105] [log_replay_service.cpp:320] replay service accepting new stream: 8589934684 from log group: 0 to cc_ng: 1 at term: 3
+[2025-11-21T09:10:51.173230 I 21102] [cc_node.cpp:125] The leader of cc node group ng#1 with the term 3 has been recovered.
+[2025-11-21T09:10:51.173251 I 21102] [log_replay_service.cpp:670] replay connection: cc node group: 1, term: 3, log group: 0, set recovering status to finished
+[2025-11-21T09:10:51.173302 I 21102] [log_replay_service.cpp:771] replay service stream: 8589934684, is closed, active stream cnt: 0
+[2025-11-21T09:10:51.555311 I 21102] [sharder.cpp:708] update node group ng2 leader to node_id: 2
+[2025-11-21T09:10:51.617458 I 21102] [node.cpp:1617] node lg0:127.0.0.1:17381:0:0 term 1 start pre_vote
+[2025-11-21T09:10:51.618801 I 21105] [node.cpp:1542] node lg0:127.0.0.1:17381:0:0 received PreVoteResponse from 127.0.0.1:18381:0:0 term 1 granted 1 rejected_by_lease 0 disrupted 0
+[2025-11-21T09:10:51.618839 I 21105] [node.cpp:1692] node lg0:127.0.0.1:17381:0:0 term 1 start vote and grant vote self
+[2025-11-21T09:10:51.618860 W 21105] [node.cpp:1509] node lg0:127.0.0.1:17381:0:0 received invalid PreVoteResponse from 127.0.0.1:16381:0:0 ctx_version 2 current_ctx_version 3
+[2025-11-21T09:10:51.620580 I 21105] [raft_meta.cpp:551] Saved single stable meta, path /tmp/redis_server_data_1/log_service/0/raft_meta term 2 votedfor 127.0.0.1:17381:0:0 time: 1599
+[2025-11-21T09:10:51.620617 W 21105] [node.cpp:1423] node lg0:127.0.0.1:17381:0:0 received invalid RequestVoteResponse from 127.0.0.1:16381:0:0 term 3 expect 2
+[2025-11-21T09:10:51.622956 I 21105] [raft_meta.cpp:551] Saved single stable meta, path /tmp/redis_server_data_1/log_service/0/raft_meta term 3 votedfor 0.0.0.0:0:0:0 time: 2326
+[2025-11-21T09:10:51.623339 W 21105] [node.cpp:1400] node lg0:127.0.0.1:17381:0:0 received invalid RequestVoteResponse from 127.0.0.1:18381:0:0 ctx_version 1 current_ctx_version 2
+[2025-11-21T09:10:51.840799 I 21105] [node.cpp:2177] node lg0:127.0.0.1:17381:0:0 received PreVote from 127.0.0.1:18381:0:0 in term 3 current_term 3 granted 1 rejected_by_lease 0
+[2025-11-21T09:10:52.006764 I 21189] [sharder.cpp:708] update node group ng0 leader to node_id: 0
+[2025-11-21T09:10:52.006922 I 21189] [sharder.cpp:708] update node group ng1 leader to node_id: 1
+[2025-11-21T09:10:52.007033 I 21189] [sharder.cpp:708] update node group ng2 leader to node_id: 2
+[2025-11-21T09:10:52.007141 I 21189] [sharder.cpp:708] update node group ng0 leader to node_id: 0
+[2025-11-21T09:10:52.007239 I 21189] [sharder.cpp:708] update node group ng1 leader to node_id: 1
+[2025-11-21T09:10:52.007337 I 21189] [sharder.cpp:708] update node group ng2 leader to node_id: 2
+[2025-11-21T09:10:52.007807 I 21091] [server.cpp:1129] Server[EloqKV::RedisServiceImpl] is serving on port=7379.
+[2025-11-21T09:10:52.007833 W 21091] [server.cpp:1135] Builtin services are disabled according to ServerOptions.has_builtin_services
+EloqKV Server Started, listening on 127.0.0.1:7379
+[2025-11-21T09:10:52.007843 I 21091] [redis_server.cpp:110] ==== EloqKV Server Started, listening on 127.0.0.1:7379====
+[2025-11-21T09:10:52.923242 I 21326] [object_cc_map.h:81] creating ObjectCcmap on shard: 0, table name: data_table_0, table_schema: 0x3dcf89f0850, schema_ts: 1763716252894165
+[2025-11-21T09:10:52.925102 I 21102] [object_cc_map.h:81] creating ObjectCcmap on shard: 1, table name: data_table_0, table_schema: 0x3dcf89f0850, schema_ts: 1763716252894165
+[2025-11-21T09:10:53.020800 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0c40, schema ts: 1763716252994231
+[2025-11-21T09:10:53.020807 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0c40, schema ts: 1763716252994231
+[2025-11-21T09:10:53.021100 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0c40, schema ts: 1763716252994231
+[2025-11-21T09:10:53.021157 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0c40, schema ts: 1763716252994231
+[2025-11-21T09:10:53.131785 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253094723
+[2025-11-21T09:10:53.131788 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253094723
+[2025-11-21T09:10:53.131982 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253094723
+[2025-11-21T09:10:53.132040 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253094723
+[2025-11-21T09:10:53.223560 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253194390
+[2025-11-21T09:10:53.223567 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253194390
+[2025-11-21T09:10:53.223732 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253194390
+[2025-11-21T09:10:53.223796 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253194390
+[2025-11-21T09:10:53.420297 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253394518
+[2025-11-21T09:10:53.420356 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253394518
+[2025-11-21T09:10:53.420493 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253394518
+[2025-11-21T09:10:53.420553 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253394518
+[2025-11-21T09:10:53.495846 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0f50, schema ts: 1763716253394594
+[2025-11-21T09:10:53.495851 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0f50, schema ts: 1763716253394594
+[2025-11-21T09:10:53.496009 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0f50, schema ts: 1763716253394594
+[2025-11-21T09:10:53.496065 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0f50, schema ts: 1763716253394594
+[2025-11-21T09:10:53.511207 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0ee0, schema ts: 1763716253494583
+[2025-11-21T09:10:53.511219 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0ee0, schema ts: 1763716253494583
+[2025-11-21T09:10:53.511364 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0ee0, schema ts: 1763716253494583
+[2025-11-21T09:10:53.511420 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0ee0, schema ts: 1763716253494583
+[2025-11-21T09:10:53.525597 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253503096
+[2025-11-21T09:10:53.525612 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253503096
+[2025-11-21T09:10:53.525743 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253503096
+[2025-11-21T09:10:53.525789 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e70, schema ts: 1763716253503096
+[2025-11-21T09:10:53.540058 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0fc0, schema ts: 1763716253503100
+[2025-11-21T09:10:53.540066 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0fc0, schema ts: 1763716253503100
+[2025-11-21T09:10:53.540279 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0fc0, schema ts: 1763716253503100
+[2025-11-21T09:10:53.540337 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0fc0, schema ts: 1763716253503100
+[2025-11-21T09:10:53.554735 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253503104
+[2025-11-21T09:10:53.554742 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253503104
+[2025-11-21T09:10:53.554890 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253503104
+[2025-11-21T09:10:53.554941 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e00, schema ts: 1763716253503104
+[2025-11-21T09:10:53.575047 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0cb0, schema ts: 1763716253503108
+[2025-11-21T09:10:53.575053 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0cb0, schema ts: 1763716253503108
+[2025-11-21T09:10:53.575194 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0cb0, schema ts: 1763716253503108
+[2025-11-21T09:10:53.575241 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0cb0, schema ts: 1763716253503108
+[2025-11-21T09:10:53.617908 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0d90, schema ts: 1763716253594642
+[2025-11-21T09:10:53.617916 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0d90, schema ts: 1763716253594642
+[2025-11-21T09:10:53.618057 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0d90, schema ts: 1763716253594642
+[2025-11-21T09:10:53.618103 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0d90, schema ts: 1763716253594642
+[2025-11-21T09:10:53.706604 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0a10, schema ts: 1763716253694742
+[2025-11-21T09:10:53.706616 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0a10, schema ts: 1763716253694742
+[2025-11-21T09:10:53.706769 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0a10, schema ts: 1763716253694742
+[2025-11-21T09:10:53.706830 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0a10, schema ts: 1763716253694742
+[2025-11-21T09:10:54.130579 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e00, schema ts: 1763716254095099
+[2025-11-21T09:10:54.130585 I 21326] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e00, schema ts: 1763716254095099
+[2025-11-21T09:10:54.130781 I 21105] [cc_shard.cpp:1994] Truncate ccm on shard: 0, set new table schema: 0x3dcf89f0e00, schema ts: 1763716254095099
+[2025-11-21T09:10:54.130844 I 21102] [cc_shard.cpp:1994] Truncate ccm on shard: 1, set new table schema: 0x3dcf89f0e00, schema ts: 1763716254095099
+[2025-11-21T09:10:56.999089 I 21102] [node.cpp:1617] node lg0:127.0.0.1:17381:0:0 term 3 start pre_vote
+[2025-11-21T09:10:56.999504 I 21105] [node.cpp:1542] node lg0:127.0.0.1:17381:0:0 received PreVoteResponse from 127.0.0.1:16381:0:0 term 3 granted 0 rejected_by_lease 0 disrupted 1
+[2025-11-21T09:10:56.999544 I 21105] [node.cpp:1542] node lg0:127.0.0.1:17381:0:0 received PreVoteResponse from 127.0.0.1:18381:0:0 term 3 granted 1 rejected_by_lease 0 disrupted 0
+[2025-11-21T09:10:56.999553 I 21105] [node.cpp:1692] node lg0:127.0.0.1:17381:0:0 term 3 start vote and grant vote self
+[2025-11-21T09:10:57.002403 I 21105] [raft_meta.cpp:551] Saved single stable meta, path /tmp/redis_server_data_1/log_service/0/raft_meta term 4 votedfor 127.0.0.1:17381:0:0 time: 2728
+[2025-11-21T09:10:57.002439 I 21105] [node.cpp:1433] node lg0:127.0.0.1:17381:0:0 received RequestVoteResponse from 127.0.0.1:16381:0:0 term 4 granted 0 rejected_by_lease 0 disrupted 1
+[2025-11-21T09:10:57.004340 I 21105] [node.cpp:1433] node lg0:127.0.0.1:17381:0:0 received RequestVoteResponse from 127.0.0.1:18381:0:0 term 4 granted 1 rejected_by_lease 0 disrupted 0
+[2025-11-21T09:10:57.004352 I 21105] [node.cpp:1956] node lg0:127.0.0.1:17381:0:0 term 4 become leader of group 127.0.0.1:16381:0:0,127.0.0.1:17381:0:0,127.0.0.1:18381:0:0 
+[2025-11-21T09:10:57.004384 I 21105] [replicator.cpp:155] Replicator=2413771620371@127.0.0.1:16381:0:0 is started, group lg0
+[2025-11-21T09:10:57.004438 I 21105] [replicator.cpp:155] Replicator=2383706849297@127.0.0.1:18381:0:0 is started, group lg0
+[2025-11-21T09:10:57.004590 I 21105] [log.cpp:116] Created new segment `/tmp/redis_server_data_1/log_service/0/log/log_inprogress_00000000000000000001' with fd=36
+[2025-11-21T09:10:57.006199 I 21105] [node.cpp:3354] node lg0:127.0.0.1:17381:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:16381:0:0,127.0.0.1:17381:0:0,127.0.0.1:18381:0:0, old_peers: 127.0.0.1:16381:0:0,127.0.0.1:17381:0:0,127.0.0.1:18381:0:0
+[2025-11-21T09:10:57.006235 I 21105] [log_instance.h:476] Log node 127.0.0.1:17381 becomes the leader of the log group #0, term: 4, leader lease valid? yes
+[2025-11-21T09:10:57.006295 I 21105] [log_instance.h:495] Start checking replay log size every 10 seconds.
+[2025-11-21T09:10:57.006300 I 21105] [log_instance.h:497] notify_checkpointer_threshold_size: 1024 MB
+[2025-11-21T09:10:57.006356 I 21389] [log_state_rocksdb_impl.cpp:706] Total memtables size: 0 MB
+[2025-11-21T09:10:57.006383 I 21389] [log_state_rocksdb_impl.cpp:707] Total SSTables size used in replay: 0 MB
+[2025-11-21T09:10:57.006388 I 21389] [log_state_rocksdb_impl.cpp:711] Total replay log size: 0 MB
+[2025-11-21T09:11:00.896862 I 21184] [log_agent.cpp:327] Refresh log group:0 leader from node_id: 0 to node_id: 1
+[2025-11-21T09:11:01.003345 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.005015 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.006318 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.007611 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.008870 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.010214 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.011308 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.012514 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.013850 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.015048 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.016227 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.017338 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.018359 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.019454 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.020834 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.022037 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.023269 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.024665 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.025807 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.026887 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.027957 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.029160 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.030251 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.031373 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.032507 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.033883 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.035041 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.036206 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.037345 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.038456 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.039678 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.040949 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.042399 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.043486 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.044721 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.045984 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.047127 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.048367 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.049575 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.050724 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.051944 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.053098 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.054385 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.055577 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.056726 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.057857 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.058993 E 21105] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.060216 E 21102] [log_instance.cpp:569] Tx term not match, tx's ng id: 0, tx_term: 3, ng latest term: -1, tx number: 2787
+[2025-11-21T09:11:01.469337 I 21102] [cc_node.cpp:382] CC node 1 becomes the leader of ng#0. Term: 4
+[2025-11-21T09:11:01.470610 I 21105] [sharder.cpp:708] update node group ng0 leader to node_id: 1
+[2025-11-21T09:11:01.471825 W 21105] [replicator.cpp:416] Group lg0 fail to issue RPC to 127.0.0.1:16381:0:0 _consecutive_error_times=1, [E1014]Got EOF of Socket{id=1 fd=32 addr=127.0.0.1:16381:39024} (0x0x3dce07d0300) [R1][E112]Not connected to 127.0.0.1:16381 yet, server_id=1 [R2][E112]Not connected to 127.0.0.1:16381 yet, server_id=1 [R3][E112]Not connected to 127.0.0.1:16381 yet, server_id=1
+[2025-11-21T09:11:01.473670 I 21102] [log_instance.cpp:850] Received ReplayLogRequest.
+[2025-11-21T09:11:01.473697 I 21102] [log_state.h:844] Updating node group term, ng:0,term:4
+[2025-11-21T09:11:01.473709 I 21102] [log_state.h:885] Create a new leader info
+[2025-11-21T09:11:01.473714 I 21102] [log_instance.cpp:865] ReplayLogRequest cc_ng_id: 0 term: 4 ip: 127.0.0.1 port: 17382 term match? yes
+[2025-11-21T09:11:01.473728 I 21102] [log_instance.cpp:872] shipping log records to: 127.0.0.1 17382
+[2025-11-21T09:11:01.473734 I 21102] [log_instance.cpp:884] start replaying from ts 0
+[2025-11-21T09:11:01.473739 I 21102] [log_state_rocksdb_impl.cpp:86] cluster_scale_list size: 0
+[2025-11-21T09:11:01.473744 I 21102] [log_state_rocksdb_impl.cpp:90] schema_log_list size: 0
+[2025-11-21T09:11:01.473748 I 21102] [log_state_rocksdb_impl.cpp:94] split_range_op_list size: 0
+[2025-11-21T09:11:01.473910 I 21102] [log_instance.cpp:943] Set response status to LogResponse_ResponseStatus_Success
+[2025-11-21T09:11:01.474022 I 21391] [log_shipping_agent.h:216] Log shipping agent from log group 0 to cc node group 0 term 4 trying to create a new stream to cc node at 127.0.0.1:17382
+[2025-11-21T09:11:01.474231 I 21102] [log_replay_service.cpp:320] replay service accepting new stream: 8589934678 from log group: 0 to cc_ng: 0 at term: 4
+[2025-11-21T09:11:01.474275 I 21391] [log_shipping_agent.h:106] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-11-21T09:11:01.474287 I 21391] [log_shipping_agent.h:379] thread: 135573899601600 send log item list to replay service of cc node group: 0, term: 4
+[2025-11-21T09:11:01.474313 I 21391] [log_shipping_agent.h:266] LogShippingAgent shipping replay log records to cc node group: 0, term: 4 finished, sent 0 messages, took 25 microseconds, 0 eagains
+[2025-11-21T09:11:01.474332 I 21391] [log_shipping_agent.h:124] finish_msg->set_latest_commit_ts(latest_commit_ts_)
+[2025-11-21T09:11:01.474901 I 21105] [cc_node.cpp:125] The leader of cc node group ng#0 with the term 4 has been recovered.
+[2025-11-21T09:11:01.474918 I 21105] [log_replay_service.cpp:670] replay connection: cc node group: 0, term: 4, log group: 0, set recovering status to finished
+[2025-11-21T09:11:01.474970 I 21105] [log_replay_service.cpp:771] replay service stream: 8589934678, is closed, active stream cnt: 0
